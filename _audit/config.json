@@ -1,0 +1,5 @@
+{
+  "siteActuel": "budgetravaux.fr",
+  "pagesTypes": ["/", "/depannage", "/renovation", "/plomberie", "/devis-en-ligne", "/contact"],
+  "effets": ["lampe", "reseau", "ticket", "disjoncteurs", "compteur-eau", "ricochet", "thermique", "horloge"]
+}

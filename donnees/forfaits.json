@@ -1,0 +1,10 @@
+[
+  { "cle": "fuite", "titre": "Recherche de fuite", "prix": 149, "detail": "Déplacement et 1 h de prestation compris", "groupe": "fuite" },
+  { "cle": "thermique", "titre": "Recherche de fuite approfondie", "prix": 299, "detail": "Avec caméra thermique", "groupe": "fuite" },
+  { "cle": "soir", "titre": "Fuite le soir, le week-end, les jours fériés", "prix": 199, "detail": "Recherche ou réparation après 20 h, le week-end et les jours fériés", "groupe": "fuite" },
+  { "cle": "degorgement", "titre": "Dégorgement avec pompe", "prix": 149, "detail": "Canalisation bouchée", "groupe": "evacuation" },
+  { "cle": "pvc", "titre": "Forfait modification PVC", "prix": 230, "detail": "2 m de PVC jusqu'au diamètre 50, colle comprise", "groupe": "reseau" },
+  { "cle": "cuivre", "titre": "Forfait modification cuivre", "prix": 250, "detail": "2 m de cuivre jusqu'au diamètre 22", "groupe": "reseau" },
+  { "cle": "ballon", "titre": "Recherche de panne ballon ou chaudière", "prix": 149, "detail": "Chaudières jusqu'à 45 kW, diagnostic et remise en route compris", "groupe": "chauffage" },
+  { "cle": "main-oeuvre", "titre": "Main-d'œuvre supplémentaire", "prix": 70, "detail": "Au-delà du temps compris dans le forfait", "groupe": "autre" }
+]

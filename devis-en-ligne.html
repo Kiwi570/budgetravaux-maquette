@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="fr" data-v="1" data-curseur>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Devis en ligne : Budgetravaux, Oise (60)</title>
+<meta name="description" content="Composez votre demande de devis : métier, pièce, postes. Le total se calcule sur les prix publiés, le reste est chiffré gratuitement.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://budgetravaux-maquette.vercel.app/devis-en-ligne">
+<style>:root{--fond:#121417;--texte:#f1eee8;--voile-fond:#0b0c0e;--ouverture-fond:#0b0c0e;--menu-fond:#121417}:root { --entete-h: 72px; --barres-h: 0px; } html { background: var(--fond); color: var(--texte); scrollbar-gutter: stable; } body { margin: 0; background: var(--fond); } html.js:not(.calme):not(.secours):not([data-arrivee="retour"]) [data-anime] { opacity: 0; } html.js:not(.calme):not(.secours):not([data-arrivee="retour"]) [data-anime].vu { opacity: 1; } [data-voile] { position: fixed; inset: 0; z-index: 900; background: var(--voile-fond); transform: translateY(100%); visibility: hidden; pointer-events: none; } html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) [data-voile] { transform: none; visibility: visible; } html.calme [data-voile], html.secours [data-voile] { visibility: hidden !important; } .ouverture-panneau { position: fixed; inset: 0; z-index: 850; display: none; place-content: center; justify-items: center; background: var(--ouverture-fond, var(--voile-fond)); color: var(--fond); text-align: center; } html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) .ouverture-panneau { display: grid; } html.defilement-bloque, html.defilement-bloque body, html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie), html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) body, html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours), html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) body { overflow: hidden; } html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) { background-color: var(--ouverture-fond, var(--voile-fond)); } html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) { background-color: var(--voile-fond); }</style>
+<script>(function () {
+var d = document.documentElement, ss = null, ls = null;
+try { ss = window.sessionStorage; ls = window.localStorage; } catch (e) {}
+d.classList.add('js');
+var calme = false;
+try { calme = !!ls && ls.getItem('socle:calme') === 'oui'; } catch (e) {}
+if (!calme && window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) calme = true;
+if (calme) d.classList.add('calme');
+var nav = performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
+var type = nav ? nav.type : 'navigate';
+var depart = null;
+try { depart = JSON.parse(ss.getItem('socle:depart') || 'null'); ss.removeItem('socle:depart'); } catch (e) {}
+if (depart && !(Date.now() - depart.t < 15000)) depart = null;
+var retourSection = false;
+try { retourSection = !!ss.getItem('socle:calme-retour'); } catch (e) {}
+var mode = type === 'back_forward' || retourSection ? 'retour' : type === 'reload' ? 'intro' : depart ? 'voile' : 'intro';
+d.setAttribute('data-arrivee', mode);
+if (mode === 'voile' && depart.couleur) d.style.setProperty('--voile-fond', depart.couleur);
+if (type === 'reload' && 'scrollRestoration' in history) {
+if (!retourSection) history.scrollRestoration = 'manual';
+}
+try {
+var choisie = ls && ls.getItem('socle:langue');
+var langue = (d.lang || '').slice(0, 2);
+if (choisie && choisie !== langue && type === 'navigate' && !depart) {
+var alt = document.querySelector('link[rel="alternate"][hreflang="' + choisie + '"]');
+if (alt) location.replace(new URL(alt.href).pathname + location.search + location.hash);
+}
+} catch (e) {}
+setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
+})();</script>
+<link rel="preload" href="/assets/polices/bricolage.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/polices/dm-sans.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/socle.css?v=1">
+<link rel="stylesheet" href="/assets/css/site.css?v=1">
+<link rel="modulepreload" href="/assets/js/site.js?v=1">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<script src="/assets/vendor/gsap.min.js" defer></script>
+<script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="/assets/vendor/SplitText.min.js" defer></script>
+<script type="module" src="/assets/js/site.js?v=1"></script>
+<meta name="theme-color" content="#121417">
+<link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Budgetravaux">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Devis en ligne : Budgetravaux, Oise (60)">
+<meta property="og:description" content="Composez votre demande de devis : métier, pièce, postes. Le total se calcule sur les prix publiés, le reste est chiffré gratuitement.">
+<meta property="og:url" content="https://budgetravaux-maquette.vercel.app/devis-en-ligne">
+<meta property="og:image" content="https://budgetravaux-maquette.vercel.app/assets/partage/devis-fr.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Devis en ligne Budgetravaux">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Plumber","name":"Budgetravaux","url":"https://budgetravaux-maquette.vercel.app/","telephone":"+33761183322","founder":{"@type":"Person","name":"Pedro Ricardo Dos Reis Oliveira"},"address":{"@type":"PostalAddress","streetAddress":"9 bis rue de l'Abreuvoir","postalCode":"60126","addressLocality":"Longueil-Sainte-Marie","addressCountry":"FR"},"areaServed":{"@type":"AdministrativeArea","name":"Oise (60)"},"description":"Dépannage plomberie, chauffage et électricité, rénovation tous corps d'état dans l'Oise. Devis gratuit, déplacement inclus."}</script>
+</head>
+<body id="haut">
+<div data-voile aria-hidden="true"><div class="voile-contenu"><img src="/assets/images/logo-clair.svg" alt="" width="88" height="56"><span data-voile-libelle>Devis en ligne</span></div></div>
+<div class="ouverture-panneau" data-ouverture aria-hidden="true">
+  <div class="ouverture-faisceau"></div>
+  <img class="ouverture-logo" src="/assets/images/logo-clair.svg" alt="" width="113" height="72">
+  <p class="ouverture-nom">Budgetravaux</p>
+  <p class="ouverture-ligne">Dépannage et rénovation · Oise (60)</p>
+</div>
+<a class="evitement" href="#contenu">Aller au contenu</a>
+<header data-entete>
+  <div class="entete-rangee">
+    <a class="entete-logo" href="/" data-libelle="Accueil">
+      <img src="/assets/images/logo-clair.svg" alt="" width="63" height="40"><span><span class="logo-b">Budget</span><span class="logo-r">ravaux</span></span>
+    </a>
+    <nav data-nav aria-label="Navigation principale">
+      <ul><li><a href="/depannage" data-libelle="Dépannage &amp; tarifs">Dépannage &amp; tarifs</a></li><li><a href="/renovation" data-libelle="Rénovation">Rénovation</a></li><li><a href="/plomberie" data-libelle="Plomberie en détail">Plomberie en détail</a></li><li><a href="/devis-en-ligne" data-libelle="Devis en ligne" aria-current="page">Devis en ligne</a></li><li><a href="/contact" data-libelle="Contact &amp; RDV">Contact &amp; RDV</a></li></ul>
+    </nav>
+    <div class="entete-actions">
+      <a class="bouton bouton--appel" href="tel:+33761183322" aria-label="Appeler le 07 61 18 33 22"><svg class="icone" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1L6.6 10.8z" fill="currentColor"/></svg><span>07 61 18 33 22</span></a>
+      <button type="button" data-menu-bouton aria-controls="menu" aria-expanded="false" data-libelle-ouvrir="Menu" data-libelle-fermer="Fermer"><span data-libelle-bouton>Menu</span></button>
+    </div>
+  </div>
+</header>
+<div id="menu" data-menu role="dialog" aria-modal="true" aria-label="Menu">
+  <ul><li style="--i:0"><a href="/" class="menu-lien" data-libelle="Accueil">Accueil</a></li><li style="--i:1"><a href="/depannage" class="menu-lien" data-libelle="Dépannage &amp; tarifs">Dépannage &amp; tarifs</a></li><li style="--i:2"><a href="/renovation" class="menu-lien" data-libelle="Rénovation">Rénovation</a></li><li style="--i:3"><a href="/plomberie" class="menu-lien" data-libelle="Plomberie en détail">Plomberie en détail</a></li><li style="--i:4"><a href="/devis-en-ligne" class="menu-lien" data-libelle="Devis en ligne" aria-current="page">Devis en ligne</a></li><li style="--i:5"><a href="/contact" class="menu-lien" data-libelle="Contact &amp; RDV">Contact &amp; RDV</a></li></ul>
+  <p class="menu-actions"><a class="bouton bouton--appel" href="tel:+33761183322"><svg class="icone" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1L6.6 10.8z" fill="currentColor"/></svg>Appeler le 07 61 18 33 22</a> <a href="/devis-en-ligne" class="bouton bouton--contour" data-libelle="Devis en ligne" aria-current="page">Devis en ligne</a></p>
+  <p><button type="button" class="lien" data-calme-bascule data-libelle-reduire="Réduire les animations" data-libelle-retablir="Rétablir les animations" data-libelle-systeme="Animations réduites par le réglage de votre appareil"><span data-libelle-bouton>Réduire les animations</span></button></p>
+</div>
+<main id="contenu" tabindex="-1">
+<section class="page-tete" id="debut">
+  <figure class="media page-tete-fond" data-grok data-fx="parallaxe" data-fx-force="8" style="--cadrage:60% 50%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/devis-ouverture-mobile-640.webp 640w, /assets/images/grok/devis-ouverture-mobile-960.webp 960w" sizes="100vw">
+    <img src="/assets/images/grok/devis-ouverture-1280.webp" srcset="/assets/images/grok/devis-ouverture-640.webp 640w, /assets/images/grok/devis-ouverture-1280.webp 1280w, /assets/images/grok/devis-ouverture-1600.webp 1600w" sizes="100vw" alt="Crayon, mètre ruban fermé et feuille quadrillée sur un établi" width="1280" height="720" fetchpriority="high" loading="eager" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+  <div class="conteneur page-tete-texte">
+    <p class="surtitre pt-anim" data-anime="gsap">Devis en ligne</p>
+    <h1 class="pt-anim pt-titre" data-anime="gsap">Votre devis, ligne par ligne.</h1>
+    <p class="pt-anim" data-anime="gsap">Quatre étapes : le métier, la pièce, les postes, vos coordonnées. Le ticket se calcule sur les prix publiés ; tout le reste est chiffré gratuitement par Budgetravaux.</p>
+    <p class="hero-actions pt-anim" data-anime="gsap"><a class="bouton bouton--appel" href="#estimateur" data-action-principale data-survol="magnetique">Composer mon devis</a></p>
+    <p class="hero-info pt-anim" data-info-cle data-anime="gsap">Gratuit et sans engagement</p>
+  </div>
+</section>
+<section class="estimateur bloc clair" id="estimateur">
+  <div class="conteneur devis-grille">
+    <form class="devis-form" data-formulaire data-etapes data-effet="estimateur" action="#" novalidate>
+      <ol class="etapes-tete" role="list"><li data-indicateur="0" aria-current="step">1. Le métier</li><li data-indicateur="1">2. La pièce</li><li data-indicateur="2">3. Les postes</li><li data-indicateur="3">4. Vos coordonnées</li></ol>
+      <p class="visuellement-cache" aria-live="polite" data-annonce-etape data-modele="Étape {n} sur 4"></p>
+      <div class="form-hauteur">
+        <fieldset class="etape-form courante" data-etape="0">
+          <legend>Le métier</legend>
+          <div class="cartes-choix"><label class="carte-choix"><input type="radio" name="metier" value="plomberie" checked><span>Plomberie</span></label><label class="carte-choix"><input type="radio" name="metier" value="chauffage"><span>Chauffage</span></label><label class="carte-choix"><input type="radio" name="metier" value="electricite"><span>Électricité</span></label><label class="carte-choix"><input type="radio" name="metier" value="platrerie"><span>Plâtrerie et isolation</span></label><label class="carte-choix"><input type="radio" name="metier" value="maconnerie"><span>Maçonnerie</span></label><label class="carte-choix"><input type="radio" name="metier" value="murs"><span>Murs et plafonds</span></label><label class="carte-choix"><input type="radio" name="metier" value="sols"><span>Revêtements de sols</span></label><label class="carte-choix"><input type="radio" name="metier" value="menuiserie"><span>Menuiserie</span></label></div>
+          <p class="sous-titre-choix">Précisez</p>
+          <div class="choix-precision" data-sous-de="plomberie"><label class="puce"><input type="radio" name="precision-plomberie" value="Salle de bain complète" checked><span>Salle de bain complète</span></label><label class="puce"><input type="radio" name="precision-plomberie" value="Ma douche"><span>Ma douche</span></label><label class="puce"><input type="radio" name="precision-plomberie" value="Ma baignoire"><span>Ma baignoire</span></label><label class="puce"><input type="radio" name="precision-plomberie" value="Mon lavabo"><span>Mon lavabo</span></label><label class="puce"><input type="radio" name="precision-plomberie" value="Mon WC"><span>Mon WC</span></label><label class="puce"><input type="radio" name="precision-plomberie" value="Mon chauffe-eau"><span>Mon chauffe-eau</span></label><label class="puce"><input type="radio" name="precision-plomberie" value="Une fuite, une panne"><span>Une fuite, une panne</span></label><label class="puce"><input type="radio" name="precision-plomberie" value="Ma cuisine"><span>Ma cuisine</span></label></div><div class="choix-precision" data-sous-de="chauffage" hidden><label class="puce"><input type="radio" name="precision-chauffage" value="Chauffe-eau ou chaudière en panne" checked><span>Chauffe-eau ou chaudière en panne</span></label><label class="puce"><input type="radio" name="precision-chauffage" value="Radiateurs"><span>Radiateurs</span></label></div><div class="choix-precision" data-sous-de="electricite" hidden><label class="puce"><input type="radio" name="precision-electricite" value="Tableau électrique" checked><span>Tableau électrique</span></label><label class="puce"><input type="radio" name="precision-electricite" value="Prises et interrupteurs"><span>Prises et interrupteurs</span></label><label class="puce"><input type="radio" name="precision-electricite" value="Points lumineux"><span>Points lumineux</span></label><label class="puce"><input type="radio" name="precision-electricite" value="Mise en conformité"><span>Mise en conformité</span></label></div><div class="choix-precision" data-sous-de="platrerie" hidden><label class="puce"><input type="radio" name="precision-platrerie" value="Cloison" checked><span>Cloison</span></label><label class="puce"><input type="radio" name="precision-platrerie" value="Doublage et isolation"><span>Doublage et isolation</span></label><label class="puce"><input type="radio" name="precision-platrerie" value="Faux plafond"><span>Faux plafond</span></label></div><div class="choix-precision" data-sous-de="maconnerie" hidden><label class="puce"><input type="radio" name="precision-maconnerie" value="Travaux de maçonnerie" checked><span>Travaux de maçonnerie</span></label></div><div class="choix-precision" data-sous-de="murs" hidden><label class="puce"><input type="radio" name="precision-murs" value="Peinture" checked><span>Peinture</span></label><label class="puce"><input type="radio" name="precision-murs" value="Papier peint ou toile de verre"><span>Papier peint ou toile de verre</span></label><label class="puce"><input type="radio" name="precision-murs" value="Faïence"><span>Faïence</span></label></div><div class="choix-precision" data-sous-de="sols" hidden><label class="puce"><input type="radio" name="precision-sols" value="Carrelage" checked><span>Carrelage</span></label><label class="puce"><input type="radio" name="precision-sols" value="Lino antidérapant"><span>Lino antidérapant</span></label><label class="puce"><input type="radio" name="precision-sols" value="Autre revêtement"><span>Autre revêtement</span></label></div><div class="choix-precision" data-sous-de="menuiserie" hidden><label class="puce"><input type="radio" name="precision-menuiserie" value="Portes" checked><span>Portes</span></label><label class="puce"><input type="radio" name="precision-menuiserie" value="Fenêtres et portes-fenêtres"><span>Fenêtres et portes-fenêtres</span></label><label class="puce"><input type="radio" name="precision-menuiserie" value="Fenêtre de toit"><span>Fenêtre de toit</span></label><label class="puce"><input type="radio" name="precision-menuiserie" value="Escalier"><span>Escalier</span></label><label class="puce"><input type="radio" name="precision-menuiserie" value="Plancher"><span>Plancher</span></label></div>
+        </fieldset>
+        <fieldset class="etape-form" data-etape="1">
+          <legend>La pièce</legend>
+          <div class="cartes-choix cartes-choix--petites"><label class="carte-choix"><input type="radio" name="piece" value="Entrée"><span>Entrée</span></label><label class="carte-choix"><input type="radio" name="piece" value="Couloir"><span>Couloir</span></label><label class="carte-choix"><input type="radio" name="piece" value="Séjour"><span>Séjour</span></label><label class="carte-choix"><input type="radio" name="piece" value="Salle à manger"><span>Salle à manger</span></label><label class="carte-choix"><input type="radio" name="piece" value="Chambre"><span>Chambre</span></label><label class="carte-choix"><input type="radio" name="piece" value="Cuisine"><span>Cuisine</span></label><label class="carte-choix"><input type="radio" name="piece" value="Salle de bain" checked><span>Salle de bain</span></label><label class="carte-choix"><input type="radio" name="piece" value="WC"><span>WC</span></label><label class="carte-choix"><input type="radio" name="piece" value="Buanderie"><span>Buanderie</span></label><label class="carte-choix"><input type="radio" name="piece" value="Terrasse"><span>Terrasse</span></label><label class="carte-choix"><input type="radio" name="piece" value="Mezzanine"><span>Mezzanine</span></label><label class="carte-choix"><input type="radio" name="piece" value="Combles"><span>Combles</span></label><label class="carte-choix"><input type="radio" name="piece" value="Sous-sol"><span>Sous-sol</span></label><label class="carte-choix"><input type="radio" name="piece" value="Garage"><span>Garage</span></label><label class="carte-choix"><input type="radio" name="piece" value="Autre"><span>Autre</span></label></div>
+        </fieldset>
+        <fieldset class="etape-form" data-etape="2">
+          <legend>Les postes</legend>
+          <ul class="postes" role="list"><li class="poste" data-poste="fuite" data-metier="plomberie" data-prix="149" data-unite="forfait">
+            <span class="poste-texte"><span class="poste-titre">Recherche de fuite (déplacement + 1 h)</span> <span class="poste-prix">149 €</span></span>
+            <span></span>
+            <button type="button" class="poste-bouton" aria-pressed="false" data-ajouter="Ajouter" data-retirer="Retirer">Ajouter</button>
+          </li><li class="poste" data-poste="thermique" data-metier="plomberie" data-prix="299" data-unite="forfait">
+            <span class="poste-texte"><span class="poste-titre">Recherche de fuite à la caméra thermique</span> <span class="poste-prix">299 €</span></span>
+            <span></span>
+            <button type="button" class="poste-bouton" aria-pressed="false" data-ajouter="Ajouter" data-retirer="Retirer">Ajouter</button>
+          </li><li class="poste" data-poste="soir" data-metier="plomberie" data-prix="199" data-unite="forfait">
+            <span class="poste-texte"><span class="poste-titre">Fuite le soir, le week-end ou un jour férié</span> <span class="poste-prix">199 €</span></span>
+            <span></span>
+            <button type="button" class="poste-bouton" aria-pressed="false" data-ajouter="Ajouter" data-retirer="Retirer">Ajouter</button>
+          </li><li class="poste" data-poste="degorgement" data-metier="plomberie" data-prix="149" data-unite="forfait">
+            <span class="poste-texte"><span class="poste-titre">Dégorgement avec pompe</span> <span class="poste-prix">149 €</span></span>
+            <span></span>
+            <button type="button" class="poste-bouton" aria-pressed="false" data-ajouter="Ajouter" data-retirer="Retirer">Ajouter</button>
+          </li><li class="poste" data-poste="pvc" data-metier="plomberie" data-prix="230" data-unite="forfait">
+            <span class="poste-texte"><span class="poste-titre">Modification PVC (2 m, jusqu&#39;à Ø 50)</span> <span class="poste-prix">230 €</span></span>
+            <span></span>
+            <button type="button" class="poste-bouton" aria-pressed="false" data-ajouter="Ajouter" data-retirer="Retirer">Ajouter</button>
+          </li><li class="poste" data-poste="cuivre" data-metier="plomberie" data-prix="250" data-unite="forfait">
+            <span class="poste-texte"><span class="poste-titre">Modification cuivre (2 m, jusqu&#39;à Ø 22)</span> <span class="poste-prix">250 €</span></span>
+            <span></span>
+            <button type="button" class="poste-bouton" aria-pressed="false" data-ajouter="Ajouter" data-retirer="Retirer">Ajouter</button>
+          </li><li class="poste" data-poste="ballon" data-metier="chauffage" data-prix="149" data-unite="forfait">
+            <span class="poste-texte"><span class="poste-titre">Recherche de panne ballon ou chaudière</span> <span class="poste-prix">149 €</span></span>
+            <span></span>
+            <button type="button" class="poste-bouton" aria-pressed="false" data-ajouter="Ajouter" data-retirer="Retirer">Ajouter</button>
+          </li><li class="poste" data-poste="main-oeuvre" data-metier="tous" data-prix="70" data-unite="heure">
+            <span class="poste-texte"><span class="poste-titre">Heure de main-d&#39;œuvre supplémentaire</span> <span class="poste-prix">70 € / h</span></span>
+            <label class="visuellement-cache" for="qte-main-oeuvre">Quantité : Heure de main-d&#39;œuvre supplémentaire</label><input id="qte-main-oeuvre" type="number" min="1" max="999" step="1" value="1" inputmode="numeric">
+            <button type="button" class="poste-bouton" aria-pressed="false" data-ajouter="Ajouter" data-retirer="Retirer">Ajouter</button>
+          </li><li class="poste" data-poste="carrelage" data-metier="sols" data-prix="30" data-unite="m²">
+            <span class="poste-texte"><span class="poste-titre">Pose de carrelage 30 × 30 à 40 cm</span> <span class="poste-prix">à partir de 30 € / m²</span></span>
+            <label class="visuellement-cache" for="qte-carrelage">Quantité : Pose de carrelage 30 × 30 à 40 cm</label><input id="qte-carrelage" type="number" min="1" max="999" step="1" value="10" inputmode="numeric">
+            <button type="button" class="poste-bouton" aria-pressed="false" data-ajouter="Ajouter" data-retirer="Retirer">Ajouter</button>
+          </li><li class="poste" data-poste="lino" data-metier="sols" data-prix="30" data-unite="m²">
+            <span class="poste-texte"><span class="poste-titre">Lino antidérapant</span> <span class="poste-prix">à partir de 30 € / m²</span></span>
+            <label class="visuellement-cache" for="qte-lino">Quantité : Lino antidérapant</label><input id="qte-lino" type="number" min="1" max="999" step="1" value="10" inputmode="numeric">
+            <button type="button" class="poste-bouton" aria-pressed="false" data-ajouter="Ajouter" data-retirer="Retirer">Ajouter</button>
+          </li><li class="poste" data-poste="sdb" data-metier="plomberie" data-prix="" data-unite="projet">
+            <span class="poste-texte"><span class="poste-titre">Salle de bain clé en main</span> <span class="poste-prix">sur devis</span></span>
+            <span></span>
+            <button type="button" class="poste-bouton" aria-pressed="false" data-ajouter="Ajouter" data-retirer="Retirer">Ajouter</button>
+          </li><li class="poste" data-poste="douche" data-metier="plomberie" data-prix="" data-unite="u">
+            <span class="poste-texte"><span class="poste-titre">Douche classique ou à l&#39;italienne</span> <span class="poste-prix">sur devis</span></span>
+            <label class="visuellement-cache" for="qte-douche">Quantité : Douche classique ou à l&#39;italienne</label><input id="qte-douche" type="number" min="1" max="999" step="1" value="1" inputmode="numeric">
+            <button type="button" class="poste-bouton" aria-pressed="false" data-ajouter="Ajouter" data-retirer="Retirer">Ajouter</button>
+          </li><li class="poste" data-poste="wc" data-metier="plomberie" data-prix="" data-unite="u">
+            <span class="poste-texte"><span class="poste-titre">WC classique, suspendu ou sanibroyeur</span> <span class="poste-prix">sur devis</span></span>
+            <label class="visuellement-cache" for="qte-wc">Quantité : WC classique, suspendu ou sanibroyeur</label><input id="qte-wc" type="number" min="1" max="999" step="1" value="1" inputmode="numeric">
+            <button type="button" class="poste-bouton" aria-pressed="false" data-ajouter="Ajouter" data-retirer="Retirer">Ajouter</button>
+          </li><li class="poste" data-poste="chauffe-eau" data-metier="plomberie" data-prix="" data-unite="u">
+            <span class="poste-texte"><span class="poste-titre">Chauffe-eau électrique 75 à 150 l</span> <span class="poste-prix">sur devis</span></span>
+            <label class="visuellement-cache" for="qte-chauffe-eau">Quantité : Chauffe-eau électrique 75 à 150 l</label><input id="qte-chauffe-eau" type="number" min="1" max="999" step="1" value="1" inputmode="numeric">
+            <button type="button" class="poste-bouton" aria-pressed="false" data-ajouter="Ajouter" data-retirer="Retirer">Ajouter</button>
+          </li><li class="poste" data-poste="tableau" data-metier="electricite" data-prix="" data-unite="u">
+            <span class="poste-texte"><span class="poste-titre">Tableau électrique</span> <span class="poste-prix">sur devis</span></span>
+            <label class="visuellement-cache" for="qte-tableau">Quantité : Tableau électrique</label><input id="qte-tableau" type="number" min="1" max="999" step="1" value="1" inputmode="numeric">
+            <button type="button" class="poste-bouton" aria-pressed="false" data-ajouter="Ajouter" data-retirer="Retirer">Ajouter</button>
+          </li><li class="poste" data-poste="prise" data-metier="electricite" data-prix="" data-unite="u">
+            <span class="poste-texte"><span class="poste-titre">Prise 16 A, 20 A ou 32 A</span> <span class="poste-prix">sur devis</span></span>
+            <label class="visuellement-cache" for="qte-prise">Quantité : Prise 16 A, 20 A ou 32 A</label><input id="qte-prise" type="number" min="1" max="999" step="1" value="1" inputmode="numeric">
+            <button type="button" class="poste-bouton" aria-pressed="false" data-ajouter="Ajouter" data-retirer="Retirer">Ajouter</button>
+          </li><li class="poste" data-poste="point" data-metier="electricite" data-prix="" data-unite="u">
+            <span class="poste-texte"><span class="poste-titre">Point lumineux</span> <span class="poste-prix">sur devis</span></span>
+            <label class="visuellement-cache" for="qte-point">Quantité : Point lumineux</label><input id="qte-point" type="number" min="1" max="999" step="1" value="1" inputmode="numeric">
+            <button type="button" class="poste-bouton" aria-pressed="false" data-ajouter="Ajouter" data-retirer="Retirer">Ajouter</button>
+          </li><li class="poste" data-poste="cloison" data-metier="platrerie" data-prix="" data-unite="m²">
+            <span class="poste-texte"><span class="poste-titre">Cloison BA 13 ou carreaux de plâtre</span> <span class="poste-prix">sur devis</span></span>
+            <label class="visuellement-cache" for="qte-cloison">Quantité : Cloison BA 13 ou carreaux de plâtre</label><input id="qte-cloison" type="number" min="1" max="999" step="1" value="10" inputmode="numeric">
+            <button type="button" class="poste-bouton" aria-pressed="false" data-ajouter="Ajouter" data-retirer="Retirer">Ajouter</button>
+          </li><li class="poste" data-poste="doublage" data-metier="platrerie" data-prix="" data-unite="m²">
+            <span class="poste-texte"><span class="poste-titre">Doublage avec isolant</span> <span class="poste-prix">sur devis</span></span>
+            <label class="visuellement-cache" for="qte-doublage">Quantité : Doublage avec isolant</label><input id="qte-doublage" type="number" min="1" max="999" step="1" value="10" inputmode="numeric">
+            <button type="button" class="poste-bouton" aria-pressed="false" data-ajouter="Ajouter" data-retirer="Retirer">Ajouter</button>
+          </li><li class="poste" data-poste="plafond" data-metier="platrerie" data-prix="" data-unite="m²">
+            <span class="poste-texte"><span class="poste-titre">Faux plafond</span> <span class="poste-prix">sur devis</span></span>
+            <label class="visuellement-cache" for="qte-plafond">Quantité : Faux plafond</label><input id="qte-plafond" type="number" min="1" max="999" step="1" value="10" inputmode="numeric">
+            <button type="button" class="poste-bouton" aria-pressed="false" data-ajouter="Ajouter" data-retirer="Retirer">Ajouter</button>
+          </li><li class="poste" data-poste="maconnerie" data-metier="maconnerie" data-prix="" data-unite="projet">
+            <span class="poste-texte"><span class="poste-titre">Travaux de maçonnerie</span> <span class="poste-prix">sur devis</span></span>
+            <span></span>
+            <button type="button" class="poste-bouton" aria-pressed="false" data-ajouter="Ajouter" data-retirer="Retirer">Ajouter</button>
+          </li><li class="poste" data-poste="peinture" data-metier="murs" data-prix="" data-unite="m²">
+            <span class="poste-texte"><span class="poste-titre">Peinture murs et plafonds</span> <span class="poste-prix">sur devis</span></span>
+            <label class="visuellement-cache" for="qte-peinture">Quantité : Peinture murs et plafonds</label><input id="qte-peinture" type="number" min="1" max="999" step="1" value="10" inputmode="numeric">
+            <button type="button" class="poste-bouton" aria-pressed="false" data-ajouter="Ajouter" data-retirer="Retirer">Ajouter</button>
+          </li><li class="poste" data-poste="faience" data-metier="murs" data-prix="" data-unite="m²">
+            <span class="poste-texte"><span class="poste-titre">Faïence</span> <span class="poste-prix">sur devis</span></span>
+            <label class="visuellement-cache" for="qte-faience">Quantité : Faïence</label><input id="qte-faience" type="number" min="1" max="999" step="1" value="10" inputmode="numeric">
+            <button type="button" class="poste-bouton" aria-pressed="false" data-ajouter="Ajouter" data-retirer="Retirer">Ajouter</button>
+          </li><li class="poste" data-poste="porte" data-metier="menuiserie" data-prix="" data-unite="u">
+            <span class="poste-texte"><span class="poste-titre">Porte intérieure ou blindée</span> <span class="poste-prix">sur devis</span></span>
+            <label class="visuellement-cache" for="qte-porte">Quantité : Porte intérieure ou blindée</label><input id="qte-porte" type="number" min="1" max="999" step="1" value="1" inputmode="numeric">
+            <button type="button" class="poste-bouton" aria-pressed="false" data-ajouter="Ajouter" data-retirer="Retirer">Ajouter</button>
+          </li><li class="poste" data-poste="fenetre" data-metier="menuiserie" data-prix="" data-unite="u">
+            <span class="poste-texte"><span class="poste-titre">Fenêtre ou porte-fenêtre</span> <span class="poste-prix">sur devis</span></span>
+            <label class="visuellement-cache" for="qte-fenetre">Quantité : Fenêtre ou porte-fenêtre</label><input id="qte-fenetre" type="number" min="1" max="999" step="1" value="1" inputmode="numeric">
+            <button type="button" class="poste-bouton" aria-pressed="false" data-ajouter="Ajouter" data-retirer="Retirer">Ajouter</button>
+          </li></ul>
+        </fieldset>
+        <fieldset class="etape-form" data-etape="3">
+          <legend>Vos coordonnées</legend>
+          <div class="champs-2">
+            <div class="champ"><label for="d-nom">Nom</label><input id="d-nom" name="nom" autocomplete="family-name" required></div>
+            <div class="champ"><label for="d-prenom">Prénom</label><input id="d-prenom" name="prenom" autocomplete="given-name" required></div>
+            <div class="champ"><label for="d-email">E-mail</label><input id="d-email" name="email" type="email" autocomplete="email" required></div>
+            <div class="champ"><label for="d-tel">Téléphone</label><input id="d-tel" name="tel" type="tel" autocomplete="tel" required></div>
+            <div class="champ"><label for="d-ville">Ville d&#39;intervention</label><input id="d-ville" name="ville" autocomplete="address-level2" list="communes-oise"></div>
+            <div class="champ"><label for="d-jour">Jour souhaité</label><input id="d-jour" name="jour" type="date"></div>
+          </div>
+          <datalist id="communes-oise"><option value="Beauvais"><option value="Compiègne"><option value="Creil"><option value="Nogent-sur-Oise"><option value="Senlis"><option value="Chantilly"><option value="Noyon"><option value="Pont-Sainte-Maxence"><option value="Méru"><option value="Crépy-en-Valois"><option value="Chambly"><option value="Clermont"></datalist>
+          <div class="champ"><label for="d-message">Précisions</label><textarea id="d-message" name="message" rows="4"></textarea></div>
+          <p class="mention-donnees">Vos coordonnées servent seulement à établir votre devis. Politique de confidentialité : à compléter.</p>
+          <p data-message-envoi hidden tabindex="-1" data-texte="Demande simulée : rien n&#39;a été envoyé. Sur le site final, elle partira vers Budgetravaux."></p>
+        </fieldset>
+      </div>
+      <div class="etapes-actions">
+        <button type="button" class="bouton bouton--contour" data-etape-precedente hidden>Retour</button>
+        <button type="button" class="bouton bouton--sombre" data-etape-suivante>Continuer</button>
+        <button type="submit" class="bouton bouton--sombre" data-etape-envoi hidden>Envoyer ma demande</button>
+      </div>
+    </form>
+    <aside class="devis-ticket" aria-label="Votre ticket" data-visuel>
+      <div class="ticket ticket--devis" data-ticket-dynamique data-sur-devis="sur devis" data-unite-forfait="forfait" data-unite-projet="projet">
+        <div class="ticket-tete"><span class="ticket-marque">Budgetravaux</span><span class="ticket-num">Votre ticket</span></div>
+        <p class="ticket-titre" data-ticket-contexte></p>
+        <ul class="ticket-lignes" role="list" aria-live="polite" data-vide="Ajoutez des postes : ils s&#39;impriment ici."></ul>
+        <p class="ticket-total"><span>Total sur les prix publiés</span><span class="ticket-prix" data-prix><span data-total data-vide="—">—</span></span></p>
+        <p class="ticket-reste" data-reste-modele="Postes chiffrés gratuitement sur devis"></p>
+        <p class="ticket-pied">TTC à confirmer</p>
+      </div>
+    </aside>
+  </div>
+</section>
+</main>
+<footer class="pied" id="pied">
+  <svg class="pied-reseau" viewBox="0 0 1200 120" preserveAspectRatio="none" aria-hidden="true" data-fx="trace">
+    <path d="M-10 30 H560 q30 0 30 30 v20 q0 22 22 22 h36 q22 0 22-22 V60 q0-30 30-30 H1210" fill="none" stroke="var(--cuivre)" stroke-width="6" stroke-linecap="round"/>
+    <path d="M-10 52 H520 q22 0 22 22 v6" fill="none" stroke="var(--eau)" stroke-width="4" stroke-linecap="round"/>
+  </svg>
+  <div class="conteneur pied-grille">
+    <div class="pied-marque">
+      <p class="pied-logo"><img src="/assets/images/logo-clair.svg" alt="" width="69" height="44"><strong>Budgetravaux</strong></p>
+      <p>Dépannage plomberie, chauffage, électricité et rénovation tous corps d&#39;état dans l&#39;Oise.</p>
+      <p><a class="bouton bouton--appel" href="tel:+33761183322"><svg class="icone" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1L6.6 10.8z" fill="currentColor"/></svg>07 61 18 33 22</a></p>
+    </div>
+    <div>
+      <p class="pied-titre">Adresse</p>
+      <p>9 bis rue de l&#39;Abreuvoir, 60126 Longueil-Sainte-Marie<br>Intervention dans tout le département de l&#39;Oise<br><span class="a-completer">E-mail : à compléter</span></p>
+    </div>
+    <nav aria-label="Sommaire">
+      <p class="pied-titre">Sommaire</p>
+      <ul><li><a href="/" data-libelle="Accueil">Accueil</a></li><li><a href="/depannage" data-libelle="Dépannage &amp; tarifs">Dépannage &amp; tarifs</a></li><li><a href="/renovation" data-libelle="Rénovation">Rénovation</a></li><li><a href="/plomberie" data-libelle="Plomberie en détail">Plomberie en détail</a></li><li><a href="/devis-en-ligne" data-libelle="Devis en ligne" aria-current="page">Devis en ligne</a></li><li><a href="/contact" data-libelle="Contact &amp; RDV">Contact &amp; RDV</a></li></ul>
+    </nav>
+    <div>
+      <p class="pied-titre">Confort</p>
+      <ul>
+        <li><button type="button" class="lien" data-calme-bascule data-libelle-reduire="Réduire les animations" data-libelle-retablir="Rétablir les animations" data-libelle-systeme="Animations réduites par le réglage de votre appareil"><span data-libelle-bouton>Réduire les animations</span></button></li>
+        <li><a href="#haut" data-sans-transition>Retour en haut</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="conteneur pied-bas">
+    <p>Maquette : les informations marquées « à compléter » seront fournies par Budgetravaux.</p>
+    <p class="a-completer">Mentions légales : à compléter · Politique de confidentialité : à compléter</p>
+    <p>Entreprise individuelle de Pedro Ricardo Dos Reis Oliveira · SIRET : à confirmer · © Budgetravaux</p>
+  </div>
+</footer>
+<div data-barre-fixe>
+  <a class="bouton bouton--appel" href="tel:+33761183322"><svg class="icone" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1L6.6 10.8z" fill="currentColor"/></svg>Appeler</a>
+  <a class="bouton bouton--contour" href="/devis-en-ligne" data-libelle="Devis en ligne">Devis en ligne</a>
+</div>
+</body>
+</html>

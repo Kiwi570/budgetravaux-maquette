@@ -1,0 +1,40 @@
+{
+  "nom": "Budgetravaux",
+  "adresse": "https://budgetravaux-maquette.vercel.app",
+  "siteActuel": "budgetravaux.fr",
+  "version": 1,
+  "langues": [
+    "fr"
+  ],
+  "navigation": [
+    "accueil",
+    "depannage",
+    "renovation",
+    "plomberie",
+    "devis",
+    "contact"
+  ],
+  "actionEntete": {
+    "page": "devis"
+  },
+  "couleurs": {
+    "fond": "#121417",
+    "texte": "#f1eee8",
+    "voile": "#0b0c0e",
+    "theme": "#121417",
+    "ouverture": "#0b0c0e",
+    "menu": "#121417"
+  },
+  "contact": {
+    "telephone": "07 61 18 33 22",
+    "telephoneLien": "+33761183322",
+    "email": "",
+    "adresse": "9 bis rue de l'Abreuvoir, 60126 Longueil-Sainte-Marie"
+  },
+  "polices": [
+    "/assets/polices/bricolage.woff2",
+    "/assets/polices/dm-sans.woff2"
+  ],
+  "imagePartage": "grok/accueil-ouverture-1280.webp",
+  "curseur": true
+}

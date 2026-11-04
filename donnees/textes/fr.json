@@ -1,0 +1,415 @@
+{
+  "commun": {
+    "navigation": "Navigation principale",
+    "menu": "Menu",
+    "fermer": "Fermer",
+    "langueAutre": "Autre langue",
+    "actionEntete": "Devis en ligne",
+    "appeler": "Appeler",
+    "appelerNumero": "Appeler le 07 61 18 33 22",
+    "calmeReduire": "Réduire les animations",
+    "calmeRetablir": "Rétablir les animations",
+    "calmeSysteme": "Animations réduites par le réglage de votre appareil",
+    "sommaire": "Sommaire",
+    "confort": "Confort",
+    "retourHaut": "Retour en haut",
+    "maquette": "Maquette : les informations marquées « à compléter » seront fournies par Budgetravaux.",
+    "evitement": "Aller au contenu",
+    "mentionIa": "Illustration générée",
+    "pause": "Pause",
+    "lecture": "Lecture",
+    "introLigne": "Dépannage et rénovation · Oise (60)",
+    "ttc": "TTC à confirmer",
+    "euro": "€",
+    "aCompleter": "à compléter",
+    "email": "E-mail : à compléter",
+    "mentions": "Mentions légales : à compléter",
+    "confidentialite": "Politique de confidentialité : à compléter",
+    "siren": "Entreprise individuelle de Pedro Ricardo Dos Reis Oliveira · SIRET : à confirmer",
+    "zone": "Intervention dans tout le département de l'Oise",
+    "piedAccroche": "Dépannage plomberie, chauffage, électricité et rénovation tous corps d'état dans l'Oise.",
+    "illustratif": "Démonstration illustrative",
+    "sansObligation": "Devis gratuit · Déplacement inclus"
+  },
+  "pages": {
+    "accueil": {
+      "titre": "Budgetravaux : dépannage plomberie et rénovation dans l'Oise (60)",
+      "description": "Fuite, panne, rénovation : Pedro Ricardo Oliveira intervient dans tout l'Oise. Forfaits affichés, devis gratuit, déplacement inclus. 07 61 18 33 22.",
+      "nav": "Accueil",
+      "partageAlt": "Budgetravaux : une fuite, une panne, on arrive. Oise (60).",
+      "accroche": "Une fuite. Une panne. On arrive."
+    },
+    "depannage": {
+      "titre": "Dépannage et tarifs : Budgetravaux, Oise (60)",
+      "description": "Huit forfaits publiés : recherche de fuite 149 €, caméra thermique 299 €, soir et week-end 199 €. Déplacement compris, devis avant intervention.",
+      "nav": "Dépannage & tarifs",
+      "partageAlt": "Forfaits de dépannage Budgetravaux",
+      "accroche": "Les prix, affichés avant."
+    },
+    "renovation": {
+      "titre": "Rénovation tous corps d'état : Budgetravaux, Oise (60)",
+      "description": "Plomberie, chauffage, électricité, plâtrerie, maçonnerie, murs, sols, menuiserie et aménagement PMR, pour les particuliers et les professionnels.",
+      "nav": "Rénovation",
+      "partageAlt": "Rénovation tous corps d'état avec Budgetravaux",
+      "accroche": "Huit métiers, un même suivi."
+    },
+    "devis": {
+      "titre": "Devis en ligne : Budgetravaux, Oise (60)",
+      "description": "Composez votre demande de devis : métier, pièce, postes. Le total se calcule sur les prix publiés, le reste est chiffré gratuitement.",
+      "nav": "Devis en ligne",
+      "partageAlt": "Devis en ligne Budgetravaux",
+      "accroche": "Votre devis, ligne par ligne."
+    },
+    "contact": {
+      "titre": "Contact et rendez-vous : Budgetravaux, Oise (60)",
+      "description": "Appelez le 07 61 18 33 22 ou demandez un rendez-vous en ligne. Longueil-Sainte-Marie, intervention dans tout l'Oise.",
+      "nav": "Contact & RDV",
+      "partageAlt": "Contacter Budgetravaux",
+      "accroche": "Appelez, ou demandez un rendez-vous."
+    },
+    "404": {
+      "titre": "Page introuvable : Budgetravaux",
+      "description": "Cette page n'existe pas ou plus.",
+      "nav": "Page introuvable",
+      "partageAlt": "Page introuvable",
+      "accroche": "Cette page a fui."
+    },
+    "plomberie": {
+      "titre": "Plomberie en détail : Budgetravaux, Oise (60)",
+      "description": "Douche, baignoire, lavabo, WC, chauffe-eau, cuisine, recherche de fuite : les dépannages et les travaux de plomberie de Budgetravaux.",
+      "nav": "Plomberie en détail",
+      "partageAlt": "Plomberie en détail avec Budgetravaux",
+      "accroche": "Chaque équipement, chaque intervention."
+    }
+  },
+  "accueil": {
+    "hero": {
+      "surtitre": "Dépannage et rénovation · Oise (60)",
+      "mot1": "Une fuite.",
+      "mot2": "Une panne.",
+      "mot3": "On arrive.",
+      "texte": "Plomberie, chauffage, électricité : Pedro Ricardo Oliveira intervient rapidement dans tout le département, et vous accompagne aussi pour la rénovation, du devis à la fin du chantier.",
+      "devis": "Devis en ligne",
+      "info": "Devis gratuit · Déplacement inclus",
+      "alt": "Mur carrelé d'une salle de bain dans la pénombre",
+      "ticketTitre": "Recherche de fuite",
+      "ticketDetail": "déplacement + 1 h compris",
+      "indiceSouris": "Promenez la lampe sur le mur",
+      "indiceDoigt": "Touchez le mur pour l'éclairer"
+    },
+    "urgences": {
+      "surtitre": "Urgences",
+      "titre": "Ce qui ne peut pas attendre.",
+      "texte": "Une intervention rapide sur simple appel, partout dans l'Oise, avec prise de rendez-vous rapide.",
+      "des": "Recherche",
+      "surDevis": "Sur devis",
+      "voir": "Tous les dépannages"
+    },
+    "forfaits": {
+      "surtitre": "Tarifs publiés",
+      "titre": "Les prix, affichés avant.",
+      "texte": "Huit forfaits, déplacement compris. Le devis est toujours remis avant l'intervention.",
+      "voir": "Le détail des tarifs",
+      "ticket": "Ticket"
+    },
+    "metiers": {
+      "surtitre": "Rénovation tous corps d'état",
+      "titre": "Huit métiers sur le même tableau.",
+      "texte": "Du robinet qui goutte à la salle de bain clé en main. Pour la rénovation, Budgetravaux travaille avec des professionnels partenaires, tenus d'être immatriculés et assurés.",
+      "indice": "Basculez un disjoncteur",
+      "voir": "Voir la rénovation",
+      "region": "Tableau des corps d'état"
+    },
+    "intervention": {
+      "surtitre": "Une intervention",
+      "titre": "Du premier appel à la garantie.",
+      "compteur": "Étape"
+    },
+    "zone": {
+      "surtitre": "Zone d'intervention",
+      "titre": "Tout l'Oise, depuis Longueil-Sainte-Marie.",
+      "texte": "Beauvais, Compiègne, Creil, Senlis, Chantilly, Nogent-sur-Oise et toutes les communes alentour.",
+      "carte": "Carte schématique de l'Oise : Longueil-Sainte-Marie et les communes desservies",
+      "base": "Longueil-Sainte-Marie"
+    },
+    "pedro": {
+      "surtitre": "Votre interlocuteur",
+      "nom": "Pedro Ricardo Oliveira",
+      "citation": "« Conseil, dépannage, aide pour réaliser tous vos travaux. »",
+      "texte": "Le savoir-faire et l'expérience au service de vos projets, jusqu'à votre complète satisfaction.",
+      "alt": "Pedro Ricardo Oliveira",
+      "garanties": "Engagements",
+      "decennale": "Garantie décennale annoncée · assureur et n° de contrat : à compléter",
+      "photo": "Photo de Pedro : à fournir"
+    },
+    "estimer": {
+      "surtitre": "Devis en ligne",
+      "titre": "Chiffrez avant d'appeler.",
+      "texte": "Choisissez le métier, la pièce, les postes : le ticket se calcule sur les prix publiés, le reste est chiffré gratuitement.",
+      "exemple": "Exemple de calcul",
+      "total": "Total",
+      "action": "Composer mon devis"
+    },
+    "fin": {
+      "titre": "Un appel, et on arrive.",
+      "texte": "07 61 18 33 22 · devis gratuit, déplacement inclus, partout dans l'Oise.",
+      "alt": "Porte d'entrée éclairée, de nuit",
+      "rdv": "Prendre rendez-vous"
+    },
+    "plomberie": {
+      "surtitre": "Plomberie en détail",
+      "titre": "Équipement par équipement.",
+      "texte": "Douche, baignoire, lavabo, WC, chauffe-eau, cuisine.",
+      "region": "Équipements de plomberie, défilement horizontal",
+      "voir": "Tout le détail"
+    }
+  },
+  "engagements": {
+    "e1": "Devis gratuit et sans engagement",
+    "e2": "Déplacement inclus",
+    "e3": "Devis avant intervention",
+    "e4": "Travail soigné",
+    "e5": "Garantie sur intervention",
+    "e6": "Respect des normes en vigueur"
+  },
+  "depannage": {
+    "surtitre": "Dépannage · Oise (60)",
+    "titre": "Plomberie, chauffage, électricité : on répare.",
+    "texte": "Fuite d'eau, canalisation, robinetterie, panne électrique, chauffe-eau et chaudière. Intervention sur simple appel, déplacement compris.",
+    "info": "Recherche de fuite : 149 €, déplacement compris",
+    "alt": "Tuyaux sous un évier éclairés par une lampe torche",
+    "forfaits": {
+      "titre": "Huit forfaits, sans surprise.",
+      "texte": "Le devis est remis avant toute intervention, quel que soit le montant."
+    },
+    "thermique": {
+      "surtitre": "Fuite invisible",
+      "titre": "La caméra thermique repère la fuite derrière le mur.",
+      "texte": "Une tache d'humidité sans origine ? La recherche approfondie aide à localiser la fuite avant d'ouvrir.",
+      "prix": "Recherche de fuite approfondie",
+      "indiceSouris": "Passez la caméra sur le mur",
+      "indiceDoigt": "Faites glisser la caméra sur le mur",
+      "trouve": "Fuite localisée",
+      "alt": "Mur de salon blanc, vide",
+      "region": "Démonstration de la caméra thermique"
+    },
+    "horloge": {
+      "surtitre": "Soir, week-end, jours fériés",
+      "titre": "Après 20 h, on vient aussi.",
+      "texte": "Tournez l'aiguille ou choisissez le jour : le ticket affiche le forfait de recherche de fuite qui s'applique.",
+      "semaine": "En semaine",
+      "weekend": "Week-end",
+      "ferie": "Jour férié",
+      "heure": "Heure de l'appel",
+      "jour": "Forfait de journée",
+      "soir": "Forfait soir, week-end et jours fériés",
+      "nuit": "Avant 8 h : tarif à confirmer",
+      "alt": "Cuisine de nuit, seuls les éclairages sous les meubles allumés",
+      "horaires": "Horaires d'intervention : à compléter",
+      "jourLegende": "Jour de l'appel",
+      "nuitArc": "Avant 8 h : à confirmer"
+    },
+    "pannes": {
+      "titre": "Les dépannages les plus courants.",
+      "texte": "Tirés de la liste des interventions de Budgetravaux."
+    },
+    "faq": {
+      "titre": "Questions fréquentes."
+    },
+    "fin": {
+      "titre": "Une fuite en ce moment ?",
+      "texte": "Appelez, une estimation peut se faire par téléphone."
+    },
+    "forfaitsSurtitre": "Tarifs publiés"
+  },
+  "pannes": {
+    "douche": {
+      "titre": "Douche",
+      "texte": "Paroi, joints silicone, receveur, mitigeur, pompe de relevage, fuite, débouchage."
+    },
+    "baignoire": {
+      "titre": "Baignoire",
+      "texte": "Fuite d'arrivée, vidange, mitigeur, colonnettes, joints, pare-bain, débouchage."
+    },
+    "lavabo": {
+      "titre": "Lavabo",
+      "texte": "Fuite d'arrivée ou d'évacuation, mitigeur, remplacement, joints, débouchage."
+    },
+    "wc": {
+      "titre": "WC",
+      "texte": "Fuite, chasse d'eau, broyeur, remplacement, débouchage."
+    },
+    "chauffeEau": {
+      "titre": "Chauffe-eau",
+      "texte": "Panne, fuite, groupe de sécurité, réducteur de pression, remplacement."
+    },
+    "cuisine": {
+      "titre": "Cuisine",
+      "texte": "Robinets, meuble évier, broyeur, fuite, arrivée et évacuation pour machine."
+    },
+    "electricite": {
+      "titre": "Électricité",
+      "texte": "Panne électrique, prises, points lumineux, tableau, mise en conformité."
+    }
+  },
+  "renovation": {
+    "surtitre": "Rénovation · Oise (60)",
+    "titre": "Rénovation tous corps d'état.",
+    "texte": "Étude et planification, suivi du chantier, jusqu'au terme de sa réalisation : Budgetravaux vous accompagne à chaque étape.",
+    "info": "Devis gratuit et sans engagement",
+    "alt": "Salle de bain rénovée avec douche à l'italienne",
+    "tableau": {
+      "titre": "Choisissez votre métier.",
+      "texte": "Chaque disjoncteur ouvre un corps d'état et les travaux qu'il couvre.",
+      "devis": "Chiffrer ce métier",
+      "surtitre": "Le tableau des métiers",
+      "partenaires": "Pour la rénovation, Budgetravaux travaille avec des professionnels partenaires, tenus d'être immatriculés et assurés. Carrelage et lino antidérapant : à partir de 30 € le m²."
+    },
+    "projets": {
+      "titre": "Trois façons de transformer un lieu.",
+      "amelioration": "Amélioration de l'habitat",
+      "ameliorationTexte": "Agencement, transformations, mise en conformité de l'électricité et de la plomberie.",
+      "restructuration": "Restructuration de biens",
+      "restructurationTexte": "Pour les particuliers, les locaux commerciaux, les bureaux et les locaux d'activité.",
+      "pmr": "Aménagement PMR",
+      "pmrTexte": "Robinetterie adaptée, barres de maintien, sièges de douche, rampes, cabines de douche PMR sur devis.",
+      "altPmr": "Salle de bain accessible avec siège de douche et barres de maintien",
+      "altPro": "Petit bureau rénové, murs blancs et parquet clair"
+    },
+    "garanties": {
+      "titre": "Ce que Budgetravaux garantit.",
+      "g1": "Devis gratuits et sans engagement",
+      "g2": "Conseils personnalisés",
+      "g3": "Exécution soignée, conforme à votre budget et aux délais définis",
+      "g4": "Suivi constant de votre chantier",
+      "g5": "Respect des normes en vigueur",
+      "g6": "Garantie décennale annoncée (assureur : à compléter)"
+    },
+    "fin": {
+      "titre": "Un projet de rénovation ?",
+      "texte": "Composez votre devis en ligne, ou appelez pour en parler."
+    }
+  },
+  "devis": {
+    "surtitre": "Devis en ligne",
+    "titre": "Votre devis, ligne par ligne.",
+    "texte": "Quatre étapes : le métier, la pièce, les postes, vos coordonnées. Le ticket se calcule sur les prix publiés ; tout le reste est chiffré gratuitement par Budgetravaux.",
+    "info": "Gratuit et sans engagement",
+    "alt": "Crayon, mètre ruban fermé et feuille quadrillée sur un établi",
+    "etapes": "Étape {n} sur 4",
+    "e1": "Le métier",
+    "e2": "La pièce",
+    "e3": "Les postes",
+    "e4": "Vos coordonnées",
+    "precedent": "Retour",
+    "suivant": "Continuer",
+    "envoyer": "Envoyer ma demande",
+    "sousTitre": "Précisez",
+    "quantite": "Quantité",
+    "ajouter": "Ajouter",
+    "retirer": "Retirer",
+    "surDevis": "sur devis",
+    "aPartir": "à partir de",
+    "ticketTitre": "Votre ticket",
+    "ticketVide": "Ajoutez des postes : ils s'impriment ici.",
+    "totalConnu": "Total sur les prix publiés",
+    "resteDevis": "Postes chiffrés gratuitement sur devis",
+    "nom": "Nom",
+    "prenom": "Prénom",
+    "email": "E-mail",
+    "tel": "Téléphone",
+    "ville": "Ville d'intervention",
+    "jour": "Jour souhaité",
+    "heure": "Heure souhaitée",
+    "message": "Précisions",
+    "donnees": "Vos coordonnées servent seulement à établir votre devis. Politique de confidentialité : à compléter.",
+    "envoye": "Demande simulée : rien n'a été envoyé. Sur le site final, elle partira vers Budgetravaux.",
+    "unites": {
+      "forfait": "forfait",
+      "heure": "h",
+      "m2": "m²",
+      "u": "u",
+      "projet": "projet"
+    },
+    "totalVide": "—"
+  },
+  "contact": {
+    "surtitre": "Contact & RDV",
+    "titre": "Appelez, ou demandez un rendez-vous.",
+    "texte": "Pour une urgence, le téléphone reste le plus rapide. Pour un rendez-vous, le formulaire suffit.",
+    "alt": "Rue de maisons en brique au crépuscule",
+    "adresseTitre": "Adresse",
+    "telTitre": "Téléphone",
+    "emailTitre": "E-mail",
+    "horairesTitre": "Horaires",
+    "horaires": "Horaires : à compléter",
+    "form": {
+      "titre": "Demander un rendez-vous.",
+      "etapes": "Trois étapes : l'intervention, le rendez-vous, vos coordonnées.",
+      "e1": "L'intervention",
+      "e2": "Le rendez-vous",
+      "e3": "Vos coordonnées",
+      "type": "Type d'intervention",
+      "projet": "Type de projet",
+      "piece": "Pièce concernée",
+      "ville": "Ville d'intervention",
+      "jour": "Jour souhaité",
+      "heure": "Heure souhaitée",
+      "nom": "Nom",
+      "prenom": "Prénom",
+      "email": "E-mail",
+      "tel": "Téléphone",
+      "message": "Message",
+      "precedent": "Retour",
+      "suivant": "Continuer",
+      "envoyer": "Envoyer la demande",
+      "donnees": "Vos données servent seulement à répondre à votre demande. Politique de confidentialité : à compléter.",
+      "envoye": "Demande simulée : rien n'a été envoyé. Sur le site final, elle partira vers Budgetravaux.",
+      "choisir": "Choisir…",
+      "etapesN": "Étape {n} sur 3"
+    },
+    "carteTitre": "Où intervient Budgetravaux."
+  },
+  "types": {
+    "depannage": "Dépannage",
+    "urgence": "Dépannage en urgence",
+    "renovation": "Rénovation",
+    "reparation": "Réparation",
+    "montage": "Montage",
+    "pose": "Pose"
+  },
+  "projets": {
+    "chauffage": "Chauffage",
+    "electricite": "Électricité",
+    "maconnerie": "Maçonnerie",
+    "menuiserie": "Menuiserie",
+    "platrerie": "Plâtrerie",
+    "plomberie": "Plomberie",
+    "complet": "Projet complet",
+    "murs": "Revêtement murs",
+    "sols": "Revêtement sol"
+  },
+  "introuvable": {
+    "titre": "Cette page a fui.",
+    "texte": "Elle n'existe pas ou plus. Le reste du réseau tient bon.",
+    "retour": "Revenir à l'accueil",
+    "alt": "Coude en cuivre d'où s'échappe un petit jet d'eau, un seau dessous"
+  },
+  "plomberie": {
+    "surtitre": "Plomberie en détail",
+    "titre": "Chaque équipement, chaque intervention.",
+    "texte": "Douche, baignoire, lavabo, WC, chauffe-eau, cuisine : ce que Budgetravaux répare et ce qu'il pose, équipement par équipement.",
+    "info": "Devis avant intervention, déplacement inclus",
+    "alt": "Carrelage ouvert sur des tuyaux de cuivre et de PVC neufs",
+    "filtres": "Choisir un équipement",
+    "tout": "Tous",
+    "depannage": "Dépannage",
+    "renovation": "Pose et rénovation",
+    "devis": "Demander un devis",
+    "photos": "Photos de chantiers réels : à fournir par Budgetravaux",
+    "fin": {
+      "titre": "Votre équipement n'est pas dans la liste ?",
+      "texte": "Décrivez-le dans le devis en ligne, ou appelez."
+    }
+  }
+}

@@ -1,0 +1,42 @@
+[
+ {
+  "cle": "fuite",
+  "titre": "Fuite d'eau",
+  "texte": "Recherche et réparation : détection par mise en pression, réparation sur cuivre, remplacement de vanne. Réparation sur devis.",
+  "image": "grok/urgence-fuite",
+  "forfait": "fuite",
+  "prixLibelle": "Recherche de fuite"
+ },
+ {
+  "cle": "canalisation",
+  "titre": "Canalisation",
+  "texte": "Débouchage de douche, baignoire, lavabo, WC ou évier, dégorgement avec pompe.",
+  "image": "grok/urgence-canalisation",
+  "forfait": "degorgement",
+  "prixLibelle": "Dégorgement"
+ },
+ {
+  "cle": "robinetterie",
+  "titre": "Robinetterie",
+  "texte": "Mitigeur, colonnettes, joints, robinets de lave-linge et d'évier.",
+  "image": "grok/urgence-robinet",
+  "forfait": null,
+  "prixLibelle": null
+ },
+ {
+  "cle": "electricite",
+  "titre": "Panne électrique",
+  "texte": "Recherche de panne, prises, points lumineux, tableau électrique.",
+  "image": "grok/urgence-electricite",
+  "forfait": null,
+  "prixLibelle": null
+ },
+ {
+  "cle": "chauffe-eau",
+  "titre": "Chauffe-eau et chaudière",
+  "texte": "Panne, fuite, groupe de sécurité, réducteur de pression, remise en route.",
+  "image": "grok/urgence-chauffe-eau",
+  "forfait": "ballon",
+  "prixLibelle": "Recherche de panne"
+ }
+]

@@ -1,0 +1,40 @@
+{
+  "metiers": [
+    { "cle": "plomberie", "titre": "Plomberie", "sous": ["Salle de bain complète", "Ma douche", "Ma baignoire", "Mon lavabo", "Mon WC", "Mon chauffe-eau", "Une fuite, une panne", "Ma cuisine"] },
+    { "cle": "chauffage", "titre": "Chauffage", "sous": ["Chauffe-eau ou chaudière en panne", "Radiateurs"] },
+    { "cle": "electricite", "titre": "Électricité", "sous": ["Tableau électrique", "Prises et interrupteurs", "Points lumineux", "Mise en conformité"] },
+    { "cle": "platrerie", "titre": "Plâtrerie et isolation", "sous": ["Cloison", "Doublage et isolation", "Faux plafond"] },
+    { "cle": "maconnerie", "titre": "Maçonnerie", "sous": ["Travaux de maçonnerie"] },
+    { "cle": "murs", "titre": "Murs et plafonds", "sous": ["Peinture", "Papier peint ou toile de verre", "Faïence"] },
+    { "cle": "sols", "titre": "Revêtements de sols", "sous": ["Carrelage", "Lino antidérapant", "Autre revêtement"] },
+    { "cle": "menuiserie", "titre": "Menuiserie", "sous": ["Portes", "Fenêtres et portes-fenêtres", "Fenêtre de toit", "Escalier", "Plancher"] }
+  ],
+  "pieces": ["Entrée", "Couloir", "Séjour", "Salle à manger", "Chambre", "Cuisine", "Salle de bain", "WC", "Buanderie", "Terrasse", "Mezzanine", "Combles", "Sous-sol", "Garage", "Autre"],
+  "postes": [
+    { "cle": "fuite", "titre": "Recherche de fuite (déplacement + 1 h)", "metier": "plomberie", "unite": "forfait", "prix": 149 },
+    { "cle": "thermique", "titre": "Recherche de fuite à la caméra thermique", "metier": "plomberie", "unite": "forfait", "prix": 299 },
+    { "cle": "soir", "titre": "Fuite le soir, le week-end ou un jour férié", "metier": "plomberie", "unite": "forfait", "prix": 199 },
+    { "cle": "degorgement", "titre": "Dégorgement avec pompe", "metier": "plomberie", "unite": "forfait", "prix": 149 },
+    { "cle": "pvc", "titre": "Modification PVC (2 m, jusqu'à Ø 50)", "metier": "plomberie", "unite": "forfait", "prix": 230 },
+    { "cle": "cuivre", "titre": "Modification cuivre (2 m, jusqu'à Ø 22)", "metier": "plomberie", "unite": "forfait", "prix": 250 },
+    { "cle": "ballon", "titre": "Recherche de panne ballon ou chaudière", "metier": "chauffage", "unite": "forfait", "prix": 149 },
+    { "cle": "main-oeuvre", "titre": "Heure de main-d'œuvre supplémentaire", "metier": "tous", "unite": "heure", "prix": 70 },
+    { "cle": "carrelage", "titre": "Pose de carrelage 30 × 30 à 40 cm", "metier": "sols", "unite": "m²", "prix": 30, "base": true },
+    { "cle": "lino", "titre": "Lino antidérapant", "metier": "sols", "unite": "m²", "prix": 30, "base": true },
+    { "cle": "sdb", "titre": "Salle de bain clé en main", "metier": "plomberie", "unite": "projet", "prix": null },
+    { "cle": "douche", "titre": "Douche classique ou à l'italienne", "metier": "plomberie", "unite": "u", "prix": null },
+    { "cle": "wc", "titre": "WC classique, suspendu ou sanibroyeur", "metier": "plomberie", "unite": "u", "prix": null },
+    { "cle": "chauffe-eau", "titre": "Chauffe-eau électrique 75 à 150 l", "metier": "plomberie", "unite": "u", "prix": null },
+    { "cle": "tableau", "titre": "Tableau électrique", "metier": "electricite", "unite": "u", "prix": null },
+    { "cle": "prise", "titre": "Prise 16 A, 20 A ou 32 A", "metier": "electricite", "unite": "u", "prix": null },
+    { "cle": "point", "titre": "Point lumineux", "metier": "electricite", "unite": "u", "prix": null },
+    { "cle": "cloison", "titre": "Cloison BA 13 ou carreaux de plâtre", "metier": "platrerie", "unite": "m²", "prix": null },
+    { "cle": "doublage", "titre": "Doublage avec isolant", "metier": "platrerie", "unite": "m²", "prix": null },
+    { "cle": "plafond", "titre": "Faux plafond", "metier": "platrerie", "unite": "m²", "prix": null },
+    { "cle": "maconnerie", "titre": "Travaux de maçonnerie", "metier": "maconnerie", "unite": "projet", "prix": null },
+    { "cle": "peinture", "titre": "Peinture murs et plafonds", "metier": "murs", "unite": "m²", "prix": null },
+    { "cle": "faience", "titre": "Faïence", "metier": "murs", "unite": "m²", "prix": null },
+    { "cle": "porte", "titre": "Porte intérieure ou blindée", "metier": "menuiserie", "unite": "u", "prix": null },
+    { "cle": "fenetre", "titre": "Fenêtre ou porte-fenêtre", "metier": "menuiserie", "unite": "u", "prix": null }
+  ]
+}

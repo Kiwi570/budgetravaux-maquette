@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="fr" data-v="1" data-curseur>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Contact et rendez-vous : Budgetravaux, Oise (60)</title>
+<meta name="description" content="Appelez le 07 61 18 33 22 ou demandez un rendez-vous en ligne. Longueil-Sainte-Marie, intervention dans tout l&#39;Oise.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://budgetravaux-maquette.vercel.app/contact">
+<style>:root{--fond:#121417;--texte:#f1eee8;--voile-fond:#0b0c0e;--ouverture-fond:#0b0c0e;--menu-fond:#121417}:root { --entete-h: 72px; --barres-h: 0px; } html { background: var(--fond); color: var(--texte); scrollbar-gutter: stable; } body { margin: 0; background: var(--fond); } html.js:not(.calme):not(.secours):not([data-arrivee="retour"]) [data-anime] { opacity: 0; } html.js:not(.calme):not(.secours):not([data-arrivee="retour"]) [data-anime].vu { opacity: 1; } [data-voile] { position: fixed; inset: 0; z-index: 900; background: var(--voile-fond); transform: translateY(100%); visibility: hidden; pointer-events: none; } html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) [data-voile] { transform: none; visibility: visible; } html.calme [data-voile], html.secours [data-voile] { visibility: hidden !important; } .ouverture-panneau { position: fixed; inset: 0; z-index: 850; display: none; place-content: center; justify-items: center; background: var(--ouverture-fond, var(--voile-fond)); color: var(--fond); text-align: center; } html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) .ouverture-panneau { display: grid; } html.defilement-bloque, html.defilement-bloque body, html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie), html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) body, html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours), html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) body { overflow: hidden; } html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) { background-color: var(--ouverture-fond, var(--voile-fond)); } html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) { background-color: var(--voile-fond); }</style>
+<script>(function () {
+var d = document.documentElement, ss = null, ls = null;
+try { ss = window.sessionStorage; ls = window.localStorage; } catch (e) {}
+d.classList.add('js');
+var calme = false;
+try { calme = !!ls && ls.getItem('socle:calme') === 'oui'; } catch (e) {}
+if (!calme && window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) calme = true;
+if (calme) d.classList.add('calme');
+var nav = performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
+var type = nav ? nav.type : 'navigate';
+var depart = null;
+try { depart = JSON.parse(ss.getItem('socle:depart') || 'null'); ss.removeItem('socle:depart'); } catch (e) {}
+if (depart && !(Date.now() - depart.t < 15000)) depart = null;
+var retourSection = false;
+try { retourSection = !!ss.getItem('socle:calme-retour'); } catch (e) {}
+var mode = type === 'back_forward' || retourSection ? 'retour' : type === 'reload' ? 'intro' : depart ? 'voile' : 'intro';
+d.setAttribute('data-arrivee', mode);
+if (mode === 'voile' && depart.couleur) d.style.setProperty('--voile-fond', depart.couleur);
+if (type === 'reload' && 'scrollRestoration' in history) {
+if (!retourSection) history.scrollRestoration = 'manual';
+}
+try {
+var choisie = ls && ls.getItem('socle:langue');
+var langue = (d.lang || '').slice(0, 2);
+if (choisie && choisie !== langue && type === 'navigate' && !depart) {
+var alt = document.querySelector('link[rel="alternate"][hreflang="' + choisie + '"]');
+if (alt) location.replace(new URL(alt.href).pathname + location.search + location.hash);
+}
+} catch (e) {}
+setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
+})();</script>
+<link rel="preload" href="/assets/polices/bricolage.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/polices/dm-sans.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/socle.css?v=1">
+<link rel="stylesheet" href="/assets/css/site.css?v=1">
+<link rel="modulepreload" href="/assets/js/site.js?v=1">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<script src="/assets/vendor/gsap.min.js" defer></script>
+<script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="/assets/vendor/SplitText.min.js" defer></script>
+<script type="module" src="/assets/js/site.js?v=1"></script>
+<meta name="theme-color" content="#121417">
+<link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Budgetravaux">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Contact et rendez-vous : Budgetravaux, Oise (60)">
+<meta property="og:description" content="Appelez le 07 61 18 33 22 ou demandez un rendez-vous en ligne. Longueil-Sainte-Marie, intervention dans tout l&#39;Oise.">
+<meta property="og:url" content="https://budgetravaux-maquette.vercel.app/contact">
+<meta property="og:image" content="https://budgetravaux-maquette.vercel.app/assets/partage/contact-fr.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Contacter Budgetravaux">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Plumber","name":"Budgetravaux","url":"https://budgetravaux-maquette.vercel.app/","telephone":"+33761183322","founder":{"@type":"Person","name":"Pedro Ricardo Dos Reis Oliveira"},"address":{"@type":"PostalAddress","streetAddress":"9 bis rue de l'Abreuvoir","postalCode":"60126","addressLocality":"Longueil-Sainte-Marie","addressCountry":"FR"},"areaServed":{"@type":"AdministrativeArea","name":"Oise (60)"},"description":"Dépannage plomberie, chauffage et électricité, rénovation tous corps d'état dans l'Oise. Devis gratuit, déplacement inclus."}</script>
+</head>
+<body id="haut">
+<div data-voile aria-hidden="true"><div class="voile-contenu"><img src="/assets/images/logo-clair.svg" alt="" width="88" height="56"><span data-voile-libelle>Contact &amp; RDV</span></div></div>
+<div class="ouverture-panneau" data-ouverture aria-hidden="true">
+  <div class="ouverture-faisceau"></div>
+  <img class="ouverture-logo" src="/assets/images/logo-clair.svg" alt="" width="113" height="72">
+  <p class="ouverture-nom">Budgetravaux</p>
+  <p class="ouverture-ligne">Dépannage et rénovation · Oise (60)</p>
+</div>
+<a class="evitement" href="#contenu">Aller au contenu</a>
+<header data-entete>
+  <div class="entete-rangee">
+    <a class="entete-logo" href="/" data-libelle="Accueil">
+      <img src="/assets/images/logo-clair.svg" alt="" width="63" height="40"><span><span class="logo-b">Budget</span><span class="logo-r">ravaux</span></span>
+    </a>
+    <nav data-nav aria-label="Navigation principale">
+      <ul><li><a href="/depannage" data-libelle="Dépannage &amp; tarifs">Dépannage &amp; tarifs</a></li><li><a href="/renovation" data-libelle="Rénovation">Rénovation</a></li><li><a href="/plomberie" data-libelle="Plomberie en détail">Plomberie en détail</a></li><li><a href="/devis-en-ligne" data-libelle="Devis en ligne">Devis en ligne</a></li><li><a href="/contact" data-libelle="Contact &amp; RDV" aria-current="page">Contact &amp; RDV</a></li></ul>
+    </nav>
+    <div class="entete-actions">
+      <a class="bouton bouton--appel" href="tel:+33761183322" aria-label="Appeler le 07 61 18 33 22"><svg class="icone" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1L6.6 10.8z" fill="currentColor"/></svg><span>07 61 18 33 22</span></a>
+      <button type="button" data-menu-bouton aria-controls="menu" aria-expanded="false" data-libelle-ouvrir="Menu" data-libelle-fermer="Fermer"><span data-libelle-bouton>Menu</span></button>
+    </div>
+  </div>
+</header>
+<div id="menu" data-menu role="dialog" aria-modal="true" aria-label="Menu">
+  <ul><li style="--i:0"><a href="/" class="menu-lien" data-libelle="Accueil">Accueil</a></li><li style="--i:1"><a href="/depannage" class="menu-lien" data-libelle="Dépannage &amp; tarifs">Dépannage &amp; tarifs</a></li><li style="--i:2"><a href="/renovation" class="menu-lien" data-libelle="Rénovation">Rénovation</a></li><li style="--i:3"><a href="/plomberie" class="menu-lien" data-libelle="Plomberie en détail">Plomberie en détail</a></li><li style="--i:4"><a href="/devis-en-ligne" class="menu-lien" data-libelle="Devis en ligne">Devis en ligne</a></li><li style="--i:5"><a href="/contact" class="menu-lien" data-libelle="Contact &amp; RDV" aria-current="page">Contact &amp; RDV</a></li></ul>
+  <p class="menu-actions"><a class="bouton bouton--appel" href="tel:+33761183322"><svg class="icone" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1L6.6 10.8z" fill="currentColor"/></svg>Appeler le 07 61 18 33 22</a> <a href="/devis-en-ligne" class="bouton bouton--contour" data-libelle="Devis en ligne">Devis en ligne</a></p>
+  <p><button type="button" class="lien" data-calme-bascule data-libelle-reduire="Réduire les animations" data-libelle-retablir="Rétablir les animations" data-libelle-systeme="Animations réduites par le réglage de votre appareil"><span data-libelle-bouton>Réduire les animations</span></button></p>
+</div>
+<main id="contenu" tabindex="-1">
+<section class="page-tete" id="debut">
+  <figure class="media page-tete-fond" data-grok data-fx="parallaxe" data-fx-force="8" style="--cadrage:55% 50%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/contact-ouverture-mobile-640.webp 640w, /assets/images/grok/contact-ouverture-mobile-960.webp 960w" sizes="100vw">
+    <img src="/assets/images/grok/contact-ouverture-1280.webp" srcset="/assets/images/grok/contact-ouverture-640.webp 640w, /assets/images/grok/contact-ouverture-1280.webp 1280w, /assets/images/grok/contact-ouverture-1600.webp 1600w" sizes="100vw" alt="Rue de maisons en brique au crépuscule" width="1280" height="720" fetchpriority="high" loading="eager" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+  <div class="conteneur page-tete-texte">
+    <p class="surtitre pt-anim" data-anime="gsap">Contact &amp; RDV</p>
+    <h1 class="pt-anim pt-titre" data-anime="gsap">Appelez, ou demandez un rendez-vous.</h1>
+    <p class="pt-anim" data-anime="gsap">Pour une urgence, le téléphone reste le plus rapide. Pour un rendez-vous, le formulaire suffit.</p>
+    <p class="hero-actions pt-anim" data-anime="gsap"><a class="bouton bouton--appel" href="tel:+33761183322" data-action-principale data-survol="magnetique"><svg class="icone" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1L6.6 10.8z" fill="currentColor"/></svg>Appeler le 07 61 18 33 22</a></p>
+    <p class="hero-info pt-anim" data-info-cle data-anime="gsap">Devis gratuit · Déplacement inclus</p>
+  </div>
+</section>
+<section class="rendez-vous bloc clair" id="rendez-vous">
+  <div class="conteneur contact-grille">
+    <form class="rdv-form" data-formulaire data-etapes action="#" novalidate>
+      <h2 data-anime="lignes">Demander un rendez-vous.</h2>
+      <p data-anime>Trois étapes : l&#39;intervention, le rendez-vous, vos coordonnées.</p>
+      <ol class="etapes-tete" role="list"><li data-indicateur="0" aria-current="step">1. L&#39;intervention</li><li data-indicateur="1">2. Le rendez-vous</li><li data-indicateur="2">3. Vos coordonnées</li></ol>
+      <p class="visuellement-cache" aria-live="polite" data-annonce-etape data-modele="Étape {n} sur 3"></p>
+      <div class="form-hauteur">
+        <fieldset class="etape-form courante" data-etape="0">
+          <legend>Type d&#39;intervention</legend>
+          <div class="cartes-choix"><label class="carte-choix"><input type="radio" name="type" value="depannage" checked><span>Dépannage</span></label><label class="carte-choix"><input type="radio" name="type" value="urgence"><span>Dépannage en urgence</span></label><label class="carte-choix"><input type="radio" name="type" value="renovation"><span>Rénovation</span></label><label class="carte-choix"><input type="radio" name="type" value="reparation"><span>Réparation</span></label><label class="carte-choix"><input type="radio" name="type" value="montage"><span>Montage</span></label><label class="carte-choix"><input type="radio" name="type" value="pose"><span>Pose</span></label></div>
+          <div class="champ" style="margin-top:18px"><label for="r-projet">Type de projet</label><select id="r-projet" name="projet"><option value="plomberie">Plomberie</option><option value="chauffage">Chauffage</option><option value="electricite">Électricité</option><option value="platrerie">Plâtrerie</option><option value="maconnerie">Maçonnerie</option><option value="menuiserie">Menuiserie</option><option value="murs">Revêtement murs</option><option value="sols">Revêtement sol</option><option value="complet">Projet complet</option></select></div>
+          <div class="champ"><label for="r-piece">Pièce concernée</label><select id="r-piece" name="piece"><option value="">Choisir…</option><option>Entrée</option><option>Couloir</option><option>Séjour</option><option>Salle à manger</option><option>Chambre</option><option>Cuisine</option><option>Salle de bain</option><option>WC</option><option>Buanderie</option><option>Terrasse</option><option>Mezzanine</option><option>Combles</option><option>Sous-sol</option><option>Garage</option><option>Autre</option></select></div>
+        </fieldset>
+        <fieldset class="etape-form" data-etape="1">
+          <legend>Le rendez-vous</legend>
+          <div class="champ"><label for="r-ville">Ville d&#39;intervention</label><input id="r-ville" name="ville" autocomplete="address-level2" list="communes-rdv" required></div>
+          <datalist id="communes-rdv"><option value="Beauvais"><option value="Compiègne"><option value="Creil"><option value="Nogent-sur-Oise"><option value="Senlis"><option value="Chantilly"><option value="Noyon"><option value="Pont-Sainte-Maxence"><option value="Méru"><option value="Crépy-en-Valois"><option value="Chambly"><option value="Clermont"></datalist>
+          <div class="champs-2">
+            <div class="champ"><label for="r-jour">Jour souhaité</label><input id="r-jour" name="jour" type="date" required></div>
+            <div class="champ"><label for="r-heure">Heure souhaitée</label><input id="r-heure" name="heure" type="time"></div>
+          </div>
+          <p class="petit a-completer">Horaires : à compléter</p>
+        </fieldset>
+        <fieldset class="etape-form" data-etape="2">
+          <legend>Vos coordonnées</legend>
+          <div class="champs-2">
+            <div class="champ"><label for="r-nom">Nom</label><input id="r-nom" name="nom" autocomplete="family-name" required></div>
+            <div class="champ"><label for="r-prenom">Prénom</label><input id="r-prenom" name="prenom" autocomplete="given-name" required></div>
+            <div class="champ"><label for="r-email">E-mail</label><input id="r-email" name="email" type="email" autocomplete="email" required></div>
+            <div class="champ"><label for="r-tel">Téléphone</label><input id="r-tel" name="tel" type="tel" autocomplete="tel" required></div>
+          </div>
+          <div class="champ"><label for="r-message">Message</label><textarea id="r-message" name="message" rows="4" required></textarea></div>
+          <p class="mention-donnees">Vos données servent seulement à répondre à votre demande. Politique de confidentialité : à compléter.</p>
+          <p data-message-envoi hidden tabindex="-1" data-texte="Demande simulée : rien n&#39;a été envoyé. Sur le site final, elle partira vers Budgetravaux."></p>
+        </fieldset>
+      </div>
+      <div class="etapes-actions">
+        <button type="button" class="bouton bouton--contour" data-etape-precedente hidden>Retour</button>
+        <button type="button" class="bouton bouton--sombre" data-etape-suivante>Continuer</button>
+        <button type="submit" class="bouton bouton--sombre" data-etape-envoi hidden>Envoyer la demande</button>
+      </div>
+    </form>
+    <aside class="coordonnees" data-anime>
+      <p class="coordonnees-marque" data-visuel><img src="/assets/images/logo-clair.svg" alt="" width="94" height="60"></p>
+      <h3>Téléphone</h3>
+      <p><a class="tel-grand" href="tel:+33761183322">07 61 18 33 22</a></p>
+      <h3>Adresse</h3>
+      <p>9 bis rue de l&#39;Abreuvoir, 60126 Longueil-Sainte-Marie</p>
+      <h3>E-mail</h3>
+      <p class="a-completer">à compléter</p>
+      <h3>Horaires</h3>
+      <p class="a-completer">Horaires : à compléter</p>
+    </aside>
+  </div>
+</section>
+<section class="zone sombre" id="zone">
+  <div class="conteneur zone-grille">
+    <header class="tete-section">
+      <p class="surtitre" data-anime>Zone d&#39;intervention</p>
+      <h2 data-anime="lignes">Où intervient Budgetravaux.</h2>
+      <p data-anime>Beauvais, Compiègne, Creil, Senlis, Chantilly, Nogent-sur-Oise et toutes les communes alentour.</p>
+      <p data-anime><a class="bouton bouton--appel" href="tel:+33761183322"><svg class="icone" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1L6.6 10.8z" fill="currentColor"/></svg>Appeler le 07 61 18 33 22</a></p>
+    </header>
+    <figure class="carte-oise " data-effet="ricochet" data-visuel>
+  <svg viewBox="0 0 600 446" role="img" aria-label="Carte schématique de l&#39;Oise : Longueil-Sainte-Marie et les communes desservies">
+    <defs><clipPath id="clip-oise"><path d="M19.1 70.4 L49.7 35.2 L133.7 58.7 L229.2 41.1 L324.7 64.6 L420.2 47.0 L496.6 58.7 L538.6 29.3 L561.5 70.4 L553.9 140.9 L580.6 205.4 L542.4 281.8 L565.4 334.6 L531.0 399.2 L458.4 422.6 L370.5 410.9 L305.6 381.5 L248.3 369.8 L191.0 363.9 L114.6 358.1 L57.3 328.7 L26.7 293.5 L45.8 234.8 L19.1 176.1 L34.4 117.4 Z"/></clipPath></defs><path class="oise-fond" d="M19.1 70.4 L49.7 35.2 L133.7 58.7 L229.2 41.1 L324.7 64.6 L420.2 47.0 L496.6 58.7 L538.6 29.3 L561.5 70.4 L553.9 140.9 L580.6 205.4 L542.4 281.8 L565.4 334.6 L531.0 399.2 L458.4 422.6 L370.5 410.9 L305.6 381.5 L248.3 369.8 L191.0 363.9 L114.6 358.1 L57.3 328.7 L26.7 293.5 L45.8 234.8 L19.1 176.1 L34.4 117.4 Z"/>
+    <g clip-path="url(#clip-oise)" class="ondes"><circle class="onde" cx="407.6" cy="260.0" r="0" data-onde="0"/><circle class="onde" cx="407.6" cy="260.0" r="0" data-onde="1"/><circle class="onde" cx="407.6" cy="260.0" r="0" data-onde="2"/><circle class="onde" cx="407.6" cy="260.0" r="0" data-onde="3"/></g>
+    <path class="oise-contour" d="M19.1 70.4 L49.7 35.2 L133.7 58.7 L229.2 41.1 L324.7 64.6 L420.2 47.0 L496.6 58.7 L538.6 29.3 L561.5 70.4 L553.9 140.9 L580.6 205.4 L542.4 281.8 L565.4 334.6 L531.0 399.2 L458.4 422.6 L370.5 410.9 L305.6 381.5 L248.3 369.8 L191.0 363.9 L114.6 358.1 L57.3 328.7 L26.7 293.5 L45.8 234.8 L19.1 176.1 L34.4 117.4 Z"/>
+    <g class="commune" data-distance="247"><circle cx="164.6" cy="216.6" r="4.5"/><text x="164.6" y="206.6" text-anchor="middle">Beauvais</text></g><g class="commune" data-distance="55"><circle cx="449.2" cy="224.2" r="4.5"/><text x="459.2" y="214.2" text-anchor="start">Compiègne</text></g><g class="commune" data-distance="109"><circle cx="315.2" cy="317.6" r="4.5"/><text x="305.2" y="337.6" text-anchor="end">Creil</text></g><g class="commune" data-distance="108"><circle cx="312.5" cy="310.5" r="4.5"/><text x="302.5" y="300.5" text-anchor="end">Nogent-sur-Oise</text></g><g class="commune" data-distance="101"><circle cx="357.9" cy="348.1" r="4.5"/><text x="367.9" y="338.1" text-anchor="start">Senlis</text></g><g class="commune" data-distance="134"><circle cx="313.6" cy="355.7" r="4.5"/><text x="323.6" y="375.7" text-anchor="start">Chantilly</text></g><g class="commune" data-distance="170"><circle cx="515.3" cy="128.6" r="4.5"/><text x="515.3" y="118.6" text-anchor="middle">Noyon</text></g><g class="commune" data-distance="54"><circle cx="364.4" cy="292.3" r="4.5"/><text x="374.4" y="297.3" text-anchor="start">Pont-Sainte-Maxence</text></g><g class="commune" data-distance="234"><circle cx="184.9" cy="331.1" r="4.5"/><text x="184.9" y="351.1" text-anchor="middle">Méru</text></g><g class="commune" data-distance="98"><circle cx="473.3" cy="332.2" r="4.5"/><text x="483.3" y="352.2" text-anchor="start">Crépy-en-Valois</text></g><g class="commune" data-distance="211"><circle cx="228.4" cy="372.2" r="4.5"/><text x="218.4" y="392.2" text-anchor="end">Chambly</text></g><g class="commune" data-distance="117"><circle cx="291.5" cy="247.1" r="4.5"/><text x="281.5" y="237.1" text-anchor="end">Clermont</text></g>
+    <g class="base"><circle class="base-point" data-repere cx="407.6" cy="260.0" r="7"/><text x="423.6" y="265">Longueil-Sainte-Marie</text></g>
+  </svg>
+  <figcaption class="petit"><span class="legende-base">Longueil-Sainte-Marie</span> Carte schématique de l&#39;Oise : Longueil-Sainte-Marie et les communes desservies</figcaption>
+</figure>
+  </div>
+</section>
+</main>
+<footer class="pied" id="pied">
+  <svg class="pied-reseau" viewBox="0 0 1200 120" preserveAspectRatio="none" aria-hidden="true" data-fx="trace">
+    <path d="M-10 30 H560 q30 0 30 30 v20 q0 22 22 22 h36 q22 0 22-22 V60 q0-30 30-30 H1210" fill="none" stroke="var(--cuivre)" stroke-width="6" stroke-linecap="round"/>
+    <path d="M-10 52 H520 q22 0 22 22 v6" fill="none" stroke="var(--eau)" stroke-width="4" stroke-linecap="round"/>
+  </svg>
+  <div class="conteneur pied-grille">
+    <div class="pied-marque">
+      <p class="pied-logo"><img src="/assets/images/logo-clair.svg" alt="" width="69" height="44"><strong>Budgetravaux</strong></p>
+      <p>Dépannage plomberie, chauffage, électricité et rénovation tous corps d&#39;état dans l&#39;Oise.</p>
+      <p><a class="bouton bouton--appel" href="tel:+33761183322"><svg class="icone" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1L6.6 10.8z" fill="currentColor"/></svg>07 61 18 33 22</a></p>
+    </div>
+    <div>
+      <p class="pied-titre">Adresse</p>
+      <p>9 bis rue de l&#39;Abreuvoir, 60126 Longueil-Sainte-Marie<br>Intervention dans tout le département de l&#39;Oise<br><span class="a-completer">E-mail : à compléter</span></p>
+    </div>
+    <nav aria-label="Sommaire">
+      <p class="pied-titre">Sommaire</p>
+      <ul><li><a href="/" data-libelle="Accueil">Accueil</a></li><li><a href="/depannage" data-libelle="Dépannage &amp; tarifs">Dépannage &amp; tarifs</a></li><li><a href="/renovation" data-libelle="Rénovation">Rénovation</a></li><li><a href="/plomberie" data-libelle="Plomberie en détail">Plomberie en détail</a></li><li><a href="/devis-en-ligne" data-libelle="Devis en ligne">Devis en ligne</a></li><li><a href="/contact" data-libelle="Contact &amp; RDV" aria-current="page">Contact &amp; RDV</a></li></ul>
+    </nav>
+    <div>
+      <p class="pied-titre">Confort</p>
+      <ul>
+        <li><button type="button" class="lien" data-calme-bascule data-libelle-reduire="Réduire les animations" data-libelle-retablir="Rétablir les animations" data-libelle-systeme="Animations réduites par le réglage de votre appareil"><span data-libelle-bouton>Réduire les animations</span></button></li>
+        <li><a href="#haut" data-sans-transition>Retour en haut</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="conteneur pied-bas">
+    <p>Maquette : les informations marquées « à compléter » seront fournies par Budgetravaux.</p>
+    <p class="a-completer">Mentions légales : à compléter · Politique de confidentialité : à compléter</p>
+    <p>Entreprise individuelle de Pedro Ricardo Dos Reis Oliveira · SIRET : à confirmer · © Budgetravaux</p>
+  </div>
+</footer>
+<div data-barre-fixe>
+  <a class="bouton bouton--appel" href="tel:+33761183322"><svg class="icone" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1L6.6 10.8z" fill="currentColor"/></svg>Appeler</a>
+  <a class="bouton bouton--contour" href="/devis-en-ligne" data-libelle="Devis en ligne">Devis en ligne</a>
+</div>
+</body>
+</html>

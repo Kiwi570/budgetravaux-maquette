@@ -1,0 +1,621 @@
+<!doctype html>
+<html lang="fr" data-v="1" data-curseur>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Budgetravaux : dépannage plomberie et rénovation dans l&#39;Oise (60)</title>
+<meta name="description" content="Fuite, panne, rénovation : Pedro Ricardo Oliveira intervient dans tout l&#39;Oise. Forfaits affichés, devis gratuit, déplacement inclus. 07 61 18 33 22.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://budgetravaux-maquette.vercel.app/">
+<style>:root{--fond:#121417;--texte:#f1eee8;--voile-fond:#0b0c0e;--ouverture-fond:#0b0c0e;--menu-fond:#121417}:root { --entete-h: 72px; --barres-h: 0px; } html { background: var(--fond); color: var(--texte); scrollbar-gutter: stable; } body { margin: 0; background: var(--fond); } html.js:not(.calme):not(.secours):not([data-arrivee="retour"]) [data-anime] { opacity: 0; } html.js:not(.calme):not(.secours):not([data-arrivee="retour"]) [data-anime].vu { opacity: 1; } [data-voile] { position: fixed; inset: 0; z-index: 900; background: var(--voile-fond); transform: translateY(100%); visibility: hidden; pointer-events: none; } html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) [data-voile] { transform: none; visibility: visible; } html.calme [data-voile], html.secours [data-voile] { visibility: hidden !important; } .ouverture-panneau { position: fixed; inset: 0; z-index: 850; display: none; place-content: center; justify-items: center; background: var(--ouverture-fond, var(--voile-fond)); color: var(--fond); text-align: center; } html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) .ouverture-panneau { display: grid; } html.defilement-bloque, html.defilement-bloque body, html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie), html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) body, html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours), html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) body { overflow: hidden; } html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) { background-color: var(--ouverture-fond, var(--voile-fond)); } html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) { background-color: var(--voile-fond); }</style>
+<script>(function () {
+var d = document.documentElement, ss = null, ls = null;
+try { ss = window.sessionStorage; ls = window.localStorage; } catch (e) {}
+d.classList.add('js');
+var calme = false;
+try { calme = !!ls && ls.getItem('socle:calme') === 'oui'; } catch (e) {}
+if (!calme && window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) calme = true;
+if (calme) d.classList.add('calme');
+var nav = performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
+var type = nav ? nav.type : 'navigate';
+var depart = null;
+try { depart = JSON.parse(ss.getItem('socle:depart') || 'null'); ss.removeItem('socle:depart'); } catch (e) {}
+if (depart && !(Date.now() - depart.t < 15000)) depart = null;
+var retourSection = false;
+try { retourSection = !!ss.getItem('socle:calme-retour'); } catch (e) {}
+var mode = type === 'back_forward' || retourSection ? 'retour' : type === 'reload' ? 'intro' : depart ? 'voile' : 'intro';
+d.setAttribute('data-arrivee', mode);
+if (mode === 'voile' && depart.couleur) d.style.setProperty('--voile-fond', depart.couleur);
+if (type === 'reload' && 'scrollRestoration' in history) {
+if (!retourSection) history.scrollRestoration = 'manual';
+}
+try {
+var choisie = ls && ls.getItem('socle:langue');
+var langue = (d.lang || '').slice(0, 2);
+if (choisie && choisie !== langue && type === 'navigate' && !depart) {
+var alt = document.querySelector('link[rel="alternate"][hreflang="' + choisie + '"]');
+if (alt) location.replace(new URL(alt.href).pathname + location.search + location.hash);
+}
+} catch (e) {}
+setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
+})();</script>
+<link rel="preload" href="/assets/polices/bricolage.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/polices/dm-sans.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/socle.css?v=1">
+<link rel="stylesheet" href="/assets/css/site.css?v=1">
+<link rel="modulepreload" href="/assets/js/site.js?v=1">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<script src="/assets/vendor/gsap.min.js" defer></script>
+<script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="/assets/vendor/SplitText.min.js" defer></script>
+<script type="module" src="/assets/js/site.js?v=1"></script>
+<meta name="theme-color" content="#121417">
+<link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Budgetravaux">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Budgetravaux : dépannage plomberie et rénovation dans l&#39;Oise (60)">
+<meta property="og:description" content="Fuite, panne, rénovation : Pedro Ricardo Oliveira intervient dans tout l&#39;Oise. Forfaits affichés, devis gratuit, déplacement inclus. 07 61 18 33 22.">
+<meta property="og:url" content="https://budgetravaux-maquette.vercel.app/">
+<meta property="og:image" content="https://budgetravaux-maquette.vercel.app/assets/partage/accueil-fr.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Budgetravaux : une fuite, une panne, on arrive. Oise (60).">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Plumber","name":"Budgetravaux","url":"https://budgetravaux-maquette.vercel.app/","telephone":"+33761183322","founder":{"@type":"Person","name":"Pedro Ricardo Dos Reis Oliveira"},"address":{"@type":"PostalAddress","streetAddress":"9 bis rue de l'Abreuvoir","postalCode":"60126","addressLocality":"Longueil-Sainte-Marie","addressCountry":"FR"},"areaServed":{"@type":"AdministrativeArea","name":"Oise (60)"},"description":"Dépannage plomberie, chauffage et électricité, rénovation tous corps d'état dans l'Oise. Devis gratuit, déplacement inclus."}</script>
+</head>
+<body id="haut">
+<div data-voile aria-hidden="true"><div class="voile-contenu"><img src="/assets/images/logo-clair.svg" alt="" width="88" height="56"><span data-voile-libelle>Accueil</span></div></div>
+<div class="ouverture-panneau" data-ouverture aria-hidden="true">
+  <div class="ouverture-faisceau"></div>
+  <img class="ouverture-logo" src="/assets/images/logo-clair.svg" alt="" width="113" height="72">
+  <p class="ouverture-nom">Budgetravaux</p>
+  <p class="ouverture-ligne">Dépannage et rénovation · Oise (60)</p>
+</div>
+<a class="evitement" href="#contenu">Aller au contenu</a>
+<header data-entete>
+  <div class="entete-rangee">
+    <a class="entete-logo" href="/" data-libelle="Accueil" aria-current="page">
+      <img src="/assets/images/logo-clair.svg" alt="" width="63" height="40"><span><span class="logo-b">Budget</span><span class="logo-r">ravaux</span></span>
+    </a>
+    <nav data-nav aria-label="Navigation principale">
+      <ul><li><a href="/depannage" data-libelle="Dépannage &amp; tarifs">Dépannage &amp; tarifs</a></li><li><a href="/renovation" data-libelle="Rénovation">Rénovation</a></li><li><a href="/plomberie" data-libelle="Plomberie en détail">Plomberie en détail</a></li><li><a href="/devis-en-ligne" data-libelle="Devis en ligne">Devis en ligne</a></li><li><a href="/contact" data-libelle="Contact &amp; RDV">Contact &amp; RDV</a></li></ul>
+    </nav>
+    <div class="entete-actions">
+      <a class="bouton bouton--appel" href="tel:+33761183322" aria-label="Appeler le 07 61 18 33 22"><svg class="icone" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1L6.6 10.8z" fill="currentColor"/></svg><span>07 61 18 33 22</span></a>
+      <button type="button" data-menu-bouton aria-controls="menu" aria-expanded="false" data-libelle-ouvrir="Menu" data-libelle-fermer="Fermer"><span data-libelle-bouton>Menu</span></button>
+    </div>
+  </div>
+</header>
+<div id="menu" data-menu role="dialog" aria-modal="true" aria-label="Menu">
+  <ul><li style="--i:0"><a href="/" class="menu-lien" data-libelle="Accueil" aria-current="page">Accueil</a></li><li style="--i:1"><a href="/depannage" class="menu-lien" data-libelle="Dépannage &amp; tarifs">Dépannage &amp; tarifs</a></li><li style="--i:2"><a href="/renovation" class="menu-lien" data-libelle="Rénovation">Rénovation</a></li><li style="--i:3"><a href="/plomberie" class="menu-lien" data-libelle="Plomberie en détail">Plomberie en détail</a></li><li style="--i:4"><a href="/devis-en-ligne" class="menu-lien" data-libelle="Devis en ligne">Devis en ligne</a></li><li style="--i:5"><a href="/contact" class="menu-lien" data-libelle="Contact &amp; RDV">Contact &amp; RDV</a></li></ul>
+  <p class="menu-actions"><a class="bouton bouton--appel" href="tel:+33761183322"><svg class="icone" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1L6.6 10.8z" fill="currentColor"/></svg>Appeler le 07 61 18 33 22</a> <a href="/devis-en-ligne" class="bouton bouton--contour" data-libelle="Devis en ligne">Devis en ligne</a></p>
+  <p><button type="button" class="lien" data-calme-bascule data-libelle-reduire="Réduire les animations" data-libelle-retablir="Rétablir les animations" data-libelle-systeme="Animations réduites par le réglage de votre appareil"><span data-libelle-bouton>Réduire les animations</span></button></p>
+</div>
+<main id="contenu" tabindex="-1">
+<section class="hero-mur" id="debut" data-section>
+  <div class="hero-scene" data-effet="lampe" data-souris>
+    <figure class="media hero-photo" data-grok style="--cadrage:50% 50%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/accueil-ouverture-mobile-640.webp 640w, /assets/images/grok/accueil-ouverture-mobile-960.webp 960w" sizes="100vw">
+    <img src="/assets/images/grok/accueil-ouverture-1280.webp" srcset="/assets/images/grok/accueil-ouverture-640.webp 640w, /assets/images/grok/accueil-ouverture-1280.webp 1280w, /assets/images/grok/accueil-ouverture-1600.webp 1600w" sizes="100vw" alt="Mur carrelé d&#39;une salle de bain dans la pénombre" width="1280" height="720" fetchpriority="high" loading="eager" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+    <canvas class="hero-lampe" aria-hidden="true" data-audit-ignorer></canvas>
+    <svg class="hero-reseau" viewBox="0 0 1600 900" preserveAspectRatio="xMaxYMid slice" aria-hidden="true" data-audit-ignorer>
+  <path class="tube tube--cuivre" d="M1010 960 V420 Q1010 380 1050 380 H1640" data-trace="cuivre" data-largeur="22"/><path class="tube tube--eau" d="M1280 960 V470 Q1280 430 1240 430 H1020 Q980 430 980 470 V960" data-trace="eau" data-largeur="18"/><path class="tube tube--gaine" d="M1160 -40 V250 Q1160 290 1200 290 H1640" data-trace="gaine" data-largeur="12"/><path class="tube tube--gaine2" d="M1160 220 Q1160 150 1100 150 H980 Q940 150 940 110 V-40" data-trace="gaine2" data-largeur="9"/>
+  <g class="raccords"><circle cx="1010" cy="380" r="15"/><circle cx="1280" cy="430" r="13"/><circle cx="980" cy="430" r="13"/><circle cx="1160" cy="150" r="10"/><rect x="1132" y="222" width="56" height="56" rx="8"/></g>
+  <circle class="hero-goutte" cx="0" cy="0" r="9"/>
+</svg>
+    <div class="hero-nuit" aria-hidden="true" data-superpose></div>
+  </div>
+  <div class="hero-texte conteneur">
+    <p class="surtitre hero-surtitre" data-anime="gsap">Dépannage et rénovation · Oise (60)</p>
+    <h1 class="hero-titre" data-superpose><span class="hero-mot" data-anime="gsap">Une fuite.</span> <span class="hero-mot" data-anime="gsap">Une panne.</span> <span class="hero-mot hero-mot--lumiere" data-anime="gsap">On arrive.</span></h1>
+    <p class="hero-intro" data-anime="gsap">Plomberie, chauffage, électricité : Pedro Ricardo Oliveira intervient rapidement dans tout le département, et vous accompagne aussi pour la rénovation, du devis à la fin du chantier.</p>
+    <p class="hero-actions" data-anime="gsap">
+      <a class="bouton bouton--appel" href="tel:+33761183322" data-action-principale data-survol="magnetique"><svg class="icone" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1L6.6 10.8z" fill="currentColor"/></svg>Appeler le 07 61 18 33 22</a>
+      <a href="/devis-en-ligne" class="bouton bouton--contour" data-libelle="Devis en ligne" data-survol="magnetique">Devis en ligne</a>
+    </p>
+    <p class="hero-info" data-info-cle data-anime="gsap">Devis gratuit · Déplacement inclus</p>
+  </div>
+  <div class="hero-ticket-place" data-anime="gsap" data-superpose>
+    <div class="ticket ticket--hero">
+  <div class="ticket-tete"><span class="ticket-marque">Budgetravaux</span><span class="ticket-num">N° 01</span></div>
+  <ul class="ticket-lignes" role="list"><li class="ticket-ligne">
+    <span class="ticket-l-texte"><span class="ticket-l-titre">Recherche de fuite</span><span class="ticket-l-detail">déplacement + 1 h compris</span></span>
+    <span class="ticket-prix" data-prix><span data-compteur="149">149</span> €</span>
+  </li></ul>
+  <p class="ticket-pied">TTC à confirmer</p>
+</div>
+  </div>
+  <p class="hero-indice" aria-hidden="true"><span class="indice-souris">Promenez la lampe sur le mur</span><span class="indice-doigt">Touchez le mur pour l&#39;éclairer</span></p>
+</section>
+<section class="urgences sombre" id="urgences">
+  <div class="conteneur urgences-grille">
+    <header class="tete-section">
+      <p class="surtitre" data-anime>Urgences</p>
+      <h2 data-anime="lignes">Ce qui ne peut pas attendre.</h2>
+      <p data-anime>Une intervention rapide sur simple appel, partout dans l&#39;Oise, avec prise de rendez-vous rapide.</p>
+      <p data-anime><a href="/depannage" class="lien-fleche" data-libelle="Dépannage &amp; tarifs">Tous les dépannages</a></p>
+    </header>
+    <div class="urgences-reseau">
+      <svg class="reseau-colonne" viewBox="0 0 60 1000" preserveAspectRatio="none" aria-hidden="true" data-effet="reseau" data-audit-ignorer>
+        <path class="reseau-tube" d="M30 0 V1000" />
+        <path class="reseau-eau" d="M30 0 V1000" />
+      </svg>
+      <span class="reseau-goutte" aria-hidden="true" data-audit-ignorer></span>
+      <ol class="urgences-liste" role="list">
+        <li class="urgence" data-raccord="0">
+          <span class="raccord" aria-hidden="true"></span>
+          <figure class="media urgence-media" data-grok data-fx="zoom" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/urgence-fuite-800.webp" srcset="/assets/images/grok/urgence-fuite-480.webp 480w, /assets/images/grok/urgence-fuite-640.webp 640w, /assets/images/grok/urgence-fuite-800.webp 800w" sizes="(max-width: 760px) 40vw, 220px" alt="" width="800" height="534" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+          <div class="urgence-texte">
+            <h3>Fuite d&#39;eau</h3>
+            <p>Recherche et réparation : détection par mise en pression, réparation sur cuivre, remplacement de vanne. Réparation sur devis.</p>
+            <p class="urgence-prix"><span>Recherche de fuite</span><strong data-prix>149 €</strong></p>
+          </div>
+        </li><li class="urgence" data-raccord="1">
+          <span class="raccord" aria-hidden="true"></span>
+          <figure class="media urgence-media" data-grok data-fx="zoom" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/urgence-canalisation-800.webp" srcset="/assets/images/grok/urgence-canalisation-480.webp 480w, /assets/images/grok/urgence-canalisation-640.webp 640w, /assets/images/grok/urgence-canalisation-800.webp 800w" sizes="(max-width: 760px) 40vw, 220px" alt="" width="800" height="534" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+          <div class="urgence-texte">
+            <h3>Canalisation</h3>
+            <p>Débouchage de douche, baignoire, lavabo, WC ou évier, dégorgement avec pompe.</p>
+            <p class="urgence-prix"><span>Dégorgement</span><strong data-prix>149 €</strong></p>
+          </div>
+        </li><li class="urgence" data-raccord="2">
+          <span class="raccord" aria-hidden="true"></span>
+          <figure class="media urgence-media" data-grok data-fx="zoom" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/urgence-robinet-800.webp" srcset="/assets/images/grok/urgence-robinet-480.webp 480w, /assets/images/grok/urgence-robinet-640.webp 640w, /assets/images/grok/urgence-robinet-800.webp 800w" sizes="(max-width: 760px) 40vw, 220px" alt="" width="800" height="534" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+          <div class="urgence-texte">
+            <h3>Robinetterie</h3>
+            <p>Mitigeur, colonnettes, joints, robinets de lave-linge et d&#39;évier.</p>
+            <p class="urgence-prix"><strong>Sur devis</strong></p>
+          </div>
+        </li><li class="urgence" data-raccord="3">
+          <span class="raccord" aria-hidden="true"></span>
+          <figure class="media urgence-media" data-grok data-fx="zoom" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/urgence-electricite-800.webp" srcset="/assets/images/grok/urgence-electricite-480.webp 480w, /assets/images/grok/urgence-electricite-640.webp 640w, /assets/images/grok/urgence-electricite-800.webp 800w" sizes="(max-width: 760px) 40vw, 220px" alt="" width="800" height="534" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+          <div class="urgence-texte">
+            <h3>Panne électrique</h3>
+            <p>Recherche de panne, prises, points lumineux, tableau électrique.</p>
+            <p class="urgence-prix"><strong>Sur devis</strong></p>
+          </div>
+        </li><li class="urgence" data-raccord="4">
+          <span class="raccord" aria-hidden="true"></span>
+          <figure class="media urgence-media" data-grok data-fx="zoom" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/urgence-chauffe-eau-800.webp" srcset="/assets/images/grok/urgence-chauffe-eau-480.webp 480w, /assets/images/grok/urgence-chauffe-eau-640.webp 640w, /assets/images/grok/urgence-chauffe-eau-800.webp 800w" sizes="(max-width: 760px) 40vw, 220px" alt="" width="800" height="534" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+          <div class="urgence-texte">
+            <h3>Chauffe-eau et chaudière</h3>
+            <p>Panne, fuite, groupe de sécurité, réducteur de pression, remise en route.</p>
+            <p class="urgence-prix"><span>Recherche de panne</span><strong data-prix>149 €</strong></p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </div>
+</section>
+<section class="forfaits clair" id="forfaits">
+  <div class="conteneur">
+    <header class="tete-section tete-section--large">
+      <p class="surtitre" data-anime>Tarifs publiés</p>
+      <h2 data-anime="lignes">Les prix, affichés avant.</h2>
+      <p data-anime>Huit forfaits, déplacement compris. Le devis est toujours remis avant l&#39;intervention. <span class="a-completer">TTC à confirmer</span></p>
+    </header>
+    <ul class="tickets" role="list" data-effet="ticket" data-visuel>
+      <li><div class="ticket ticket--grille" data-imprime>
+  <div class="ticket-tete"><span class="ticket-marque">Budgetravaux</span><span class="ticket-num">N° 01</span></div>
+  <ul class="ticket-lignes" role="list"><li class="ticket-ligne">
+    <span class="ticket-l-texte"><span class="ticket-l-titre">Recherche de fuite</span><span class="ticket-l-detail">Déplacement et 1 h de prestation compris</span></span>
+    <span class="ticket-prix" data-prix><span data-compteur="149">149</span> €</span>
+  </li></ul>
+  <p class="ticket-pied">TTC à confirmer</p>
+</div></li><li><div class="ticket ticket--grille" data-imprime>
+  <div class="ticket-tete"><span class="ticket-marque">Budgetravaux</span><span class="ticket-num">N° 02</span></div>
+  <ul class="ticket-lignes" role="list"><li class="ticket-ligne">
+    <span class="ticket-l-texte"><span class="ticket-l-titre">Recherche de fuite approfondie</span><span class="ticket-l-detail">Avec caméra thermique</span></span>
+    <span class="ticket-prix" data-prix><span data-compteur="299">299</span> €</span>
+  </li></ul>
+  <p class="ticket-pied">TTC à confirmer</p>
+</div></li><li><div class="ticket ticket--grille" data-imprime>
+  <div class="ticket-tete"><span class="ticket-marque">Budgetravaux</span><span class="ticket-num">N° 03</span></div>
+  <ul class="ticket-lignes" role="list"><li class="ticket-ligne">
+    <span class="ticket-l-texte"><span class="ticket-l-titre">Fuite le soir, le week-end, les jours fériés</span><span class="ticket-l-detail">Recherche ou réparation après 20 h, le week-end et les jours fériés</span></span>
+    <span class="ticket-prix" data-prix><span data-compteur="199">199</span> €</span>
+  </li></ul>
+  <p class="ticket-pied">TTC à confirmer</p>
+</div></li><li><div class="ticket ticket--grille" data-imprime>
+  <div class="ticket-tete"><span class="ticket-marque">Budgetravaux</span><span class="ticket-num">N° 04</span></div>
+  <ul class="ticket-lignes" role="list"><li class="ticket-ligne">
+    <span class="ticket-l-texte"><span class="ticket-l-titre">Dégorgement avec pompe</span><span class="ticket-l-detail">Canalisation bouchée</span></span>
+    <span class="ticket-prix" data-prix><span data-compteur="149">149</span> €</span>
+  </li></ul>
+  <p class="ticket-pied">TTC à confirmer</p>
+</div></li><li><div class="ticket ticket--grille" data-imprime>
+  <div class="ticket-tete"><span class="ticket-marque">Budgetravaux</span><span class="ticket-num">N° 05</span></div>
+  <ul class="ticket-lignes" role="list"><li class="ticket-ligne">
+    <span class="ticket-l-texte"><span class="ticket-l-titre">Forfait modification PVC</span><span class="ticket-l-detail">2 m de PVC jusqu&#39;au diamètre 50, colle comprise</span></span>
+    <span class="ticket-prix" data-prix><span data-compteur="230">230</span> €</span>
+  </li></ul>
+  <p class="ticket-pied">TTC à confirmer</p>
+</div></li><li><div class="ticket ticket--grille" data-imprime>
+  <div class="ticket-tete"><span class="ticket-marque">Budgetravaux</span><span class="ticket-num">N° 06</span></div>
+  <ul class="ticket-lignes" role="list"><li class="ticket-ligne">
+    <span class="ticket-l-texte"><span class="ticket-l-titre">Forfait modification cuivre</span><span class="ticket-l-detail">2 m de cuivre jusqu&#39;au diamètre 22</span></span>
+    <span class="ticket-prix" data-prix><span data-compteur="250">250</span> €</span>
+  </li></ul>
+  <p class="ticket-pied">TTC à confirmer</p>
+</div></li><li><div class="ticket ticket--grille" data-imprime>
+  <div class="ticket-tete"><span class="ticket-marque">Budgetravaux</span><span class="ticket-num">N° 07</span></div>
+  <ul class="ticket-lignes" role="list"><li class="ticket-ligne">
+    <span class="ticket-l-texte"><span class="ticket-l-titre">Recherche de panne ballon ou chaudière</span><span class="ticket-l-detail">Chaudières jusqu&#39;à 45 kW, diagnostic et remise en route compris</span></span>
+    <span class="ticket-prix" data-prix><span data-compteur="149">149</span> €</span>
+  </li></ul>
+  <p class="ticket-pied">TTC à confirmer</p>
+</div></li><li><div class="ticket ticket--grille" data-imprime>
+  <div class="ticket-tete"><span class="ticket-marque">Budgetravaux</span><span class="ticket-num">N° 08</span></div>
+  <ul class="ticket-lignes" role="list"><li class="ticket-ligne">
+    <span class="ticket-l-texte"><span class="ticket-l-titre">Main-d&#39;œuvre supplémentaire</span><span class="ticket-l-detail">Au-delà du temps compris dans le forfait</span></span>
+    <span class="ticket-prix" data-prix><span data-compteur="70">70</span> €</span>
+  </li></ul>
+  <p class="ticket-pied">TTC à confirmer</p>
+</div></li>
+    </ul>
+    <p class="forfaits-suite" data-anime><a href="/depannage#forfaits" class="bouton bouton--sombre" data-libelle="Dépannage &amp; tarifs" data-survol="magnetique">Le détail des tarifs</a></p>
+  </div>
+</section>
+<section class="metiers sombre" id="metiers">
+  <div class="conteneur metiers-grille">
+    <header class="tete-section">
+      <p class="surtitre" data-anime>Rénovation tous corps d&#39;état</p>
+      <h2 data-anime="lignes">Huit métiers sur le même tableau.</h2>
+      <p data-anime>Du robinet qui goutte à la salle de bain clé en main. Pour la rénovation, Budgetravaux travaille avec des professionnels partenaires, tenus d&#39;être immatriculés et assurés.</p>
+      <p data-anime><a href="/renovation" class="lien-fleche" data-libelle="Rénovation">Voir la rénovation</a></p>
+    </header>
+    <div class="tableau-elec" data-effet="disjoncteurs" data-tableau="accueil" role="group" aria-label="Tableau des corps d&#39;état">
+  <div class="tableau-rangee">
+    <button type="button" class="disjoncteur" data-metier="plomberie" aria-pressed="true" aria-controls="panneau-accueil">
+      <span class="disj-corps"><span class="disj-levier"></span></span>
+      <span class="disj-nom">Plomberie</span>
+    </button><button type="button" class="disjoncteur" data-metier="chauffage" aria-pressed="false" aria-controls="panneau-accueil">
+      <span class="disj-corps"><span class="disj-levier"></span></span>
+      <span class="disj-nom">Chauffage</span>
+    </button><button type="button" class="disjoncteur" data-metier="electricite" aria-pressed="false" aria-controls="panneau-accueil">
+      <span class="disj-corps"><span class="disj-levier"></span></span>
+      <span class="disj-nom">Électricité</span>
+    </button><button type="button" class="disjoncteur" data-metier="platrerie" aria-pressed="false" aria-controls="panneau-accueil">
+      <span class="disj-corps"><span class="disj-levier"></span></span>
+      <span class="disj-nom">Plâtrerie</span>
+    </button><button type="button" class="disjoncteur" data-metier="maconnerie" aria-pressed="false" aria-controls="panneau-accueil">
+      <span class="disj-corps"><span class="disj-levier"></span></span>
+      <span class="disj-nom">Maçonnerie</span>
+    </button><button type="button" class="disjoncteur" data-metier="murs" aria-pressed="false" aria-controls="panneau-accueil">
+      <span class="disj-corps"><span class="disj-levier"></span></span>
+      <span class="disj-nom">Murs</span>
+    </button><button type="button" class="disjoncteur" data-metier="sols" aria-pressed="false" aria-controls="panneau-accueil">
+      <span class="disj-corps"><span class="disj-levier"></span></span>
+      <span class="disj-nom">Sols</span>
+    </button><button type="button" class="disjoncteur" data-metier="menuiserie" aria-pressed="false" aria-controls="panneau-accueil">
+      <span class="disj-corps"><span class="disj-levier"></span></span>
+      <span class="disj-nom">Menuiserie</span>
+    </button>
+  </div>
+  <p class="tableau-indice">Basculez un disjoncteur</p>
+  <div class="tableau-panneaux" id="panneau-accueil" aria-live="polite">
+    <article class="metier-panneau actif" data-panneau="plomberie">
+      <figure class="media metier-media" data-grok style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/metier-plomberie-784.webp" srcset="/assets/images/grok/metier-plomberie-480.webp 480w, /assets/images/grok/metier-plomberie-640.webp 640w, /assets/images/grok/metier-plomberie-784.webp 784w" sizes="(max-width: 760px) 90vw, 300px" alt="" width="784" height="1175" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+      <div>
+        <h3>Plomberie</h3>
+        <p class="metier-court">Eau, évacuation, sanitaires</p>
+        <ul role="list"><li>Baignoire, douche classique ou à l&#39;italienne, cabine de 1 à 3 parois</li><li>Lavabo, vasque, lave-mains, évier inox ou grès émaillé</li><li>WC classique, suspendu ou sanibroyeur</li></ul>
+      </div>
+    </article><article class="metier-panneau" data-panneau="chauffage" hidden>
+      <figure class="media metier-media" data-grok style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/metier-chauffage-784.webp" srcset="/assets/images/grok/metier-chauffage-480.webp 480w, /assets/images/grok/metier-chauffage-640.webp 640w, /assets/images/grok/metier-chauffage-784.webp 784w" sizes="(max-width: 760px) 90vw, 300px" alt="" width="784" height="1175" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+      <div>
+        <h3>Chauffage</h3>
+        <p class="metier-court">Chauffe-eau, chaudière, radiateurs</p>
+        <ul role="list"><li>Dépannage de chauffe-eau et de chaudière</li><li>Recherche de panne et remise en route, chaudières jusqu&#39;à 45 kW</li><li>Radiateurs : détail à compléter</li></ul>
+      </div>
+    </article><article class="metier-panneau" data-panneau="electricite" hidden>
+      <figure class="media metier-media" data-grok style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/metier-electricite-784.webp" srcset="/assets/images/grok/metier-electricite-480.webp 480w, /assets/images/grok/metier-electricite-640.webp 640w, /assets/images/grok/metier-electricite-784.webp 784w" sizes="(max-width: 760px) 90vw, 300px" alt="" width="784" height="1175" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+      <div>
+        <h3>Électricité</h3>
+        <p class="metier-court">Tableau, prises, éclairage</p>
+        <ul role="list"><li>Tableau électrique, du studio au 6 pièces avec 2 salles de bain</li><li>Prises 16 A, 20 A et 32 A, prises télévision, téléphone et RJ45</li><li>Points lumineux, interrupteurs, va-et-vient, variateurs</li></ul>
+      </div>
+    </article><article class="metier-panneau" data-panneau="platrerie" hidden>
+      <figure class="media metier-media" data-grok style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/metier-platrerie-784.webp" srcset="/assets/images/grok/metier-platrerie-480.webp 480w, /assets/images/grok/metier-platrerie-640.webp 640w, /assets/images/grok/metier-platrerie-784.webp 784w" sizes="(max-width: 760px) 90vw, 300px" alt="" width="784" height="1175" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+      <div>
+        <h3>Plâtrerie et isolation</h3>
+        <p class="metier-court">Cloisons, doublages, faux plafonds</p>
+        <ul role="list"><li>Cloisons en carreaux de plâtre 5 ou 7 cm, ou en BA 13, standard ou hydrofuge</li><li>Doublages collés ou sur ossature, laine de roche, de verre ou isolants naturels</li><li>Faux plafonds en plaques ou en dalles 60 × 60</li></ul>
+      </div>
+    </article><article class="metier-panneau" data-panneau="maconnerie" hidden>
+      <figure class="media metier-media" data-grok style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/metier-maconnerie-784.webp" srcset="/assets/images/grok/metier-maconnerie-480.webp 480w, /assets/images/grok/metier-maconnerie-640.webp 640w, /assets/images/grok/metier-maconnerie-784.webp 784w" sizes="(max-width: 760px) 90vw, 300px" alt="" width="784" height="1175" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+      <div>
+        <h3>Maçonnerie</h3>
+        <p class="metier-court">Gros œuvre et reprises</p>
+        <ul role="list"><li>Détail des travaux de maçonnerie : à compléter</li></ul>
+      </div>
+    </article><article class="metier-panneau" data-panneau="murs" hidden>
+      <figure class="media metier-media" data-grok style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/metier-murs-784.webp" srcset="/assets/images/grok/metier-murs-480.webp 480w, /assets/images/grok/metier-murs-640.webp 640w, /assets/images/grok/metier-murs-784.webp 784w" sizes="(max-width: 760px) 90vw, 300px" alt="" width="784" height="1175" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+      <div>
+        <h3>Murs et plafonds</h3>
+        <p class="metier-court">Peinture, papier peint, faïence</p>
+        <ul role="list"><li>Dépose de carrelage, de papier peint ou d&#39;enduit</li><li>Préparation selon l&#39;état des murs et des plafonds</li><li>Peinture mate, satinée ou brillante, peintures décoratives</li></ul>
+      </div>
+    </article><article class="metier-panneau" data-panneau="sols" hidden>
+      <figure class="media metier-media" data-grok style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/metier-sols-784.webp" srcset="/assets/images/grok/metier-sols-480.webp 480w, /assets/images/grok/metier-sols-640.webp 640w, /assets/images/grok/metier-sols-784.webp 784w" sizes="(max-width: 760px) 90vw, 300px" alt="" width="784" height="1175" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+      <div>
+        <h3>Revêtements de sols</h3>
+        <p class="metier-court">Carrelage, lino</p>
+        <ul role="list"><li>Pose de carrelage 30 × 30 à 40 cm : à partir de 30 € le m²</li><li>Lino antidérapant : à partir de 30 € le m²</li><li>Autres revêtements : détail à compléter</li></ul>
+      </div>
+    </article><article class="metier-panneau" data-panneau="menuiserie" hidden>
+      <figure class="media metier-media" data-grok style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/metier-menuiserie-784.webp" srcset="/assets/images/grok/metier-menuiserie-480.webp 480w, /assets/images/grok/metier-menuiserie-640.webp 640w, /assets/images/grok/metier-menuiserie-784.webp 784w" sizes="(max-width: 760px) 90vw, 300px" alt="" width="784" height="1175" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+      <div>
+        <h3>Menuiserie</h3>
+        <p class="metier-court">Portes, fenêtres, escaliers</p>
+        <ul role="list"><li>Portes blindées 3 ou 5 points, portes intérieures battantes ou coulissantes</li><li>Fenêtres et portes-fenêtres PVC, bois ou aluminium, volets roulants</li><li>Fenêtres de toit 55 × 78, 78 × 98, 114 × 118 cm</li></ul>
+      </div>
+    </article>
+  </div>
+</div>
+  </div>
+</section>
+<section class="intervention clair" id="intervention" data-effet="compteur-eau">
+  <div class="conteneur intervention-grille">
+    <div class="intervention-cadran">
+      <p class="surtitre" data-anime>Une intervention</p>
+      <h2 data-anime="lignes">Du premier appel à la garantie.</h2>
+      <div class="compteur" aria-hidden="true" data-audit-ignorer>
+        <svg class="compteur-cadre" viewBox="0 0 320 320" data-visuel>
+          <circle cx="160" cy="160" r="150" class="compteur-bague"/>
+          <circle cx="160" cy="160" r="128" class="compteur-fond"/>
+          <line x1="270" y1="160" x2="284" y2="160" class="compteur-graduation"/><line x1="276.54722419022625" y1="178.45926687474724" x2="282.47335423379707" y2="179.39787366498862" class="compteur-graduation"/><line x1="272.22466892282813" y1="196.4640053362438" x2="277.93100802059905" y2="198.31810730249347" class="compteur-graduation"/><line x1="265.1387698542274" y1="213.57087896926652" x2="270.4848089993576" y2="216.2948219677038" class="compteur-graduation"/><line x1="255.46400533624382" y1="229.35865977051185" x2="260.3181073024935" y2="232.88537128426668" class="compteur-graduation"/><line x1="237.78174593052023" y1="237.78174593052023" x2="247.68124086713192" y2="247.6812408671319" class="compteur-graduation"/><line x1="229.35865977051185" y1="255.46400533624382" x2="232.88537128426668" y2="260.3181073024935" class="compteur-graduation"/><line x1="213.57087896926652" y1="265.1387698542274" x2="216.2948219677038" y2="270.4848089993576" class="compteur-graduation"/><line x1="196.46400533624382" y1="272.22466892282813" x2="198.3181073024935" y2="277.93100802059905" class="compteur-graduation"/><line x1="178.45926687474724" y1="276.54722419022625" x2="179.39787366498862" y2="282.47335423379707" class="compteur-graduation"/><line x1="160" y1="270" x2="160" y2="284" class="compteur-graduation"/><line x1="141.54073312525273" y1="276.54722419022625" x2="140.60212633501135" y2="282.47335423379707" class="compteur-graduation"/><line x1="123.53599466375621" y1="272.22466892282813" x2="121.68189269750653" y2="277.93100802059905" class="compteur-graduation"/><line x1="106.42912103073348" y1="265.1387698542274" x2="103.7051780322962" y2="270.4848089993576" class="compteur-graduation"/><line x1="90.64134022948818" y1="255.46400533624382" x2="87.11462871573335" y2="260.3181073024935" class="compteur-graduation"/><line x1="82.21825406947978" y1="237.78174593052023" x2="72.31875913286811" y2="247.68124086713192" class="compteur-graduation"/><line x1="64.53599466375621" y1="229.35865977051185" x2="59.68189269750653" y2="232.88537128426668" class="compteur-graduation"/><line x1="54.861230145772595" y1="213.57087896926652" x2="49.51519100064239" y2="216.2948219677038" class="compteur-graduation"/><line x1="47.775331077171884" y1="196.46400533624382" x2="42.06899197940096" y2="198.3181073024935" class="compteur-graduation"/><line x1="43.452775809773755" y1="178.45926687474724" x2="37.52664576620293" y2="179.39787366498865" class="compteur-graduation"/><line x1="50" y1="160" x2="36" y2="160.00000000000003" class="compteur-graduation"/><line x1="43.45277580977374" y1="141.54073312525279" x2="37.52664576620292" y2="140.6021263350114" class="compteur-graduation"/><line x1="47.775331077171884" y1="123.53599466375617" x2="42.06899197940096" y2="121.68189269750648" class="compteur-graduation"/><line x1="54.861230145772566" y1="106.42912103073354" x2="49.515191000642346" y2="103.70517803229626" class="compteur-graduation"/><line x1="64.5359946637562" y1="90.64134022948818" x2="59.68189269750651" y2="87.11462871573335" class="compteur-graduation"/><line x1="82.21825406947976" y1="82.21825406947978" x2="72.31875913286808" y2="72.31875913286811" class="compteur-graduation"/><line x1="90.64134022948815" y1="64.53599466375621" x2="87.11462871573332" y2="59.68189269750653" class="compteur-graduation"/><line x1="106.42912103073346" y1="54.861230145772595" x2="103.70517803229617" y2="49.51519100064239" class="compteur-graduation"/><line x1="123.53599466375618" y1="47.775331077171884" x2="121.6818926975065" y2="42.06899197940096" class="compteur-graduation"/><line x1="141.54073312525273" y1="43.452775809773755" x2="140.60212633501135" y2="37.52664576620293" class="compteur-graduation"/><line x1="159.99999999999997" y1="50" x2="159.99999999999997" y2="36" class="compteur-graduation"/><line x1="178.45926687474721" y1="43.45277580977374" x2="179.3978736649886" y2="37.52664576620292" class="compteur-graduation"/><line x1="196.46400533624376" y1="47.77533107717187" x2="198.31810730249344" y2="42.06899197940095" class="compteur-graduation"/><line x1="213.57087896926652" y1="54.86123014577258" x2="216.2948219677038" y2="49.51519100064236" class="compteur-graduation"/><line x1="229.3586597705118" y1="64.53599466375618" x2="232.88537128426663" y2="59.6818926975065" class="compteur-graduation"/><line x1="237.7817459305202" y1="82.21825406947976" x2="247.68124086713186" y2="72.31875913286808" class="compteur-graduation"/><line x1="255.4640053362438" y1="90.64134022948815" x2="260.31810730249344" y2="87.1146287157333" class="compteur-graduation"/><line x1="265.1387698542274" y1="106.42912103073346" x2="270.4848089993576" y2="103.70517803229617" class="compteur-graduation"/><line x1="272.22466892282813" y1="123.53599466375618" x2="277.93100802059905" y2="121.6818926975065" class="compteur-graduation"/><line x1="276.54722419022625" y1="141.54073312525273" x2="282.47335423379707" y2="140.60212633501135" class="compteur-graduation"/>
+          <g class="compteur-aiguille"><path d="M160 160 L160 62" /><circle cx="160" cy="160" r="10"/></g>
+        </svg>
+        <div class="compteur-rouleaux" data-superpose><span class="compteur-libelle">Étape</span><span class="rouleau"><span class="rouleau-bande"><span>01</span><span>02</span><span>03</span><span>04</span><span>05</span></span></span></div>
+      </div>
+    </div>
+    <ol class="etapes" role="list">
+      <li class="etape" data-etape="0">
+        <span class="etape-n">01</span>
+        <h3>Vous appelez</h3>
+        <p>Au 07 61 18 33 22, ou par le formulaire de contact. Une estimation peut se faire par téléphone.</p>
+      </li><li class="etape" data-etape="1">
+        <span class="etape-n">02</span>
+        <h3>Rendez-vous rapide</h3>
+        <p>Partout dans l&#39;Oise, au jour et à l&#39;heure que vous proposez. Le déplacement est compris.</p>
+      </li><li class="etape" data-etape="2">
+        <span class="etape-n">03</span>
+        <h3>Devis avant intervention</h3>
+        <p>Gratuit et sans engagement : vous savez ce que vous payez avant le début du travail.</p>
+      </li><li class="etape" data-etape="3">
+        <span class="etape-n">04</span>
+        <h3>Travail soigné</h3>
+        <p>Exécution conforme au devis et aux délais définis, dans le respect des normes en vigueur.</p>
+      </li><li class="etape" data-etape="4">
+        <span class="etape-n">05</span>
+        <h3>Garantie</h3>
+        <p>Garantie sur intervention, garantie décennale annoncée pour les travaux tous corps d&#39;état.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+<section class="zone sombre" id="zone">
+  <div class="conteneur zone-grille">
+    <header class="tete-section">
+      <p class="surtitre" data-anime>Zone d&#39;intervention</p>
+      <h2 data-anime="lignes">Tout l&#39;Oise, depuis Longueil-Sainte-Marie.</h2>
+      <p data-anime>Beauvais, Compiègne, Creil, Senlis, Chantilly, Nogent-sur-Oise et toutes les communes alentour.</p>
+      <ul class="communes" role="list" data-anime="cascade"><li>Beauvais</li><li>Compiègne</li><li>Creil</li><li>Nogent-sur-Oise</li><li>Senlis</li><li>Chantilly</li><li>Noyon</li><li>Pont-Sainte-Maxence</li><li>Méru</li><li>Crépy-en-Valois</li><li>Chambly</li><li>Clermont</li></ul>
+    </header>
+    <figure class="carte-oise " data-effet="ricochet" data-visuel>
+  <svg viewBox="0 0 600 446" role="img" aria-label="Carte schématique de l&#39;Oise : Longueil-Sainte-Marie et les communes desservies">
+    <defs><clipPath id="clip-oise"><path d="M19.1 70.4 L49.7 35.2 L133.7 58.7 L229.2 41.1 L324.7 64.6 L420.2 47.0 L496.6 58.7 L538.6 29.3 L561.5 70.4 L553.9 140.9 L580.6 205.4 L542.4 281.8 L565.4 334.6 L531.0 399.2 L458.4 422.6 L370.5 410.9 L305.6 381.5 L248.3 369.8 L191.0 363.9 L114.6 358.1 L57.3 328.7 L26.7 293.5 L45.8 234.8 L19.1 176.1 L34.4 117.4 Z"/></clipPath></defs><path class="oise-fond" d="M19.1 70.4 L49.7 35.2 L133.7 58.7 L229.2 41.1 L324.7 64.6 L420.2 47.0 L496.6 58.7 L538.6 29.3 L561.5 70.4 L553.9 140.9 L580.6 205.4 L542.4 281.8 L565.4 334.6 L531.0 399.2 L458.4 422.6 L370.5 410.9 L305.6 381.5 L248.3 369.8 L191.0 363.9 L114.6 358.1 L57.3 328.7 L26.7 293.5 L45.8 234.8 L19.1 176.1 L34.4 117.4 Z"/>
+    <g clip-path="url(#clip-oise)" class="ondes"><circle class="onde" cx="407.6" cy="260.0" r="0" data-onde="0"/><circle class="onde" cx="407.6" cy="260.0" r="0" data-onde="1"/><circle class="onde" cx="407.6" cy="260.0" r="0" data-onde="2"/><circle class="onde" cx="407.6" cy="260.0" r="0" data-onde="3"/></g>
+    <path class="oise-contour" d="M19.1 70.4 L49.7 35.2 L133.7 58.7 L229.2 41.1 L324.7 64.6 L420.2 47.0 L496.6 58.7 L538.6 29.3 L561.5 70.4 L553.9 140.9 L580.6 205.4 L542.4 281.8 L565.4 334.6 L531.0 399.2 L458.4 422.6 L370.5 410.9 L305.6 381.5 L248.3 369.8 L191.0 363.9 L114.6 358.1 L57.3 328.7 L26.7 293.5 L45.8 234.8 L19.1 176.1 L34.4 117.4 Z"/>
+    <g class="commune" data-distance="247"><circle cx="164.6" cy="216.6" r="4.5"/><text x="164.6" y="206.6" text-anchor="middle">Beauvais</text></g><g class="commune" data-distance="55"><circle cx="449.2" cy="224.2" r="4.5"/><text x="459.2" y="214.2" text-anchor="start">Compiègne</text></g><g class="commune" data-distance="109"><circle cx="315.2" cy="317.6" r="4.5"/><text x="305.2" y="337.6" text-anchor="end">Creil</text></g><g class="commune" data-distance="108"><circle cx="312.5" cy="310.5" r="4.5"/><text x="302.5" y="300.5" text-anchor="end">Nogent-sur-Oise</text></g><g class="commune" data-distance="101"><circle cx="357.9" cy="348.1" r="4.5"/><text x="367.9" y="338.1" text-anchor="start">Senlis</text></g><g class="commune" data-distance="134"><circle cx="313.6" cy="355.7" r="4.5"/><text x="323.6" y="375.7" text-anchor="start">Chantilly</text></g><g class="commune" data-distance="170"><circle cx="515.3" cy="128.6" r="4.5"/><text x="515.3" y="118.6" text-anchor="middle">Noyon</text></g><g class="commune" data-distance="54"><circle cx="364.4" cy="292.3" r="4.5"/><text x="374.4" y="297.3" text-anchor="start">Pont-Sainte-Maxence</text></g><g class="commune" data-distance="234"><circle cx="184.9" cy="331.1" r="4.5"/><text x="184.9" y="351.1" text-anchor="middle">Méru</text></g><g class="commune" data-distance="98"><circle cx="473.3" cy="332.2" r="4.5"/><text x="483.3" y="352.2" text-anchor="start">Crépy-en-Valois</text></g><g class="commune" data-distance="211"><circle cx="228.4" cy="372.2" r="4.5"/><text x="218.4" y="392.2" text-anchor="end">Chambly</text></g><g class="commune" data-distance="117"><circle cx="291.5" cy="247.1" r="4.5"/><text x="281.5" y="237.1" text-anchor="end">Clermont</text></g>
+    <g class="base"><circle class="base-point" data-repere cx="407.6" cy="260.0" r="7"/><text x="423.6" y="265">Longueil-Sainte-Marie</text></g>
+  </svg>
+  <figcaption class="petit"><span class="legende-base">Longueil-Sainte-Marie</span> Carte schématique de l&#39;Oise : Longueil-Sainte-Marie et les communes desservies</figcaption>
+</figure>
+  </div>
+</section>
+<section class="plomberie-apercu ecran epingle sombre" id="plomberie" data-entete-cache data-fx="galerie" data-plein-ecran>
+  <div class="conteneur galerie-tete">
+    <p class="surtitre">Plomberie en détail</p>
+    <h2 data-anime="lignes">Équipement par équipement.</h2>
+    <p>Douche, baignoire, lavabo, WC, chauffe-eau, cuisine. <a href="/plomberie" class="lien-fleche" data-libelle="Plomberie en détail">Tout le détail</a></p>
+  </div>
+  <div class="piste galerie-piste" data-galerie tabindex="0" role="region" aria-label="Équipements de plomberie, défilement horizontal">
+    <article class="carte">
+      <a href="/plomberie#douche" class="carte-lien" data-libelle="Plomberie en détail"><figure class="media carte-media" data-grok style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/equip-douche-784.webp" srcset="/assets/images/grok/equip-douche-480.webp 480w, /assets/images/grok/equip-douche-640.webp 640w, /assets/images/grok/equip-douche-784.webp 784w" sizes="(max-width: 760px) 72vw, 30vw" alt="" width="784" height="1045" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure><span class="carte-n">01</span><span class="carte-titre">Douche</span><span class="carte-detail">Remplacement de paroi ou de receveur · Joints silicone</span></a>
+    </article><article class="carte">
+      <a href="/plomberie#baignoire" class="carte-lien" data-libelle="Plomberie en détail"><figure class="media carte-media" data-grok style="--cadrage:50% 55%">
+  <picture>
+    <img src="/assets/images/grok/equip-baignoire-784.webp" srcset="/assets/images/grok/equip-baignoire-480.webp 480w, /assets/images/grok/equip-baignoire-640.webp 640w, /assets/images/grok/equip-baignoire-784.webp 784w" sizes="(max-width: 760px) 72vw, 30vw" alt="" width="784" height="1045" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure><span class="carte-n">02</span><span class="carte-titre">Baignoire</span><span class="carte-detail">Fuite d&#39;arrivée, vidange · Mitigeur, colonnettes</span></a>
+    </article><article class="carte">
+      <a href="/plomberie#lavabo" class="carte-lien" data-libelle="Plomberie en détail"><figure class="media carte-media" data-grok style="--cadrage:50% 55%">
+  <picture>
+    <img src="/assets/images/grok/equip-lavabo-784.webp" srcset="/assets/images/grok/equip-lavabo-480.webp 480w, /assets/images/grok/equip-lavabo-640.webp 640w, /assets/images/grok/equip-lavabo-784.webp 784w" sizes="(max-width: 760px) 72vw, 30vw" alt="" width="784" height="1045" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure><span class="carte-n">03</span><span class="carte-titre">Lavabo</span><span class="carte-detail">Fuite d&#39;arrivée ou d&#39;évacuation · Mitigeur</span></a>
+    </article><article class="carte">
+      <a href="/plomberie#wc" class="carte-lien" data-libelle="Plomberie en détail"><figure class="media carte-media" data-grok style="--cadrage:50% 55%">
+  <picture>
+    <img src="/assets/images/grok/equip-wc-784.webp" srcset="/assets/images/grok/equip-wc-480.webp 480w, /assets/images/grok/equip-wc-640.webp 640w, /assets/images/grok/equip-wc-784.webp 784w" sizes="(max-width: 760px) 72vw, 30vw" alt="" width="784" height="1045" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure><span class="carte-n">04</span><span class="carte-titre">WC</span><span class="carte-detail">Fuite · Chasse d&#39;eau</span></a>
+    </article><article class="carte">
+      <a href="/plomberie#chauffe-eau" class="carte-lien" data-libelle="Plomberie en détail"><figure class="media carte-media" data-grok style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/urgence-chauffe-eau-800.webp" srcset="/assets/images/grok/urgence-chauffe-eau-480.webp 480w, /assets/images/grok/urgence-chauffe-eau-640.webp 640w, /assets/images/grok/urgence-chauffe-eau-800.webp 800w" sizes="(max-width: 760px) 72vw, 30vw" alt="" width="800" height="534" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure><span class="carte-n">05</span><span class="carte-titre">Chauffe-eau</span><span class="carte-detail">Panne ou fuite · Groupe de sécurité</span></a>
+    </article><article class="carte">
+      <a href="/plomberie#cuisine" class="carte-lien" data-libelle="Plomberie en détail"><figure class="media carte-media" data-grok style="--cadrage:50% 55%">
+  <picture>
+    <img src="/assets/images/grok/equip-cuisine-784.webp" srcset="/assets/images/grok/equip-cuisine-480.webp 480w, /assets/images/grok/equip-cuisine-640.webp 640w, /assets/images/grok/equip-cuisine-784.webp 784w" sizes="(max-width: 760px) 72vw, 30vw" alt="" width="784" height="1045" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure><span class="carte-n">06</span><span class="carte-titre">Cuisine</span><span class="carte-detail">Robinet de machine à laver, mitigeur d&#39;évier · Meuble évier, joints silicone</span></a>
+    </article><article class="carte">
+      <a href="/plomberie#fuite" class="carte-lien" data-libelle="Plomberie en détail"><figure class="media carte-media" data-grok style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/urgence-fuite-800.webp" srcset="/assets/images/grok/urgence-fuite-480.webp 480w, /assets/images/grok/urgence-fuite-640.webp 640w, /assets/images/grok/urgence-fuite-800.webp 800w" sizes="(max-width: 760px) 72vw, 30vw" alt="" width="800" height="534" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure><span class="carte-n">07</span><span class="carte-titre">Recherche de fuite</span><span class="carte-detail">Détection par mise en pression · Réparation sur cuivre</span></a>
+    </article>
+  </div>
+  <div class="galerie-progres" aria-hidden="true"><span></span></div>
+</section>
+<section class="pedro clair" id="pedro">
+  <div class="conteneur pedro-grille">
+    <div class="pedro-cachet" data-visuel data-anime="rideau"><img src="/assets/images/logo-budgetravaux.png" alt="Budgetravaux" width="302" height="128"><span class="a-completer">Photo de Pedro : à fournir</span></div>
+    <div>
+      <p class="surtitre" data-anime>Votre interlocuteur</p>
+      <h2 data-anime="lignes">Pedro Ricardo Oliveira</h2>
+      <blockquote class="pedro-citation" data-anime="mots"><p>« Conseil, dépannage, aide pour réaliser tous vos travaux. »</p></blockquote>
+      <p data-anime>Le savoir-faire et l&#39;expérience au service de vos projets, jusqu&#39;à votre complète satisfaction.</p>
+      <ul class="engagements" role="list" data-anime="cascade">
+        <li><svg class="icone icone--coche" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/><path d="M7 12.5l3.2 3.2L17 9" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Devis gratuit et sans engagement</li><li><svg class="icone icone--coche" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/><path d="M7 12.5l3.2 3.2L17 9" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Déplacement inclus</li><li><svg class="icone icone--coche" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/><path d="M7 12.5l3.2 3.2L17 9" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Devis avant intervention</li><li><svg class="icone icone--coche" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/><path d="M7 12.5l3.2 3.2L17 9" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Travail soigné</li><li><svg class="icone icone--coche" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/><path d="M7 12.5l3.2 3.2L17 9" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Garantie sur intervention</li><li><svg class="icone icone--coche" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/><path d="M7 12.5l3.2 3.2L17 9" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Respect des normes en vigueur</li>
+      </ul>
+      <p class="petit a-completer" data-anime>Garantie décennale annoncée · assureur et n° de contrat : à compléter</p>
+    </div>
+  </div>
+</section>
+<section class="estimer sombre" id="estimer">
+  <div class="conteneur estimer-grille">
+    <div>
+      <p class="surtitre" data-anime>Devis en ligne</p>
+      <h2 data-anime="lignes">Chiffrez avant d&#39;appeler.</h2>
+      <p data-anime>Choisissez le métier, la pièce, les postes : le ticket se calcule sur les prix publiés, le reste est chiffré gratuitement.</p>
+      <p data-anime><a href="/devis-en-ligne" class="bouton bouton--appel" data-libelle="Devis en ligne" data-survol="magnetique">Composer mon devis</a></p>
+    </div>
+    <div class="estimer-ticket" data-effet="ticket" data-visuel>
+      <div class="ticket ticket--exemple" data-imprime>
+  <div class="ticket-tete"><span class="ticket-marque">Budgetravaux</span><span class="ticket-num">N° EX</span></div>
+  <p class="ticket-titre">Exemple de calcul</p>
+  <ul class="ticket-lignes" role="list"><li class="ticket-ligne">
+    <span class="ticket-l-texte"><span class="ticket-l-titre">Recherche de fuite</span><span class="ticket-l-detail">Déplacement et 1 h de prestation compris</span></span>
+    <span class="ticket-prix" data-prix><span data-compteur="149">149</span> €</span>
+  </li><li class="ticket-ligne">
+    <span class="ticket-l-texte"><span class="ticket-l-titre">Forfait modification cuivre</span><span class="ticket-l-detail">2 m de cuivre jusqu&#39;au diamètre 22</span></span>
+    <span class="ticket-prix" data-prix><span data-compteur="250">250</span> €</span>
+  </li></ul>
+  <p class="ticket-total"><span>Total</span><span class="ticket-prix" data-prix><span data-compteur="399">399</span> €</span></p>
+  <p class="ticket-pied">TTC à confirmer</p>
+</div>
+    </div>
+  </div>
+</section>
+<section class="fin-appel" id="fin">
+  <figure class="media fin-appel-media" data-grok data-fx="parallaxe" data-fx-force="12" style="--cadrage:60% 50%;--cadrage-mobile:80% 55%">
+  <picture>
+    <img src="/assets/images/grok/accueil-appel-1280.webp" srcset="/assets/images/grok/accueil-appel-640.webp 640w, /assets/images/grok/accueil-appel-1280.webp 1280w, /assets/images/grok/accueil-appel-1600.webp 1600w" sizes="100vw" alt="Porte d&#39;entrée éclairée, de nuit" width="1280" height="854" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+  <div class="conteneur fin-appel-texte">
+    <h2 data-anime="lignes">Un appel, et on arrive.</h2>
+    <p data-anime>07 61 18 33 22 · devis gratuit, déplacement inclus, partout dans l&#39;Oise.</p>
+    <p class="fin-actions" data-anime>
+      <a class="bouton bouton--appel" href="tel:+33761183322" data-survol="magnetique"><svg class="icone" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1L6.6 10.8z" fill="currentColor"/></svg>Appeler le 07 61 18 33 22</a>
+      <a href="/contact#rendez-vous" class="bouton bouton--contour" data-libelle="Contact &amp; RDV" data-survol="magnetique">Prendre rendez-vous</a>
+    </p>
+  </div>
+</section>
+</main>
+<footer class="pied" id="pied">
+  <svg class="pied-reseau" viewBox="0 0 1200 120" preserveAspectRatio="none" aria-hidden="true" data-fx="trace">
+    <path d="M-10 30 H560 q30 0 30 30 v20 q0 22 22 22 h36 q22 0 22-22 V60 q0-30 30-30 H1210" fill="none" stroke="var(--cuivre)" stroke-width="6" stroke-linecap="round"/>
+    <path d="M-10 52 H520 q22 0 22 22 v6" fill="none" stroke="var(--eau)" stroke-width="4" stroke-linecap="round"/>
+  </svg>
+  <div class="conteneur pied-grille">
+    <div class="pied-marque">
+      <p class="pied-logo"><img src="/assets/images/logo-clair.svg" alt="" width="69" height="44"><strong>Budgetravaux</strong></p>
+      <p>Dépannage plomberie, chauffage, électricité et rénovation tous corps d&#39;état dans l&#39;Oise.</p>
+      <p><a class="bouton bouton--appel" href="tel:+33761183322"><svg class="icone" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1L6.6 10.8z" fill="currentColor"/></svg>07 61 18 33 22</a></p>
+    </div>
+    <div>
+      <p class="pied-titre">Adresse</p>
+      <p>9 bis rue de l&#39;Abreuvoir, 60126 Longueil-Sainte-Marie<br>Intervention dans tout le département de l&#39;Oise<br><span class="a-completer">E-mail : à compléter</span></p>
+    </div>
+    <nav aria-label="Sommaire">
+      <p class="pied-titre">Sommaire</p>
+      <ul><li><a href="/" data-libelle="Accueil" aria-current="page">Accueil</a></li><li><a href="/depannage" data-libelle="Dépannage &amp; tarifs">Dépannage &amp; tarifs</a></li><li><a href="/renovation" data-libelle="Rénovation">Rénovation</a></li><li><a href="/plomberie" data-libelle="Plomberie en détail">Plomberie en détail</a></li><li><a href="/devis-en-ligne" data-libelle="Devis en ligne">Devis en ligne</a></li><li><a href="/contact" data-libelle="Contact &amp; RDV">Contact &amp; RDV</a></li></ul>
+    </nav>
+    <div>
+      <p class="pied-titre">Confort</p>
+      <ul>
+        <li><button type="button" class="lien" data-calme-bascule data-libelle-reduire="Réduire les animations" data-libelle-retablir="Rétablir les animations" data-libelle-systeme="Animations réduites par le réglage de votre appareil"><span data-libelle-bouton>Réduire les animations</span></button></li>
+        <li><a href="#haut" data-sans-transition>Retour en haut</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="conteneur pied-bas">
+    <p>Maquette : les informations marquées « à compléter » seront fournies par Budgetravaux.</p>
+    <p class="a-completer">Mentions légales : à compléter · Politique de confidentialité : à compléter</p>
+    <p>Entreprise individuelle de Pedro Ricardo Dos Reis Oliveira · SIRET : à confirmer · © Budgetravaux</p>
+  </div>
+</footer>
+<div data-barre-fixe>
+  <a class="bouton bouton--appel" href="tel:+33761183322"><svg class="icone" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1L6.6 10.8z" fill="currentColor"/></svg>Appeler</a>
+  <a class="bouton bouton--contour" href="/devis-en-ligne" data-libelle="Devis en ligne">Devis en ligne</a>
+</div>
+</body>
+</html>

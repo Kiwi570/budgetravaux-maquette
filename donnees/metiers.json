@@ -1,0 +1,107 @@
+[
+ {
+  "cle": "plomberie",
+  "titre": "Plomberie",
+  "court": "Eau, évacuation, sanitaires",
+  "image": "grok/metier-plomberie",
+  "postes": [
+   "Baignoire, douche classique ou à l'italienne, cabine de 1 à 3 parois",
+   "Lavabo, vasque, lave-mains, évier inox ou grès émaillé",
+   "WC classique, suspendu ou sanibroyeur",
+   "Chauffe-eau électrique de 75, 100 ou 150 litres",
+   "Arrivées d'eau chaude et froide, évacuations PVC de 32 à 100 mm",
+   "Salle de bain clé en main"
+  ],
+  "etiquette": "Plomberie"
+ },
+ {
+  "cle": "chauffage",
+  "titre": "Chauffage",
+  "court": "Chauffe-eau, chaudière, radiateurs",
+  "image": "grok/metier-chauffage",
+  "postes": [
+   "Dépannage de chauffe-eau et de chaudière",
+   "Recherche de panne et remise en route, chaudières jusqu'à 45 kW",
+   "Radiateurs : détail à compléter"
+  ],
+  "etiquette": "Chauffage"
+ },
+ {
+  "cle": "electricite",
+  "titre": "Électricité",
+  "court": "Tableau, prises, éclairage",
+  "image": "grok/metier-electricite",
+  "postes": [
+   "Tableau électrique, du studio au 6 pièces avec 2 salles de bain",
+   "Prises 16 A, 20 A et 32 A, prises télévision, téléphone et RJ45",
+   "Points lumineux, interrupteurs, va-et-vient, variateurs",
+   "Interphone, motorisation de portail, rideau électrique",
+   "Mise en conformité"
+  ],
+  "etiquette": "Électricité"
+ },
+ {
+  "cle": "platrerie",
+  "titre": "Plâtrerie et isolation",
+  "court": "Cloisons, doublages, faux plafonds",
+  "image": "grok/metier-platrerie",
+  "postes": [
+   "Cloisons en carreaux de plâtre 5 ou 7 cm, ou en BA 13, standard ou hydrofuge",
+   "Doublages collés ou sur ossature, laine de roche, de verre ou isolants naturels",
+   "Faux plafonds en plaques ou en dalles 60 × 60",
+   "Cloisons en pavés de verre",
+   "Isolation phonique, liège, isolation de tuyauterie"
+  ],
+  "etiquette": "Plâtrerie"
+ },
+ {
+  "cle": "maconnerie",
+  "titre": "Maçonnerie",
+  "court": "Gros œuvre et reprises",
+  "image": "grok/metier-maconnerie",
+  "postes": [
+   "Détail des travaux de maçonnerie : à compléter"
+  ],
+  "etiquette": "Maçonnerie"
+ },
+ {
+  "cle": "murs",
+  "titre": "Murs et plafonds",
+  "court": "Peinture, papier peint, faïence",
+  "image": "grok/metier-murs",
+  "postes": [
+   "Dépose de carrelage, de papier peint ou d'enduit",
+   "Préparation selon l'état des murs et des plafonds",
+   "Peinture mate, satinée ou brillante, peintures décoratives",
+   "Papier peint, toile de verre, faïence et pâte de verre",
+   "Peinture des plinthes, fenêtres, portes et radiateurs"
+  ],
+  "etiquette": "Murs"
+ },
+ {
+  "cle": "sols",
+  "titre": "Revêtements de sols",
+  "court": "Carrelage, lino",
+  "image": "grok/metier-sols",
+  "postes": [
+   "Pose de carrelage 30 × 30 à 40 cm : à partir de 30 € le m²",
+   "Lino antidérapant : à partir de 30 € le m²",
+   "Autres revêtements : détail à compléter"
+  ],
+  "etiquette": "Sols"
+ },
+ {
+  "cle": "menuiserie",
+  "titre": "Menuiserie",
+  "court": "Portes, fenêtres, escaliers",
+  "image": "grok/metier-menuiserie",
+  "postes": [
+   "Portes blindées 3 ou 5 points, portes intérieures battantes ou coulissantes",
+   "Fenêtres et portes-fenêtres PVC, bois ou aluminium, volets roulants",
+   "Fenêtres de toit 55 × 78, 78 × 98, 114 × 118 cm",
+   "Escaliers droits, quart tournant ou hélicoïdaux",
+   "Planchers sapin, bois exotique ou chêne"
+  ],
+  "etiquette": "Menuiserie"
+ }
+]

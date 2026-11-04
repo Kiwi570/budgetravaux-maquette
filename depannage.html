@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="fr" data-v="1" data-curseur>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dépannage et tarifs : Budgetravaux, Oise (60)</title>
+<meta name="description" content="Huit forfaits publiés : recherche de fuite 149 €, caméra thermique 299 €, soir et week-end 199 €. Déplacement compris, devis avant intervention.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://budgetravaux-maquette.vercel.app/depannage">
+<style>:root{--fond:#121417;--texte:#f1eee8;--voile-fond:#0b0c0e;--ouverture-fond:#0b0c0e;--menu-fond:#121417}:root { --entete-h: 72px; --barres-h: 0px; } html { background: var(--fond); color: var(--texte); scrollbar-gutter: stable; } body { margin: 0; background: var(--fond); } html.js:not(.calme):not(.secours):not([data-arrivee="retour"]) [data-anime] { opacity: 0; } html.js:not(.calme):not(.secours):not([data-arrivee="retour"]) [data-anime].vu { opacity: 1; } [data-voile] { position: fixed; inset: 0; z-index: 900; background: var(--voile-fond); transform: translateY(100%); visibility: hidden; pointer-events: none; } html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) [data-voile] { transform: none; visibility: visible; } html.calme [data-voile], html.secours [data-voile] { visibility: hidden !important; } .ouverture-panneau { position: fixed; inset: 0; z-index: 850; display: none; place-content: center; justify-items: center; background: var(--ouverture-fond, var(--voile-fond)); color: var(--fond); text-align: center; } html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) .ouverture-panneau { display: grid; } html.defilement-bloque, html.defilement-bloque body, html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie), html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) body, html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours), html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) body { overflow: hidden; } html.js[data-arrivee="intro"]:not(.calme):not(.secours):not(.intro-finie) { background-color: var(--ouverture-fond, var(--voile-fond)); } html[data-arrivee="voile"]:not(.voile-leve):not(.calme):not(.secours) { background-color: var(--voile-fond); }</style>
+<script>(function () {
+var d = document.documentElement, ss = null, ls = null;
+try { ss = window.sessionStorage; ls = window.localStorage; } catch (e) {}
+d.classList.add('js');
+var calme = false;
+try { calme = !!ls && ls.getItem('socle:calme') === 'oui'; } catch (e) {}
+if (!calme && window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) calme = true;
+if (calme) d.classList.add('calme');
+var nav = performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
+var type = nav ? nav.type : 'navigate';
+var depart = null;
+try { depart = JSON.parse(ss.getItem('socle:depart') || 'null'); ss.removeItem('socle:depart'); } catch (e) {}
+if (depart && !(Date.now() - depart.t < 15000)) depart = null;
+var retourSection = false;
+try { retourSection = !!ss.getItem('socle:calme-retour'); } catch (e) {}
+var mode = type === 'back_forward' || retourSection ? 'retour' : type === 'reload' ? 'intro' : depart ? 'voile' : 'intro';
+d.setAttribute('data-arrivee', mode);
+if (mode === 'voile' && depart.couleur) d.style.setProperty('--voile-fond', depart.couleur);
+if (type === 'reload' && 'scrollRestoration' in history) {
+if (!retourSection) history.scrollRestoration = 'manual';
+}
+try {
+var choisie = ls && ls.getItem('socle:langue');
+var langue = (d.lang || '').slice(0, 2);
+if (choisie && choisie !== langue && type === 'navigate' && !depart) {
+var alt = document.querySelector('link[rel="alternate"][hreflang="' + choisie + '"]');
+if (alt) location.replace(new URL(alt.href).pathname + location.search + location.hash);
+}
+} catch (e) {}
+setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
+})();</script>
+<link rel="preload" href="/assets/polices/bricolage.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/polices/dm-sans.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/socle.css?v=1">
+<link rel="stylesheet" href="/assets/css/site.css?v=1">
+<link rel="modulepreload" href="/assets/js/site.js?v=1">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<script src="/assets/vendor/gsap.min.js" defer></script>
+<script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="/assets/vendor/SplitText.min.js" defer></script>
+<script type="module" src="/assets/js/site.js?v=1"></script>
+<meta name="theme-color" content="#121417">
+<link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Budgetravaux">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Dépannage et tarifs : Budgetravaux, Oise (60)">
+<meta property="og:description" content="Huit forfaits publiés : recherche de fuite 149 €, caméra thermique 299 €, soir et week-end 199 €. Déplacement compris, devis avant intervention.">
+<meta property="og:url" content="https://budgetravaux-maquette.vercel.app/depannage">
+<meta property="og:image" content="https://budgetravaux-maquette.vercel.app/assets/partage/depannage-fr.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Forfaits de dépannage Budgetravaux">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Plumber","name":"Budgetravaux","url":"https://budgetravaux-maquette.vercel.app/","telephone":"+33761183322","founder":{"@type":"Person","name":"Pedro Ricardo Dos Reis Oliveira"},"address":{"@type":"PostalAddress","streetAddress":"9 bis rue de l'Abreuvoir","postalCode":"60126","addressLocality":"Longueil-Sainte-Marie","addressCountry":"FR"},"areaServed":{"@type":"AdministrativeArea","name":"Oise (60)"},"description":"Dépannage plomberie, chauffage et électricité, rénovation tous corps d'état dans l'Oise. Devis gratuit, déplacement inclus."}</script>
+</head>
+<body id="haut">
+<div data-voile aria-hidden="true"><div class="voile-contenu"><img src="/assets/images/logo-clair.svg" alt="" width="88" height="56"><span data-voile-libelle>Dépannage &amp; tarifs</span></div></div>
+<div class="ouverture-panneau" data-ouverture aria-hidden="true">
+  <div class="ouverture-faisceau"></div>
+  <img class="ouverture-logo" src="/assets/images/logo-clair.svg" alt="" width="113" height="72">
+  <p class="ouverture-nom">Budgetravaux</p>
+  <p class="ouverture-ligne">Dépannage et rénovation · Oise (60)</p>
+</div>
+<a class="evitement" href="#contenu">Aller au contenu</a>
+<header data-entete>
+  <div class="entete-rangee">
+    <a class="entete-logo" href="/" data-libelle="Accueil">
+      <img src="/assets/images/logo-clair.svg" alt="" width="63" height="40"><span><span class="logo-b">Budget</span><span class="logo-r">ravaux</span></span>
+    </a>
+    <nav data-nav aria-label="Navigation principale">
+      <ul><li><a href="/depannage" data-libelle="Dépannage &amp; tarifs" aria-current="page">Dépannage &amp; tarifs</a></li><li><a href="/renovation" data-libelle="Rénovation">Rénovation</a></li><li><a href="/plomberie" data-libelle="Plomberie en détail">Plomberie en détail</a></li><li><a href="/devis-en-ligne" data-libelle="Devis en ligne">Devis en ligne</a></li><li><a href="/contact" data-libelle="Contact &amp; RDV">Contact &amp; RDV</a></li></ul>
+    </nav>
+    <div class="entete-actions">
+      <a class="bouton bouton--appel" href="tel:+33761183322" aria-label="Appeler le 07 61 18 33 22"><svg class="icone" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1L6.6 10.8z" fill="currentColor"/></svg><span>07 61 18 33 22</span></a>
+      <button type="button" data-menu-bouton aria-controls="menu" aria-expanded="false" data-libelle-ouvrir="Menu" data-libelle-fermer="Fermer"><span data-libelle-bouton>Menu</span></button>
+    </div>
+  </div>
+</header>
+<div id="menu" data-menu role="dialog" aria-modal="true" aria-label="Menu">
+  <ul><li style="--i:0"><a href="/" class="menu-lien" data-libelle="Accueil">Accueil</a></li><li style="--i:1"><a href="/depannage" class="menu-lien" data-libelle="Dépannage &amp; tarifs" aria-current="page">Dépannage &amp; tarifs</a></li><li style="--i:2"><a href="/renovation" class="menu-lien" data-libelle="Rénovation">Rénovation</a></li><li style="--i:3"><a href="/plomberie" class="menu-lien" data-libelle="Plomberie en détail">Plomberie en détail</a></li><li style="--i:4"><a href="/devis-en-ligne" class="menu-lien" data-libelle="Devis en ligne">Devis en ligne</a></li><li style="--i:5"><a href="/contact" class="menu-lien" data-libelle="Contact &amp; RDV">Contact &amp; RDV</a></li></ul>
+  <p class="menu-actions"><a class="bouton bouton--appel" href="tel:+33761183322"><svg class="icone" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1L6.6 10.8z" fill="currentColor"/></svg>Appeler le 07 61 18 33 22</a> <a href="/devis-en-ligne" class="bouton bouton--contour" data-libelle="Devis en ligne">Devis en ligne</a></p>
+  <p><button type="button" class="lien" data-calme-bascule data-libelle-reduire="Réduire les animations" data-libelle-retablir="Rétablir les animations" data-libelle-systeme="Animations réduites par le réglage de votre appareil"><span data-libelle-bouton>Réduire les animations</span></button></p>
+</div>
+<main id="contenu" tabindex="-1">
+<section class="page-tete" id="debut">
+  <figure class="media page-tete-fond" data-grok data-fx="onde" style="--cadrage:62% 55%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/depannage-ouverture-mobile-640.webp 640w, /assets/images/grok/depannage-ouverture-mobile-960.webp 960w" sizes="100vw">
+    <img src="/assets/images/grok/depannage-ouverture-1280.webp" srcset="/assets/images/grok/depannage-ouverture-640.webp 640w, /assets/images/grok/depannage-ouverture-1280.webp 1280w, /assets/images/grok/depannage-ouverture-1600.webp 1600w" sizes="100vw" alt="Tuyaux sous un évier éclairés par une lampe torche" width="1280" height="720" fetchpriority="high" loading="eager" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+  <div class="conteneur page-tete-texte">
+    <p class="surtitre pt-anim" data-anime="gsap">Dépannage · Oise (60)</p>
+    <h1 class="pt-anim pt-titre" data-anime="gsap">Plomberie, chauffage, électricité : on répare.</h1>
+    <p class="pt-anim" data-anime="gsap">Fuite d&#39;eau, canalisation, robinetterie, panne électrique, chauffe-eau et chaudière. Intervention sur simple appel, déplacement compris.</p>
+    <p class="hero-actions pt-anim" data-anime="gsap"><a class="bouton bouton--appel" href="tel:+33761183322" data-action-principale data-survol="magnetique"><svg class="icone" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1L6.6 10.8z" fill="currentColor"/></svg>Appeler le 07 61 18 33 22</a></p>
+    <p class="hero-info pt-anim" data-info-cle data-anime="gsap">Recherche de fuite : 149 €, déplacement compris</p>
+  </div>
+</section>
+<section class="forfaits clair" id="forfaits">
+  <div class="conteneur">
+    <header class="tete-section tete-section--large">
+      <p class="surtitre" data-anime>Tarifs publiés</p>
+      <h2 data-anime="lignes">Huit forfaits, sans surprise.</h2>
+      <p data-anime>Le devis est remis avant toute intervention, quel que soit le montant. <span class="a-completer">TTC à confirmer</span></p>
+    </header>
+    <ul class="tickets" role="list" data-effet="ticket" data-visuel>
+      <li id="forfait-fuite"><div class="ticket ticket--grille" data-imprime>
+  <div class="ticket-tete"><span class="ticket-marque">Budgetravaux</span><span class="ticket-num">N° 01</span></div>
+  <ul class="ticket-lignes" role="list"><li class="ticket-ligne">
+    <span class="ticket-l-texte"><span class="ticket-l-titre">Recherche de fuite</span><span class="ticket-l-detail">Déplacement et 1 h de prestation compris</span></span>
+    <span class="ticket-prix" data-prix><span data-compteur="149">149</span> €</span>
+  </li></ul>
+  <p class="ticket-pied">TTC à confirmer</p>
+</div></li><li id="forfait-thermique"><div class="ticket ticket--grille" data-imprime>
+  <div class="ticket-tete"><span class="ticket-marque">Budgetravaux</span><span class="ticket-num">N° 02</span></div>
+  <ul class="ticket-lignes" role="list"><li class="ticket-ligne">
+    <span class="ticket-l-texte"><span class="ticket-l-titre">Recherche de fuite approfondie</span><span class="ticket-l-detail">Avec caméra thermique</span></span>
+    <span class="ticket-prix" data-prix><span data-compteur="299">299</span> €</span>
+  </li></ul>
+  <p class="ticket-pied">TTC à confirmer</p>
+</div></li><li id="forfait-soir"><div class="ticket ticket--grille" data-imprime>
+  <div class="ticket-tete"><span class="ticket-marque">Budgetravaux</span><span class="ticket-num">N° 03</span></div>
+  <ul class="ticket-lignes" role="list"><li class="ticket-ligne">
+    <span class="ticket-l-texte"><span class="ticket-l-titre">Fuite le soir, le week-end, les jours fériés</span><span class="ticket-l-detail">Recherche ou réparation après 20 h, le week-end et les jours fériés</span></span>
+    <span class="ticket-prix" data-prix><span data-compteur="199">199</span> €</span>
+  </li></ul>
+  <p class="ticket-pied">TTC à confirmer</p>
+</div></li><li id="forfait-degorgement"><div class="ticket ticket--grille" data-imprime>
+  <div class="ticket-tete"><span class="ticket-marque">Budgetravaux</span><span class="ticket-num">N° 04</span></div>
+  <ul class="ticket-lignes" role="list"><li class="ticket-ligne">
+    <span class="ticket-l-texte"><span class="ticket-l-titre">Dégorgement avec pompe</span><span class="ticket-l-detail">Canalisation bouchée</span></span>
+    <span class="ticket-prix" data-prix><span data-compteur="149">149</span> €</span>
+  </li></ul>
+  <p class="ticket-pied">TTC à confirmer</p>
+</div></li><li id="forfait-pvc"><div class="ticket ticket--grille" data-imprime>
+  <div class="ticket-tete"><span class="ticket-marque">Budgetravaux</span><span class="ticket-num">N° 05</span></div>
+  <ul class="ticket-lignes" role="list"><li class="ticket-ligne">
+    <span class="ticket-l-texte"><span class="ticket-l-titre">Forfait modification PVC</span><span class="ticket-l-detail">2 m de PVC jusqu&#39;au diamètre 50, colle comprise</span></span>
+    <span class="ticket-prix" data-prix><span data-compteur="230">230</span> €</span>
+  </li></ul>
+  <p class="ticket-pied">TTC à confirmer</p>
+</div></li><li id="forfait-cuivre"><div class="ticket ticket--grille" data-imprime>
+  <div class="ticket-tete"><span class="ticket-marque">Budgetravaux</span><span class="ticket-num">N° 06</span></div>
+  <ul class="ticket-lignes" role="list"><li class="ticket-ligne">
+    <span class="ticket-l-texte"><span class="ticket-l-titre">Forfait modification cuivre</span><span class="ticket-l-detail">2 m de cuivre jusqu&#39;au diamètre 22</span></span>
+    <span class="ticket-prix" data-prix><span data-compteur="250">250</span> €</span>
+  </li></ul>
+  <p class="ticket-pied">TTC à confirmer</p>
+</div></li><li id="forfait-ballon"><div class="ticket ticket--grille" data-imprime>
+  <div class="ticket-tete"><span class="ticket-marque">Budgetravaux</span><span class="ticket-num">N° 07</span></div>
+  <ul class="ticket-lignes" role="list"><li class="ticket-ligne">
+    <span class="ticket-l-texte"><span class="ticket-l-titre">Recherche de panne ballon ou chaudière</span><span class="ticket-l-detail">Chaudières jusqu&#39;à 45 kW, diagnostic et remise en route compris</span></span>
+    <span class="ticket-prix" data-prix><span data-compteur="149">149</span> €</span>
+  </li></ul>
+  <p class="ticket-pied">TTC à confirmer</p>
+</div></li><li id="forfait-main-oeuvre"><div class="ticket ticket--grille" data-imprime>
+  <div class="ticket-tete"><span class="ticket-marque">Budgetravaux</span><span class="ticket-num">N° 08</span></div>
+  <ul class="ticket-lignes" role="list"><li class="ticket-ligne">
+    <span class="ticket-l-texte"><span class="ticket-l-titre">Main-d&#39;œuvre supplémentaire</span><span class="ticket-l-detail">Au-delà du temps compris dans le forfait</span></span>
+    <span class="ticket-prix" data-prix><span data-compteur="70">70</span> €</span>
+  </li></ul>
+  <p class="ticket-pied">TTC à confirmer</p>
+</div></li>
+    </ul>
+  </div>
+</section>
+<section class="thermique bloc sombre" id="thermique">
+  <div class="conteneur bloc-grille">
+    <div>
+      <p class="surtitre" data-anime>Fuite invisible</p>
+      <h2 data-anime="lignes">La caméra thermique repère la fuite derrière le mur.</h2>
+      <p data-anime>Une tache d&#39;humidité sans origine ? La recherche approfondie aide à localiser la fuite avant d&#39;ouvrir.</p>
+      <div data-anime><div class="ticket ">
+  <div class="ticket-tete"><span class="ticket-marque">Budgetravaux</span><span class="ticket-num">N° 02</span></div>
+  <ul class="ticket-lignes" role="list"><li class="ticket-ligne">
+    <span class="ticket-l-texte"><span class="ticket-l-titre">Recherche de fuite approfondie</span><span class="ticket-l-detail">Avec caméra thermique</span></span>
+    <span class="ticket-prix" data-prix><span data-compteur="299">299</span> €</span>
+  </li></ul>
+  <p class="ticket-pied">TTC à confirmer</p>
+</div></div>
+    </div>
+    <figure class="thermique-figure" data-anime>
+      <div class="thermique-scene" data-effet="thermique" data-souris role="img" aria-label="Démonstration de la caméra thermique">
+        <figure class="media thermique-mur" data-grok style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/depannage-mur-1280.webp" srcset="/assets/images/grok/depannage-mur-640.webp 640w, /assets/images/grok/depannage-mur-1280.webp 1280w, /assets/images/grok/depannage-mur-1600.webp 1600w" sizes="(max-width: 860px) 100vw, 50vw" alt="Mur de salon blanc, vide" width="1280" height="720" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+        <canvas class="thermique-canvas" aria-hidden="true" data-audit-ignorer></canvas>
+        <span class="thermique-viseur" aria-hidden="true" data-audit-ignorer></span>
+        <p class="thermique-statut" aria-live="polite" data-trouve="Fuite localisée">Démonstration illustrative</p>
+      </div>
+      <figcaption class="thermique-legende petit"><span><span class="indice-souris">Passez la caméra sur le mur</span><span class="indice-doigt">Faites glisser la caméra sur le mur</span></span><span>15 °C<span class="thermique-echelle" aria-hidden="true"></span>30 °C</span></figcaption>
+    </figure>
+  </div>
+</section>
+<section class="horloge-section bloc" id="soir-week-end">
+  <figure class="media horloge-fond" data-grok data-fx="parallaxe" data-fx-force="8" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/depannage-nuit-1280.webp" srcset="/assets/images/grok/depannage-nuit-640.webp 640w, /assets/images/grok/depannage-nuit-1280.webp 1280w, /assets/images/grok/depannage-nuit-1600.webp 1600w" sizes="100vw" alt="" width="1280" height="854" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+  <div class="conteneur horloge-grille" data-effet="horloge" data-lib-jour="Forfait de journée" data-lib-soir="Forfait soir, week-end et jours fériés" data-lib-nuit="Avant 8 h : tarif à confirmer">
+    <div>
+      <p class="surtitre" data-anime>Soir, week-end, jours fériés</p>
+      <h2 data-anime="lignes">Après 20 h, on vient aussi.</h2>
+      <p data-anime>Tournez l&#39;aiguille ou choisissez le jour : le ticket affiche le forfait de recherche de fuite qui s&#39;applique.</p>
+      <div class="horloge-reglages" data-anime>
+        <fieldset class="choix-jours">
+          <legend>Jour de l&#39;appel</legend>
+          <label class="puce"><input type="radio" name="jour-tarif" value="semaine" checked><span>En semaine</span></label><label class="puce"><input type="radio" name="jour-tarif" value="weekend"><span>Week-end</span></label><label class="puce"><input type="radio" name="jour-tarif" value="ferie"><span>Jour férié</span></label>
+        </fieldset>
+        <label for="heure-tarif">Heure de l&#39;appel&nbsp;: <span class="horloge-heure" data-heure>14 h 00</span></label>
+        <input id="heure-tarif" type="range" min="0" max="23.75" step="0.25" value="14">
+        <p class="petit a-completer">Horaires d&#39;intervention : à compléter</p>
+      </div>
+    </div>
+    <div class="horloge" aria-hidden="true" data-anime>
+      <svg viewBox="0 0 300 300">
+        <circle class="horloge-cadran" cx="150" cy="150" r="140"/>
+        <path class="horloge-soir" d="M47.8 91.0 A118 118 0 0 1 150.0 32.0"/><path class="horloge-nuit" d="M150.6 32.0 A118 118 0 0 1 252.2 209.0"/>
+        <g class="horloge-heures"><text x="150.0" y="46.0">0</text><text x="202.0" y="59.9">2</text><text x="240.1" y="98.0">4</text><text x="254.0" y="150.0">6</text><text x="240.1" y="202.0">8</text><text x="202.0" y="240.1">10</text><text x="150.0" y="254.0">12</text><text x="98.0" y="240.1">14</text><text x="59.9" y="202.0">16</text><text x="46.0" y="150.0">18</text><text x="59.9" y="98.0">20</text><text x="98.0" y="59.9">22</text></g>
+        <g class="horloge-minutes"><path d="M150 150 L150 80"/></g><g class="horloge-aiguille"><path d="M150 150 L150 90"/><circle cx="150" cy="150" r="11"/></g>
+      </svg>
+    </div>
+    <div class="horloge-ticket" aria-live="polite">
+      <div class="ticket ticket--horloge">
+  <div class="ticket-tete"><span class="ticket-marque">Budgetravaux</span><span class="ticket-num">N° 01</span></div>
+  <ul class="ticket-lignes" role="list"><li class="ticket-ligne">
+    <span class="ticket-l-texte"><span class="ticket-l-titre">Recherche de fuite</span><span class="ticket-l-detail">Forfait de journée</span></span>
+    <span class="ticket-prix" data-prix><span data-compteur="149">149</span> €</span>
+  </li></ul>
+  <p class="ticket-pied">TTC à confirmer</p>
+</div>
+    </div>
+  </div>
+</section>
+<section class="pannes bloc clair" id="pannes">
+  <div class="conteneur">
+    <header class="tete-section">
+      <h2 data-anime="lignes">Les dépannages les plus courants.</h2>
+      <p data-anime>Tirés de la liste des interventions de Budgetravaux.</p>
+    </header>
+    <ul class="pannes-liste" role="list" data-anime="cascade">
+      <li class="panne">
+        <figure class="media panne-media" data-grok style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/equip-douche-784.webp" srcset="/assets/images/grok/equip-douche-480.webp 480w, /assets/images/grok/equip-douche-640.webp 640w, /assets/images/grok/equip-douche-784.webp 784w" sizes="(max-width: 760px) 90vw, 280px" alt="" width="784" height="1045" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+        <div><h3>Douche</h3><p>Paroi, joints silicone, receveur, mitigeur, pompe de relevage, fuite, débouchage.</p></div>
+      </li><li class="panne">
+        <figure class="media panne-media" data-grok style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/equip-baignoire-784.webp" srcset="/assets/images/grok/equip-baignoire-480.webp 480w, /assets/images/grok/equip-baignoire-640.webp 640w, /assets/images/grok/equip-baignoire-784.webp 784w" sizes="(max-width: 760px) 90vw, 280px" alt="" width="784" height="1045" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+        <div><h3>Baignoire</h3><p>Fuite d&#39;arrivée, vidange, mitigeur, colonnettes, joints, pare-bain, débouchage.</p></div>
+      </li><li class="panne">
+        <figure class="media panne-media" data-grok style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/equip-lavabo-784.webp" srcset="/assets/images/grok/equip-lavabo-480.webp 480w, /assets/images/grok/equip-lavabo-640.webp 640w, /assets/images/grok/equip-lavabo-784.webp 784w" sizes="(max-width: 760px) 90vw, 280px" alt="" width="784" height="1045" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+        <div><h3>Lavabo</h3><p>Fuite d&#39;arrivée ou d&#39;évacuation, mitigeur, remplacement, joints, débouchage.</p></div>
+      </li><li class="panne">
+        <figure class="media panne-media" data-grok style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/equip-wc-784.webp" srcset="/assets/images/grok/equip-wc-480.webp 480w, /assets/images/grok/equip-wc-640.webp 640w, /assets/images/grok/equip-wc-784.webp 784w" sizes="(max-width: 760px) 90vw, 280px" alt="" width="784" height="1045" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+        <div><h3>WC</h3><p>Fuite, chasse d&#39;eau, broyeur, remplacement, débouchage.</p></div>
+      </li><li class="panne">
+        <figure class="media panne-media" data-grok style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/urgence-chauffe-eau-800.webp" srcset="/assets/images/grok/urgence-chauffe-eau-480.webp 480w, /assets/images/grok/urgence-chauffe-eau-640.webp 640w, /assets/images/grok/urgence-chauffe-eau-800.webp 800w" sizes="(max-width: 760px) 90vw, 280px" alt="" width="800" height="534" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+        <div><h3>Chauffe-eau</h3><p>Panne, fuite, groupe de sécurité, réducteur de pression, remplacement.</p></div>
+      </li><li class="panne">
+        <figure class="media panne-media" data-grok style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/equip-cuisine-784.webp" srcset="/assets/images/grok/equip-cuisine-480.webp 480w, /assets/images/grok/equip-cuisine-640.webp 640w, /assets/images/grok/equip-cuisine-784.webp 784w" sizes="(max-width: 760px) 90vw, 280px" alt="" width="784" height="1045" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+        <div><h3>Cuisine</h3><p>Robinets, meuble évier, broyeur, fuite, arrivée et évacuation pour machine.</p></div>
+      </li><li class="panne">
+        <figure class="media panne-media" data-grok style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/urgence-electricite-800.webp" srcset="/assets/images/grok/urgence-electricite-480.webp 480w, /assets/images/grok/urgence-electricite-640.webp 640w, /assets/images/grok/urgence-electricite-800.webp 800w" sizes="(max-width: 760px) 90vw, 280px" alt="" width="800" height="534" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+        <div><h3>Électricité</h3><p>Panne électrique, prises, points lumineux, tableau, mise en conformité.</p></div>
+      </li>
+    </ul>
+  </div>
+</section>
+<section class="faq bloc sombre" id="faq">
+  <div class="conteneur faq-grille">
+    <div>
+      <h2 data-anime="lignes">Questions fréquentes.</h2>
+      <details class="faq-item" data-anime><summary>Le déplacement est-il payant ?</summary><p>Non. Le déplacement est toujours compté dans les tarifs et les devis.</p></details><details class="faq-item" data-anime><summary>Faites-vous un devis avant d&#39;intervenir ?</summary><p>Oui. Le devis est gratuit, sans engagement, et remis avant toute intervention.</p></details><details class="faq-item" data-anime><summary>Intervenez-vous le soir et le week-end ?</summary><p>Oui, pour les fuites : forfait de 199 € après 20 h, le week-end et les jours fériés.</p></details><details class="faq-item" data-anime><summary>Dans quelles communes intervenez-vous ?</summary><p>Dans tout le département de l&#39;Oise : Beauvais, Compiègne, Creil, Senlis, Chantilly, Nogent-sur-Oise, Noyon, Pont-Sainte-Maxence, Méru, Crépy-en-Valois, Chambly, Clermont et les communes alentour.</p></details><details class="faq-item" data-anime><summary>Êtes-vous assuré ?</summary><p>Budgetravaux annonce une garantie décennale et une assurance de responsabilité professionnelle. Assureur et numéro de contrat : à compléter.</p></details>
+    </div>
+    <figure class="media faq-media" data-grok data-fx="parallaxe" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/urgence-robinet-800.webp" srcset="/assets/images/grok/urgence-robinet-480.webp 480w, /assets/images/grok/urgence-robinet-640.webp 640w, /assets/images/grok/urgence-robinet-800.webp 800w" sizes="(max-width: 860px) 100vw, 35vw" alt="" width="800" height="534" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+  </div>
+</section>
+<section class="fin-courte clair" id="fin">
+  <div class="conteneur fin-courte-grille">
+    <div>
+      <h2 data-anime="lignes">Une fuite en ce moment ?</h2>
+      <p data-anime>Appelez, une estimation peut se faire par téléphone.</p>
+      <p class="fin-actions" data-anime>
+        <a class="bouton bouton--appel" href="tel:+33761183322" data-survol="magnetique"><svg class="icone" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1L6.6 10.8z" fill="currentColor"/></svg>Appeler le 07 61 18 33 22</a>
+        <a href="/devis-en-ligne" class="bouton bouton--contour" data-libelle="Devis en ligne" data-survol="magnetique">Devis en ligne</a>
+      </p>
+    </div>
+    <figure class="media fin-courte-media" data-grok data-anime="rideau" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/urgence-canalisation-800.webp" srcset="/assets/images/grok/urgence-canalisation-480.webp 480w, /assets/images/grok/urgence-canalisation-640.webp 640w, /assets/images/grok/urgence-canalisation-800.webp 800w" sizes="(max-width: 860px) 100vw, 40vw" alt="" width="800" height="534" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+  </div>
+</section>
+</main>
+<footer class="pied" id="pied">
+  <svg class="pied-reseau" viewBox="0 0 1200 120" preserveAspectRatio="none" aria-hidden="true" data-fx="trace">
+    <path d="M-10 30 H560 q30 0 30 30 v20 q0 22 22 22 h36 q22 0 22-22 V60 q0-30 30-30 H1210" fill="none" stroke="var(--cuivre)" stroke-width="6" stroke-linecap="round"/>
+    <path d="M-10 52 H520 q22 0 22 22 v6" fill="none" stroke="var(--eau)" stroke-width="4" stroke-linecap="round"/>
+  </svg>
+  <div class="conteneur pied-grille">
+    <div class="pied-marque">
+      <p class="pied-logo"><img src="/assets/images/logo-clair.svg" alt="" width="69" height="44"><strong>Budgetravaux</strong></p>
+      <p>Dépannage plomberie, chauffage, électricité et rénovation tous corps d&#39;état dans l&#39;Oise.</p>
+      <p><a class="bouton bouton--appel" href="tel:+33761183322"><svg class="icone" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1L6.6 10.8z" fill="currentColor"/></svg>07 61 18 33 22</a></p>
+    </div>
+    <div>
+      <p class="pied-titre">Adresse</p>
+      <p>9 bis rue de l&#39;Abreuvoir, 60126 Longueil-Sainte-Marie<br>Intervention dans tout le département de l&#39;Oise<br><span class="a-completer">E-mail : à compléter</span></p>
+    </div>
+    <nav aria-label="Sommaire">
+      <p class="pied-titre">Sommaire</p>
+      <ul><li><a href="/" data-libelle="Accueil">Accueil</a></li><li><a href="/depannage" data-libelle="Dépannage &amp; tarifs" aria-current="page">Dépannage &amp; tarifs</a></li><li><a href="/renovation" data-libelle="Rénovation">Rénovation</a></li><li><a href="/plomberie" data-libelle="Plomberie en détail">Plomberie en détail</a></li><li><a href="/devis-en-ligne" data-libelle="Devis en ligne">Devis en ligne</a></li><li><a href="/contact" data-libelle="Contact &amp; RDV">Contact &amp; RDV</a></li></ul>
+    </nav>
+    <div>
+      <p class="pied-titre">Confort</p>
+      <ul>
+        <li><button type="button" class="lien" data-calme-bascule data-libelle-reduire="Réduire les animations" data-libelle-retablir="Rétablir les animations" data-libelle-systeme="Animations réduites par le réglage de votre appareil"><span data-libelle-bouton>Réduire les animations</span></button></li>
+        <li><a href="#haut" data-sans-transition>Retour en haut</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="conteneur pied-bas">
+    <p>Maquette : les informations marquées « à compléter » seront fournies par Budgetravaux.</p>
+    <p class="a-completer">Mentions légales : à compléter · Politique de confidentialité : à compléter</p>
+    <p>Entreprise individuelle de Pedro Ricardo Dos Reis Oliveira · SIRET : à confirmer · © Budgetravaux</p>
+  </div>
+</footer>
+<div data-barre-fixe>
+  <a class="bouton bouton--appel" href="tel:+33761183322"><svg class="icone" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1L6.6 10.8z" fill="currentColor"/></svg>Appeler</a>
+  <a class="bouton bouton--contour" href="/devis-en-ligne" data-libelle="Devis en ligne">Devis en ligne</a>
+</div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+[
+  { "cle": "douche", "titre": "Douche", "image": "grok/equip-douche", "cadrage": "50% 50%",
+    "renovation": ["Receveur classique ou à l'italienne, grès émaillé ou acrylique", "Cabine ou 1 à 3 parois", "Cabine de douche PMR sur devis"],
+    "depannage": ["Remplacement de paroi ou de receveur", "Joints silicone", "Mitigeur, barre de colonne", "Broyeur ou pompe de relevage", "Fuite d'évacuation ou d'alimentation", "Débouchage"] },
+  { "cle": "baignoire", "titre": "Baignoire", "image": "grok/equip-baignoire", "cadrage": "50% 55%",
+    "renovation": ["Pose ou fourniture et pose : fonte, acier, acrylique, d'angle", "Robinetterie et tablier à carreler", "Transformation de baignoire en douche"],
+    "depannage": ["Fuite d'arrivée, vidange", "Mitigeur, colonnettes", "Joints, pare-bain", "Remplacement à l'identique", "Débouchage"] },
+  { "cle": "lavabo", "titre": "Lavabo", "image": "grok/equip-lavabo", "cadrage": "50% 55%",
+    "renovation": ["Meuble de salle de bain, vasque, lave-mains ou lavabo"],
+    "depannage": ["Fuite d'arrivée ou d'évacuation", "Mitigeur", "Remplacement du lavabo", "Joints, broyeur", "Débouchage"] },
+  { "cle": "wc", "titre": "WC", "image": "grok/equip-wc", "cadrage": "50% 55%",
+    "renovation": ["WC classique, suspendu ou sanibroyeur"],
+    "depannage": ["Fuite", "Chasse d'eau", "Broyeur", "Remplacement", "Débouchage"] },
+  { "cle": "chauffe-eau", "titre": "Chauffe-eau", "image": "grok/urgence-chauffe-eau", "cadrage": "50% 50%",
+    "renovation": ["Chauffe-eau électrique vertical ou horizontal, 75, 100 ou 150 litres"],
+    "depannage": ["Panne ou fuite", "Groupe de sécurité", "Réducteur de pression", "Remplacement"] },
+  { "cle": "cuisine", "titre": "Cuisine", "image": "grok/equip-cuisine", "cadrage": "50% 55%",
+    "renovation": ["Évier inox ou grès émaillé", "Raccordement de lave-vaisselle et de lave-linge", "Modification ou déplacement d'une cuisine"],
+    "depannage": ["Robinet de machine à laver, mitigeur d'évier", "Meuble évier, joints silicone", "Fuite sur arrivée ou évacuation", "Broyeur ou pompe de relevage", "Débouchage", "Création d'une arrivée et d'une évacuation pour machine"] },
+  { "cle": "fuite", "titre": "Recherche de fuite", "image": "grok/urgence-fuite", "cadrage": "50% 50%",
+    "renovation": ["Modification des arrivées d'eau chaude et froide", "Évacuations PVC de 32 à 100 mm"],
+    "depannage": ["Détection par mise en pression", "Réparation sur cuivre", "Remplacement de vanne", "Panne d'eau chaude", "Réducteur de pression"] }
+]

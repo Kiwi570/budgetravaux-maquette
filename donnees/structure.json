@@ -1,0 +1,11 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Plumber",
+  "name": "Budgetravaux",
+  "url": "https://budgetravaux-maquette.vercel.app/",
+  "telephone": "+33761183322",
+  "founder": { "@type": "Person", "name": "Pedro Ricardo Dos Reis Oliveira" },
+  "address": { "@type": "PostalAddress", "streetAddress": "9 bis rue de l'Abreuvoir", "postalCode": "60126", "addressLocality": "Longueil-Sainte-Marie", "addressCountry": "FR" },
+  "areaServed": { "@type": "AdministrativeArea", "name": "Oise (60)" },
+  "description": { "fr": "Dépannage plomberie, chauffage et électricité, rénovation tous corps d'état dans l'Oise. Devis gratuit, déplacement inclus." }
+}
