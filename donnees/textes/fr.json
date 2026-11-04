@@ -220,7 +220,17 @@
       "titre": "Une fuite en ce moment ?",
       "texte": "Appelez, une estimation peut se faire par téléphone."
     },
-    "forfaitsSurtitre": "Tarifs publiés"
+    "forfaitsSurtitre": "Tarifs publiés",
+    "bon": {
+      "titre": "Bon d'intervention",
+      "l1": "Recherche de fuite",
+      "d1": "Déplacement et 1 h compris",
+      "l2": "Caméra thermique",
+      "d2": "Recherche approfondie",
+      "l3": "Soir, week-end, fériés",
+      "d3": "Après 20 h",
+      "pied": "Les 8 forfaits plus bas"
+    }
   },
   "pannes": {
     "douche": {
@@ -288,6 +298,11 @@
     "fin": {
       "titre": "Un projet de rénovation ?",
       "texte": "Composez votre devis en ligne, ou appelez pour en parler."
+    },
+    "plan": {
+      "legende": "Plan de principe",
+      "coupe": "Salle de bain · plan",
+      "indice": "Faites défiler : le plan devient chantier fini"
     }
   },
   "devis": {
@@ -331,7 +346,8 @@
       "u": "u",
       "projet": "projet"
     },
-    "totalVide": "—"
+    "totalVide": "—",
+    "metre": "Les quatre étapes du devis"
   },
   "contact": {
     "surtitre": "Contact & RDV",
@@ -368,7 +384,9 @@
       "choisir": "Choisir…",
       "etapesN": "Étape {n} sur 3"
     },
-    "carteTitre": "Où intervient Budgetravaux."
+    "carteTitre": "Où intervient Budgetravaux.",
+    "numeroTitre": "Le plus rapide : le téléphone",
+    "rdv": "Demander un rendez-vous"
   },
   "types": {
     "depannage": "Dépannage",
@@ -410,6 +428,7 @@
     "fin": {
       "titre": "Votre équipement n'est pas dans la liste ?",
       "texte": "Décrivez-le dans le devis en ligne, ou appelez."
-    }
+    },
+    "sommaire": "Aller directement à"
   }
 }

@@ -1,7 +1,8 @@
 /* Dépannage & tarifs : forfaits (ticket), caméra thermique (thermique), horloge des tarifs (horloge), pannes courantes, FAQ. */
 import { html, brut } from '../../outils/gabarit.mjs';
 import { ticket, prix, icone } from '../gabarits/morceaux.mjs';
-import { tete, finCourte } from '../gabarits/tete.mjs';
+import { finCourte } from '../gabarits/tete.mjs';
+import { ouvertureBon } from '../gabarits/ouvertures.mjs';
 
 export const page = { cle: 'depannage', fichier: 'depannage', imagePartage: 'grok/depannage-ouverture-1280.webp' };
 
@@ -12,7 +13,7 @@ export default (c) => {
   const f = c.donnees.forfaits;
   const fo = (k) => f.find((x) => x.cle === k);
   return html`
-${tete(c, { image: 'grok/depannage-ouverture', alt: c.s('depannage.alt'), surtitre: c.t('depannage.surtitre'), titre: c.t('depannage.titre'), texte: c.t('depannage.texte'), info: c.t('depannage.info'), cadrage: '62% 55%' })}
+${ouvertureBon(c)}
 
 <section class="forfaits clair" id="forfaits">
   <div class="conteneur">

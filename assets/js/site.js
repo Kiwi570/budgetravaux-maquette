@@ -3,7 +3,7 @@
    d'effets (lignes, mots, cascade, rideau, parallaxe, zoom, trace, galerie, onde, magnétique, incline).
    Effets du plan : lampe, reseau, ticket, disjoncteurs, compteur-eau, ricochet, thermique, horloge.
    En plus : planches (rénovation), vannes (plomberie), formulaires en étapes et estimateur. */
-import { demarrer, boucle, etat, quand, rafraichir } from './socle/index.js?v=1';
+import { demarrer, boucle, etat, quand, rafraichir } from './socle/index.js?v=2';
 
 const gsap = window.gsap;
 const ST = window.ScrollTrigger;
@@ -553,12 +553,69 @@ function introPage(tl, t0) {
   return tl;
 }
 
+
+/* ---------- v2 · ouvertures des pages intérieures (bon, chantier, trappe, metre, numero) ---------- */
+function typeOuverture() { const o = $('[data-tete]'); return o ? o.dataset.tete : null; }
+
+function introOuverture(tl, t0) {
+  const type = typeOuverture();
+  if (!type) return introPage(tl, t0);
+  tl.fromTo('.ov-anim', { opacity: 0, y: 22 }, { opacity: 1, y: 0, duration: .55, stagger: .08, ease: 'power3.out' }, t0 + .15);
+  if (type === 'bon') {
+    tl.fromTo('.ov-bon-photo', { clipPath: 'inset(100% 0 0 0)' }, { clipPath: 'inset(0% 0 0 0)', duration: .8, ease: 'power4.out' }, t0)
+      .fromTo('.ticket--bon', { clipPath: 'inset(0 0 100% 0)', y: -30 }, { clipPath: 'inset(0 0 0% 0)', y: 0, duration: .8, ease: 'steps(12)' }, t0 + .45)
+      .fromTo('.ov-ligne', { opacity: 0 }, { opacity: 1, duration: .2, stagger: .14 }, t0 + .7);
+  } else if (type === 'chantier') {
+    const traits = $$('.ov-calque path');
+    traits.forEach((t) => { t.setAttribute('pathLength', '1'); t.style.strokeDasharray = '1 1.05'; });
+    tl.fromTo('.ov-chantier-bande', { clipPath: 'inset(0 100% 0 0)' }, { clipPath: 'inset(0 0% 0 0)', duration: .9, ease: 'power4.inOut' }, t0)
+      .fromTo(traits, { strokeDashoffset: 1.02 }, { strokeDashoffset: 0, duration: .7, stagger: .04, ease: 'power2.inOut' }, t0 + .5);
+  } else if (type === 'trappe') {
+    tl.fromTo('.vis', { rotation: 0 }, { rotation: -540, duration: .6, stagger: .05, ease: 'power2.in' }, t0)
+      .fromTo('.ov-trappe-porte', { opacity: 1, rotationY: 0, transformPerspective: 1200 }, { rotationY: -105, opacity: 0, duration: .8, ease: 'power3.in' }, t0 + .55)
+      .fromTo('.ov-sommaire li', { opacity: 0, x: -12 }, { opacity: 1, x: 0, duration: .35, stagger: .05 }, t0 + .7);
+  } else if (type === 'metre') {
+    tl.fromTo('.ov-metre-bande', { scaleX: 0 }, { scaleX: 1, duration: .9, ease: 'power3.out' }, t0 + .2)
+      .fromTo('.ov-metre-etapes li', { opacity: 0, y: 8 }, { opacity: 1, y: 0, duration: .3, stagger: .1 }, t0 + .75);
+  } else if (type === 'numero') {
+    tl.fromTo('.paire-in', { yPercent: 110 }, { yPercent: 0, duration: .55, stagger: .09, ease: 'power3.out' }, t0 + .25)
+      .fromTo('.ov-numero-bande', { clipPath: 'inset(100% 0 0 0)' }, { clipPath: 'inset(0% 0 0 0)', duration: .8, ease: 'power4.out' }, t0 + .4);
+  }
+  return tl;
+}
+
+function initOuvertures() {
+  const type = typeOuverture();
+  if (!type || etat.calme || !gsap || !ST) return;
+  const section = $('[data-tete]');
+  const fin = { trigger: section, start: 'top top', end: 'bottom top', scrub: .4 };
+  if (type === 'bon') {
+    gsap.fromTo('.ticket--bon', { y: 0, rotation: -3 }, { y: -70, rotation: -6, ease: 'none', immediateRender: false, scrollTrigger: fin });
+    gsap.fromTo('.ov-bon-photo img', { scale: 1.08 }, { scale: 1, ease: 'none', scrollTrigger: fin });
+  } else if (type === 'chantier') {
+    const bande = $('.ov-chantier-bande');
+    const o = { p: 0 };
+    const poser = () => { const g = 50 + o.p * 50; $('.ov-calque').style.clipPath = `inset(0 0 0 ${g}%)`; $('.ov-calque-bord').style.left = `${g}%`; $('.ov-calque-bord').style.opacity = String(1 - o.p * o.p); };
+    gsap.to(o, { p: 1, ease: 'none', onUpdate: poser, scrollTrigger: { trigger: bande, start: 'top 55%', end: 'bottom 35%', scrub: .5 } });
+  } else if (type === 'trappe') {
+    gsap.fromTo('.ov-trappe-photo img', { scale: 1.14 }, { scale: 1, ease: 'none', scrollTrigger: fin });
+    gsap.fromTo('.vis', { rotation: -540 }, { rotation: -360, ease: 'none', immediateRender: false, scrollTrigger: fin });
+  } else if (type === 'metre') {
+    gsap.fromTo('.ov-metre-graduations', { x: 0 }, { x: -320, ease: 'none', scrollTrigger: { trigger: section, start: 'top top', end: 'bottom top', scrub: .4 } });
+  }
+}
+
 function etatFinalProjet() {
   if (!gsap) return;
   const mettre = (sels, props) => { const els = [].concat(sels).flatMap((x) => $$(x)); if (els.length) gsap.set(els, props); };
   mettre(['.hero-surtitre', '.hero-mot', '.hero-intro', '.hero-actions', '.hero-info', '.hero-ticket-place', '.pt-anim'], { clearProps: 'opacity,transform' });
   mettre('.hero-mot--lumiere', { clearProps: 'color,textShadow' });
   mettre('.page-tete-fond', { clearProps: 'clipPath' });
+  mettre(['.ov-anim', '.ov-sommaire li', '.ov-metre-etapes li', '.ov-ligne', '.paire-in', '.vis'], { clearProps: 'opacity,transform' });
+  mettre(['.ov-bon-photo', '.ticket--bon', '.ov-chantier-bande', '.ov-numero-bande'], { clearProps: 'clipPath,transform' });
+  mettre('.ov-metre-bande', { clearProps: 'transform' });
+  mettre('.ov-trappe-porte', { opacity: 0, clearProps: 'transform' });
+  $$('.ov-calque path').forEach((t) => { t.style.strokeDashoffset = '0'; });
   $$('.hero-reseau .tube').forEach((t) => { t.style.strokeDashoffset = '0'; });
   mettre('.hero-reseau .raccords > *', { clearProps: 'opacity,transform' });
   const scene = $('.hero-scene'), l = scene && scene.__lampe;
@@ -569,21 +626,21 @@ function etatFinalProjet() {
 demarrer({
   pret: [initLampe()].filter(Boolean),
   preparer() {
-    [initReseau, initTickets, initTableaux, initCompteur, initRicochet, initThermique, initHorloge, initPlanches, initVannes, initEtapes, initEstimateur]
+    [initReseau, initTickets, initTableaux, initCompteur, initRicochet, initThermique, initHorloge, initPlanches, initVannes, initEtapes, initEstimateur, initOuvertures]
       .forEach((fn) => { try { fn(); } catch (err) { console.error('[site]', fn.name, err); } });
   },
   jouer() {
     if (!gsap) return null;
     const tl = gsap.timeline({ defaults: { ease: 'power3.out' } });
     introPanneau(tl);
-    if ($('.hero-mur')) introAccueil(tl, .8); else introPage(tl, .9);
+    if ($('.hero-mur')) introAccueil(tl, .7); else introOuverture(tl, .9);
     return tl;
   },
   etatFinal: etatFinalProjet,
   arrivee() {
     if (!gsap) return;
     const tl = gsap.timeline({ defaults: { ease: 'power3.out' }, delay: .1 });
-    if ($('.hero-mur')) introAccueil(tl, 0); else introPage(tl, 0);
+    if ($('.hero-mur')) introAccueil(tl, 0); else introOuverture(tl, 0);
   },
 });
 

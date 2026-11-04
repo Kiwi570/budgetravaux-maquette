@@ -1,7 +1,7 @@
 /* Contact & RDV : formulaire de rendez-vous en trois étapes (vrais champs du site actuel), coordonnées, carte (ricochet). */
 import { html, brut } from '../../outils/gabarit.mjs';
 import { carteOise, icone } from '../gabarits/morceaux.mjs';
-import { tete } from '../gabarits/tete.mjs';
+import { ouvertureNumero } from '../gabarits/ouvertures.mjs';
 
 export const page = { cle: 'contact', fichier: 'contact', imagePartage: 'grok/contact-ouverture-1280.webp' };
 
@@ -10,7 +10,7 @@ export default (c) => {
   const types = ['depannage', 'urgence', 'renovation', 'reparation', 'montage', 'pose'];
   const projets = ['plomberie', 'chauffage', 'electricite', 'platrerie', 'maconnerie', 'menuiserie', 'murs', 'sols', 'complet'];
   return html`
-${tete(c, { image: 'grok/contact-ouverture', alt: c.s('contact.alt'), surtitre: c.t('contact.surtitre'), titre: c.t('contact.titre'), texte: c.t('contact.texte'), info: c.t('commun.sansObligation'), cadrage: '55% 50%', fx: 'data-fx="parallaxe" data-fx-force="8"' })}
+${ouvertureNumero(c)}
 
 <section class="rendez-vous bloc clair" id="rendez-vous">
   <div class="conteneur contact-grille">

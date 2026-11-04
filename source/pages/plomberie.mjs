@@ -1,14 +1,15 @@
 /* Plomberie en détail : un équipement par fiche, filtres en vannes quart de tour (vannes), dépannage et pose. */
 import { html, brut } from '../../outils/gabarit.mjs';
 import { icone } from '../gabarits/morceaux.mjs';
-import { tete, finCourte } from '../gabarits/tete.mjs';
+import { finCourte } from '../gabarits/tete.mjs';
+import { ouvertureTrappe } from '../gabarits/ouvertures.mjs';
 
 export const page = { cle: 'plomberie', fichier: 'plomberie', imagePartage: 'grok/plomberie-ouverture-1280.webp' };
 
 export default (c) => {
   const eq = c.donnees.equipements;
   return html`
-${tete(c, { image: 'grok/plomberie-ouverture', alt: c.s('plomberie.alt'), surtitre: c.t('plomberie.surtitre'), titre: c.t('plomberie.titre'), texte: c.t('plomberie.texte'), info: c.t('plomberie.info'), cadrage: '60% 50%' })}
+${ouvertureTrappe(c)}
 
 <section class="equipements bloc clair" id="equipements">
   <div class="conteneur">

@@ -1,7 +1,7 @@
 /* Devis en ligne : estimateur en quatre étapes ; le ticket s'imprime ligne à ligne (ticket), total sur les prix publiés. */
 import { html, brut } from '../../outils/gabarit.mjs';
 import { prix } from '../gabarits/morceaux.mjs';
-import { tete } from '../gabarits/tete.mjs';
+import { ouvertureMetre } from '../gabarits/ouvertures.mjs';
 
 export const page = { cle: 'devis', fichier: 'devis-en-ligne', imagePartage: 'grok/devis-ouverture-1280.webp' };
 
@@ -12,8 +12,7 @@ export default (c) => {
   const etapes = ['e1', 'e2', 'e3', 'e4'];
   const libellePrix = (p) => (p.prix == null ? c.s('devis.surDevis') : `${p.base ? c.s('devis.aPartir') + ' ' : ''}${prix(p.prix)}${p.unite === 'forfait' ? '' : ' / ' + c.s('devis.unites.' + UNITE[p.unite])}`);
   return html`
-${tete(c, { image: 'grok/devis-ouverture', alt: c.s('devis.alt'), surtitre: c.t('devis.surtitre'), titre: c.t('devis.titre'), texte: c.t('devis.texte'), info: c.t('devis.info'), cadrage: '60% 50%', fx: 'data-fx="parallaxe" data-fx-force="8"',
-  action: html`<a class="bouton bouton--appel" href="#estimateur" data-action-principale data-survol="magnetique">${c.t('accueil.estimer.action')}</a>` })}
+${ouvertureMetre(c)}
 
 <section class="estimateur bloc clair" id="estimateur">
   <div class="conteneur devis-grille">

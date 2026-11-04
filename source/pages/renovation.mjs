@@ -1,13 +1,13 @@
 /* Rénovation : tableau à disjoncteurs complet (disjoncteurs), trois projets en planches empilées (planches), garanties. */
 import { html, brut } from '../../outils/gabarit.mjs';
 import { tableau, icone } from '../gabarits/morceaux.mjs';
-import { tete, finCourte } from '../gabarits/tete.mjs';
+import { finCourte } from '../gabarits/tete.mjs';
+import { ouvertureChantier } from '../gabarits/ouvertures.mjs';
 
 export const page = { cle: 'renovation', fichier: 'renovation', imagePartage: 'grok/renovation-ouverture-1280.webp' };
 
 export default (c) => html`
-${tete(c, { image: 'grok/renovation-ouverture', alt: c.s('renovation.alt'), surtitre: c.t('renovation.surtitre'), titre: c.t('renovation.titre'), texte: c.t('renovation.texte'), info: c.t('renovation.info'), cadrage: '62% 50%',
-  action: html`${c.lien('devis', { classe: 'bouton bouton--appel', texte: c.t('commun.actionEntete'), attrs: 'data-action-principale data-survol="magnetique"' })} <a class="bouton bouton--contour" href="tel:${c.site.contact.telephoneLien}" data-survol="magnetique">${brut(icone('tel'))}${c.site.contact.telephone}</a>` })}
+${ouvertureChantier(c, { action: html`${c.lien('devis', { classe: 'bouton bouton--appel', texte: c.t('commun.actionEntete'), attrs: 'data-action-principale data-survol="magnetique"' })} <a class="bouton bouton--contour" href="tel:${c.site.contact.telephoneLien}" data-survol="magnetique">${brut(icone('tel'))}${c.site.contact.telephone}</a>` })}
 
 <section class="metiers sombre" id="metiers">
   <div class="conteneur metiers-grille">

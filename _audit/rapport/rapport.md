@@ -1,13 +1,13 @@
 # Rapport d’audit
 
-Projet : `budgetravaux-maquette` · 04/11/2026 05:04:50 · 0 min · 1 page(s) · audit standard ciblé sur /renovation (étapes : fichiers)
+Projet : `budgetravaux-maquette` · 04/11/2026 16:14:16 · 12 min · 7 page(s) · audit standard (étapes : fichiers, mesures, films, parcours)
 
 ## Résumé
 
 - Échecs : **0**
-- À regarder : **1**
-- Non lancé : **0**
-- Contrôles passés : vercel.json (1), .vercelignore (1), robots.txt (1), numéro de version (1), langues (1)
+- À regarder : **2**
+- Non lancé : **1**
+- Contrôles passés : vercel.json (1), .vercelignore (1), robots.txt (1), numéro de version (1), langues (1), mesures (77), balayage (6), films d’ouverture (12), films de transition (12), intro accélérable et passable (7), menu (1), clavier (7), liens et boutons (7), liens profonds (14), liens vers la page en cours (6), changements de hauteur (6), mode calme (12)
 
 ## Échecs
 
@@ -15,20 +15,39 @@ Aucun.
 
 ## À regarder
 
-### numéro de version (1)
+### retour arrière : changement brusque (1)
 
-- **numéro de version** — ?v=1 est celui de la dernière livraison : à changer avant de livrer
+- **retour arrière : changement brusque** — `/` — à 72 ms (différence 33 %) (films/retour-arrière-390.png) _(390×844 retour arrière)_
+
+### rechargement au milieu de la page (1)
+
+- **rechargement au milieu de la page** — `/renovation` — écran différent à la même position après rechargement (6.0 %), voir comparaisons/rechargement-renovation-*.png _(1366×768)_
 
 ## Non lancé
 
-Tout a été lancé.
-
+- **parcours:calme** : elementHandle.click: Timeout 30000ms exceeded.
 
 ## Repères
 
-- Numéro de version des fichiers : ?v=1
-- Audit standard : étapes lourdes sur /renovation.
+- Numéro de version des fichiers : ?v=2
+- Audit standard : étapes lourdes sur /, /contact, /depannage, /devis-en-ligne, /plomberie, /renovation.
 - Accessibilité : axe-core 4.12.1 en plus des contrôles intégrés.
+- Ouverture / (1366×768) : 2584 ms depuis le premier octet
+- film de l'ouverture / 1366×768 : réussi à la tentative 2 (avant : cdpSession.send: Protocol error (Page.startScreencast): Not attached to an active page)
+- Ouverture /contact (1366×768) : 2373 ms depuis le premier octet
+- film de l'ouverture /contact 1366×768 : réussi à la tentative 2 (avant : cdpSession.send: Protocol error (Page.startScreencast): Not attached to an active page)
+- Ouverture /depannage (1366×768) : 2426 ms depuis le premier octet
+- Ouverture /devis-en-ligne (1366×768) : 2480 ms depuis le premier octet
+- film de l'ouverture /devis-en-ligne 1366×768 : réussi à la tentative 2 (avant : cdpSession.send: Protocol error (Page.startScreencast): Not attached to an active page)
+- Ouverture /plomberie (1366×768) : 2490 ms depuis le premier octet
+- Ouverture /renovation (1366×768) : 2782 ms depuis le premier octet
+- Ouverture / (390×844) : 2542 ms depuis le premier octet
+- Ouverture /contact (390×844) : 2325 ms depuis le premier octet
+- Ouverture /depannage (390×844) : 2391 ms depuis le premier octet
+- Ouverture /devis-en-ligne (390×844) : 2494 ms depuis le premier octet
+- Ouverture /plomberie (390×844) : 2496 ms depuis le premier octet
+- Ouverture /renovation (390×844) : 2793 ms depuis le premier octet
+- Aucun parcours propre au projet (_audit/parcours.mjs) : filtres, calculateurs, panier, réservation, fenêtres testés seulement par les contrôles généraux.
 
 ## Fichiers
 
@@ -36,3 +55,12 @@ Tout a été lancé.
 - Films : `films/` (planches contact de l’ouverture, des transitions, des retours, des ancres et des épinglages ; ⚠ = image signalée)
 - Comparaisons : `comparaisons/`
 - Détail complet : `rapport.json`
+
+
+## Relancer seulement ce qui a échoué
+
+Après correction, si elle ne touche que ces pages (sinon, relancer l’audit standard en entier) :
+
+```
+node _audit/audit.mjs --seulement=fichiers,parcours
+```

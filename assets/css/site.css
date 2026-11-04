@@ -669,3 +669,144 @@ html:not(.js) .hero-photo .mention-ia { top: auto; bottom: 10px; }
   html:not(.js) [data-menu-bouton] { display: none; }
   html:not(.js) .hero-intro { display: none; }
 }
+
+/* ===================== v2 · ouvertures propres à chaque page ===================== */
+.ov { position: relative; overflow: hidden; padding-top: calc(var(--entete-h) + clamp(28px, 6vh, 64px)); padding-bottom: calc(var(--barres-h) + clamp(28px, 6vh, 64px)); }
+.ov-titre { font-size: clamp(2.4rem, min(5.8vw, 9.5vh), 5.6rem); font-weight: 800; font-stretch: 80%; line-height: .94; letter-spacing: -.012em; margin: 0 0 .32em; text-wrap: balance; }
+.ov-intro { max-width: 34em; font-size: clamp(1.02rem, .98rem + .35vw, 1.22rem); }
+.ov .hero-actions { margin-bottom: 12px; }
+.ov.sombre, .ov-bon, .ov-trappe, .ov-numero { background: var(--nuit); color: var(--texte); }
+.ov-bon .ov-intro, .ov-trappe .ov-intro { color: #d4cfc6; }
+.ov-bon .surtitre, .ov-trappe .surtitre, .ov-numero .surtitre { color: var(--jaune); }
+
+/* Dépannage · bon d'intervention */
+.ov-bon { min-height: min(100svh, 980px); display: grid; align-items: center; }
+.ov-bon::before { content: ''; position: absolute; inset: 0; pointer-events: none; opacity: .06;
+  background-image: linear-gradient(#fff 1px, transparent 1px), linear-gradient(90deg, #fff 1px, transparent 1px); background-size: 72px 72px; }
+.ov-bon-grille { position: relative; display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); gap: clamp(28px, 5vw, 80px); align-items: center; }
+.ov-bon-visuel { position: relative; justify-self: end; width: min(100%, 460px); padding-bottom: 72px; }
+.ov-bon-photo { aspect-ratio: 4 / 5; border-radius: 4px; box-shadow: 0 40px 80px -40px rgba(0,0,0,.9); max-height: 68svh; }
+.ticket--bon { position: absolute; left: -16%; bottom: 0; width: min(330px, 76%); transform: rotate(-3deg); z-index: 2; font-size: .9rem; }
+.ticket--bon .ticket-prix { font-size: 1.45rem; color: var(--cuivre-fonce); }
+.ticket--bon .ticket-num { color: var(--encre); }
+.ticket--bon .ticket-pied a { color: inherit; }
+@media (max-width: 860px) {
+  .ov-bon { min-height: 0; }
+  .ov-bon-grille { grid-template-columns: 1fr; }
+  .ov-bon-visuel { justify-self: center; width: min(100%, 420px); padding-bottom: 96px; }
+  .ov-bon-photo { aspect-ratio: 4 / 3; }
+  .ticket--bon { left: auto; right: 4%; width: min(300px, 86%); }
+}
+
+/* Rénovation · du plan au réel */
+.ov-chantier { display: flex; flex-direction: column; min-height: min(100svh, 1000px); padding-bottom: 0; }
+.ov-chantier .ov-titre { font-size: clamp(2.6rem, min(8.2vw, 12vh), 8.4rem); max-width: none; margin-bottom: .22em; }
+.ov-chantier-rangee { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); gap: clamp(20px, 4vw, 64px); align-items: end; }
+.ov-chantier-rangee .ov-intro { margin: 0; color: var(--encre-doux); }
+.ov-chantier-rangee .hero-actions { margin: 0 0 10px; }
+.ov-chantier .hero-info { color: var(--cuivre-fonce); }
+.ov-chantier-bande { position: relative; flex: 1 1 auto; min-height: clamp(220px, 38svh, 520px); margin-top: clamp(20px, 4vh, 44px); }
+.ov-chantier-photo { position: absolute; inset: 0; border-radius: 0; }
+.ov-calque { position: absolute; inset: 0; z-index: 2; pointer-events: none; background: rgba(23, 63, 128, .9); clip-path: inset(0 0 0 38%); }
+.ov-calque svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+.ov-calque path { fill: none; stroke: rgba(255,255,255,.85); stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+.ov-calque .cotes path { stroke-width: 1.5; stroke: #ffd96b; }
+.ov-calque::before { content: ''; position: absolute; inset: 0; opacity: .22; background-image: linear-gradient(#fff 1px, transparent 1px), linear-gradient(90deg, #fff 1px, transparent 1px); background-size: 32px 32px; }
+.ov-calque-legende { position: absolute; right: var(--gouttiere); top: 16px; margin: 0; padding: 4px 10px; border: 1px solid rgba(255,255,255,.7); font-family: var(--police-mono); font-size: .78rem; letter-spacing: .1em; text-transform: uppercase; color: #fff; }
+.ov-calque-bord { position: absolute; z-index: 3; top: 0; bottom: 0; left: 38%; width: 4px; margin-left: -2px; background: var(--jaune); box-shadow: 0 0 18px rgba(255, 207, 58, .6); pointer-events: none; }
+.ov-chantier-photo .mention-ia { z-index: 4; }
+html.calme .ov-calque, html.calme .ov-calque-bord, html:not(.js) .ov-calque, html:not(.js) .ov-calque-bord { display: none; }
+@media (max-width: 860px) {
+  .ov-chantier { min-height: 0; }
+  .ov-chantier-rangee { grid-template-columns: 1fr; }
+  .ov-chantier-bande { flex: none; height: 46svh; }
+}
+
+/* Plomberie · trappe de visite */
+.ov-trappe { min-height: min(100svh, 980px); display: grid; align-items: center; }
+.ov-trappe-grille { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(28px, 5vw, 88px); align-items: center; }
+.ov-trappe .ov-titre { font-size: clamp(2.3rem, min(5vw, 8.5vh), 5rem); }
+.ov-sommaire { margin-top: clamp(14px, 3vh, 28px); padding-top: 14px; border-top: 1px solid #2e3238; }
+.ov-sommaire p { margin: 0 0 8px; font-family: var(--police-mono); font-size: .78rem; letter-spacing: .12em; text-transform: uppercase; color: var(--cuivre-clair); }
+.ov-sommaire ol { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 24px; }
+.ov-sommaire a { display: flex; align-items: center; gap: 10px; min-height: 40px; color: inherit; text-decoration: none; border-bottom: 1px solid #23272c; }
+.ov-sommaire a span { font-family: var(--police-mono); font-size: .8rem; color: var(--cuivre-clair); }
+.ov-sommaire a:hover { color: var(--jaune); }
+.ov-trappe-cadre { position: relative; justify-self: end; width: min(100%, 540px); aspect-ratio: 1; padding: 22px; border-radius: 6px;
+  background: linear-gradient(145deg, #e9e5dc, #c9c3b7); box-shadow: inset 0 0 0 1px rgba(0,0,0,.15), 0 40px 80px -40px rgba(0,0,0,.9); max-height: 74svh; }
+.ov-trappe-photo { position: absolute; inset: 22px; border-radius: 2px; box-shadow: inset 0 0 0 3px #a8a194; }
+.ov-trappe-porte { position: absolute; inset: 22px; z-index: 2; border-radius: 2px; transform-origin: 0 50%; pointer-events: none;
+  background-color: #eeebe4; background-image: linear-gradient(#d3cdc1 2px, transparent 2px), linear-gradient(90deg, #d3cdc1 2px, transparent 2px); background-size: 25% 25%; background-position: -1px -1px; opacity: 0; }
+.vis { position: absolute; z-index: 3; width: 16px; height: 16px; border-radius: 50%; background: radial-gradient(circle at 35% 35%, #f2efe8, #8f897d); box-shadow: inset 0 0 0 1px rgba(0,0,0,.3); }
+.vis::after { content: ''; position: absolute; left: 3px; right: 3px; top: 7px; height: 2px; background: #5d584f; }
+.vis--hg { left: 4px; top: 4px; } .vis--hd { right: 4px; top: 4px; } .vis--bg { left: 4px; bottom: 4px; } .vis--bd { right: 4px; bottom: 4px; }
+.ov-trappe-photo .mention-ia { z-index: 4; }
+@media (max-width: 860px) {
+  .ov-trappe { min-height: 0; }
+  .ov-trappe-grille { grid-template-columns: 1fr; }
+  .ov-trappe-cadre { justify-self: center; width: min(100%, 420px); order: 2; }
+  .ov-sommaire { order: 3; }
+}
+@media (max-width: 480px) { .ov-sommaire ol { grid-template-columns: 1fr; } }
+
+/* Devis · mètre ruban */
+.ov-metre { padding-bottom: clamp(20px, 4vh, 40px); }
+.ov-metre-grille { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr); gap: clamp(24px, 5vw, 72px); align-items: center; }
+.ov-metre .ov-titre { font-size: clamp(2.3rem, min(5.4vw, 9vh), 5.2rem); }
+.ov-metre .ov-intro { color: var(--encre-doux); }
+.ov-metre .hero-info { color: var(--cuivre-fonce); }
+.ov-metre-photo { aspect-ratio: 4 / 3; border-radius: 4px; transform: rotate(2deg); box-shadow: 0 30px 60px -36px rgba(0,0,0,.6); }
+.ov-metre-ruban { position: relative; margin-top: clamp(20px, 4vh, 40px); padding-left: var(--gouttiere); display: flex; align-items: center; }
+.ov-metre-bande { position: relative; flex: 1; height: 96px; overflow: hidden; background: linear-gradient(180deg, #ffd84d, #f3c21c); border-block: 2px solid #c99a00; transform-origin: 100% 50%; }
+.ov-metre-graduations { position: absolute; left: 0; top: 0; height: 56px; width: 2400px; max-width: none; }
+.ov-metre-graduations path { stroke: #1b1d20; stroke-width: 2; }
+.ov-metre-graduations text { font-family: var(--police-mono); font-size: 15px; font-weight: 700; fill: #1b1d20; }
+.ov-metre-etapes { position: absolute; left: 0; right: 0; bottom: 8px; list-style: none; margin: 0; padding: 0 clamp(8px, 2vw, 24px); display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; }
+.ov-metre-etapes li { display: flex; align-items: center; gap: 8px; min-width: 0; font-weight: 700; font-size: .92rem; color: #1b1d20; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.ov-metre-etapes span { flex: none; display: inline-grid; place-items: center; width: 24px; height: 24px; border-radius: 50%; background: #1b1d20; color: #ffd84d; font-family: var(--police-mono); font-size: .8rem; }
+.ov-metre-boitier { flex: none; width: 112px; height: 112px; margin-right: var(--gouttiere); border-radius: 22px; background: radial-gradient(circle at 50% 50%, #2b2f34 0 18px, #d93a2b 19px 52px, #b12a1e 53px); box-shadow: 0 16px 30px -18px rgba(0,0,0,.6); }
+@media (max-width: 860px) {
+  .ov-metre-grille { grid-template-columns: 1fr; }
+  .ov-metre-photo { transform: none; aspect-ratio: 16 / 9; }
+  .ov-metre-bande { height: 118px; }
+  .ov-metre-etapes { grid-template-columns: repeat(2, minmax(0, 1fr)); bottom: 6px; row-gap: 4px; }
+  .ov-metre-etapes li { font-size: .82rem; }
+  .ov-metre-boitier { width: 72px; height: 72px; border-radius: 16px; background: radial-gradient(circle at 50% 50%, #2b2f34 0 12px, #d93a2b 13px 33px, #b12a1e 34px); }
+}
+
+/* Contact · le numéro */
+.ov-numero { display: flex; flex-direction: column; min-height: min(100svh, 980px); padding-bottom: 0; }
+.ov-numero-centre { flex: 1 0 auto; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding-bottom: clamp(20px, 4vh, 40px); }
+.ov-numero-titre { margin: 0 0 .4em; font-size: clamp(1.6rem, 1.2rem + 1.8vw, 2.8rem); font-weight: 700; font-stretch: 88%; text-wrap: balance; }
+.ov-numero-legende { margin: 0 0 6px; font-family: var(--police-mono); font-size: .8rem; letter-spacing: .14em; text-transform: uppercase; color: var(--cuivre-clair); }
+.ov-numero-tel { display: inline-flex; flex-wrap: wrap; justify-content: center; gap: 0 .32em; margin: 0 0 .3em; font-family: var(--police-mono); font-weight: 700; font-size: clamp(2.2rem, 10.5vw, 8.6rem); line-height: 1.05; letter-spacing: -.02em; color: var(--jaune); text-decoration: none; text-shadow: 0 0 .4em rgba(255, 207, 58, .22); font-variant-numeric: tabular-nums; }
+.ov-numero-tel:hover { color: #ffe07a; }
+.ov-numero-tel:focus-visible { outline-offset: 8px; }
+.paire { display: inline-block; overflow: hidden; padding-block: .06em; }
+.paire-in { display: inline-block; }
+.ov-numero-actions { margin: 6px 0 10px; }
+.ov-numero .hero-info { color: #cfc9bf; text-transform: none; letter-spacing: .02em; }
+.ov-numero-bande { position: relative; flex: none; height: clamp(170px, 30svh, 360px); border-radius: 0; border-top: 6px solid var(--cuivre); }
+.ov-numero-bande::after { content: ''; position: absolute; inset: 0; z-index: 1; background: linear-gradient(180deg, rgba(18,20,23,.55), transparent 45%); pointer-events: none; }
+.ov-numero-bande .mention-ia { z-index: 3; }
+@media (max-width: 760px) { .ov-numero { min-height: 0; } .ov-numero-bande { height: 30svh; } }
+@media (max-height: 640px) and (max-width: 760px) { .ov-intro { display: none; } .ov-sommaire { display: none; } }
+/* v2 · réglages après captures */
+.ov-calque { background: rgba(23, 63, 128, .74); clip-path: inset(0 0 0 50%); }
+.ov-calque-bord { left: 50%; }
+@media (max-width: 860px) {
+  .ov-metre-etapes li { white-space: normal; overflow: visible; text-overflow: clip; line-height: 1.1; }
+  .ov-metre-bande { height: 132px; }
+}
+
+/* v2 · corrections d'audit */
+.ov-sommaire a { min-height: 44px; }
+.ov-numero-tel { min-height: 48px; align-items: center; }
+.paire { overflow: visible; clip-path: inset(0 -.15em); }
+.ov-metre-bande { height: auto; overflow: visible; display: flex; flex-direction: column; background: #f6c933; clip-path: inset(0); }
+.ov-metre-reglet { position: relative; height: 56px; clip-path: inset(0); }
+.ov-metre-graduations { position: absolute; }
+.ov-metre-etapes { position: static; padding-block: 4px 10px; }
+@media (max-width: 860px) { .ov-metre-bande { height: auto; } .ov-metre-etapes { padding-block: 2px 8px; } }
+.ov-metre-bande { clip-path: none; }
+@media (max-width: 420px) { .ov-metre-etapes { grid-template-columns: 1fr; row-gap: 2px; } .ov-metre-boitier { width: 56px; height: 56px; border-radius: 14px; background: radial-gradient(circle at 50% 50%, #2b2f34 0 9px, #d93a2b 10px 25px, #b12a1e 26px); } }

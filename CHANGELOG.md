@@ -1,5 +1,16 @@
 # Journal des versions — Budgetravaux
 
+## v2 — une ouverture propre à chaque page
+
+- Les cinq pages intérieures n'ont plus la même ouverture (photo plein cadre, texte à gauche) : chacune a sa composition, tirée de son sujet. L'accueil garde la lampe torche.
+  - **Dépannage & tarifs** : bon d'intervention. Texte à gauche, photo encadrée à droite, et un ticket des trois tarifs clés (149 €, 299 €, 199 €) qui s'imprime par-dessus puis remonte au défilement.
+  - **Rénovation** : du plan au réel. Fond clair carrelé, très grand titre, bandeau photo recouvert d'un calque de plan bleu qui s'efface au défilement.
+  - **Plomberie en détail** : trappe de visite. Les vis se dévissent, la trappe s'ouvre sur la photo ; à côté, le sommaire des 7 équipements mène directement à chaque fiche.
+  - **Devis en ligne** : mètre ruban. Fond quadrillé, ouverture compacte, ruban jaune qui sort de son boîtier et porte les 4 étapes du devis.
+  - **Contact & RDV** : le numéro en très grand, chiffres qui montent un à un, rue au crépuscule en bandeau panoramique.
+- Cinq recadrages d'images à partir des illustrations déjà reçues (aucune nouvelle image Grok).
+- Version des fichiers passée à 2 (les navigateurs rechargent les styles et scripts).
+
 ## v1 — base de la maquette
 
 - Direction « Derrière le mur » : nuit de dépannage, carrelage blanc, cuivre, eau, jaune électrique ; titres Bricolage Grotesque, texte DM Sans, prix en JetBrains Mono, hébergés avec le site.

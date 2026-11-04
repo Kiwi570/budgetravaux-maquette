@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr" data-v="1" data-curseur>
+<html lang="fr" data-v="2" data-curseur>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -41,14 +41,14 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 })();</script>
 <link rel="preload" href="/assets/polices/bricolage.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/polices/dm-sans.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/socle.css?v=1">
-<link rel="stylesheet" href="/assets/css/site.css?v=1">
-<link rel="modulepreload" href="/assets/js/site.js?v=1">
-<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<link rel="stylesheet" href="/assets/css/socle.css?v=2">
+<link rel="stylesheet" href="/assets/css/site.css?v=2">
+<link rel="modulepreload" href="/assets/js/site.js?v=2">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=2">
 <script src="/assets/vendor/gsap.min.js" defer></script>
 <script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
 <script src="/assets/vendor/SplitText.min.js" defer></script>
-<script type="module" src="/assets/js/site.js?v=1"></script>
+<script type="module" src="/assets/js/site.js?v=2"></script>
 <meta name="theme-color" content="#121417">
 <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
@@ -94,18 +94,27 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   <p><button type="button" class="lien" data-calme-bascule data-libelle-reduire="Réduire les animations" data-libelle-retablir="Rétablir les animations" data-libelle-systeme="Animations réduites par le réglage de votre appareil"><span data-libelle-bouton>Réduire les animations</span></button></p>
 </div>
 <main id="contenu" tabindex="-1">
-<section class="page-tete" id="debut">
-  <figure class="media page-tete-fond" data-grok data-fx="parallaxe" data-fx-force="8" style="--cadrage:60% 50%">
-  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/devis-ouverture-mobile-640.webp 640w, /assets/images/grok/devis-ouverture-mobile-960.webp 960w" sizes="100vw">
-    <img src="/assets/images/grok/devis-ouverture-1280.webp" srcset="/assets/images/grok/devis-ouverture-640.webp 640w, /assets/images/grok/devis-ouverture-1280.webp 1280w, /assets/images/grok/devis-ouverture-1600.webp 1600w" sizes="100vw" alt="Crayon, mètre ruban fermé et feuille quadrillée sur un établi" width="1280" height="720" fetchpriority="high" loading="eager" decoding="async">
+<section class="ov ov-metre clair" id="debut" data-tete="metre">
+  <div class="conteneur ov-metre-grille">
+    <div class="ov-texte">
+      <p class="surtitre ov-anim" data-anime="gsap">Devis en ligne</p>
+      <h1 class="ov-anim ov-titre" data-anime="gsap">Votre devis, ligne par ligne.</h1>
+      <p class="ov-anim ov-intro" data-anime="gsap">Quatre étapes : le métier, la pièce, les postes, vos coordonnées. Le ticket se calcule sur les prix publiés ; tout le reste est chiffré gratuitement par Budgetravaux.</p>
+      <p class="hero-actions ov-anim" data-anime="gsap"><a class="bouton bouton--sombre" href="#estimateur" data-action-principale data-survol="magnetique">Composer mon devis</a></p>
+      <p class="hero-info ov-anim" data-info-cle data-anime="gsap">Gratuit et sans engagement</p>
+    </div>
+    <figure class="media ov-metre-photo ov-anim" data-grok data-anime="gsap" style="--cadrage:62% 50%">
+  <picture>
+    <img src="/assets/images/grok/devis-cadre-1040.webp" srcset="/assets/images/grok/devis-cadre-480.webp 480w, /assets/images/grok/devis-cadre-784.webp 784w, /assets/images/grok/devis-cadre-1040.webp 1040w" sizes="(max-width: 860px) 92vw, 36vw" alt="Crayon, mètre ruban fermé et feuille quadrillée sur un établi" width="1040" height="780" fetchpriority="high" loading="eager" decoding="async">
   </picture><figcaption class="mention-ia">Illustration générée</figcaption>
 </figure>
-  <div class="conteneur page-tete-texte">
-    <p class="surtitre pt-anim" data-anime="gsap">Devis en ligne</p>
-    <h1 class="pt-anim pt-titre" data-anime="gsap">Votre devis, ligne par ligne.</h1>
-    <p class="pt-anim" data-anime="gsap">Quatre étapes : le métier, la pièce, les postes, vos coordonnées. Le ticket se calcule sur les prix publiés ; tout le reste est chiffré gratuitement par Budgetravaux.</p>
-    <p class="hero-actions pt-anim" data-anime="gsap"><a class="bouton bouton--appel" href="#estimateur" data-action-principale data-survol="magnetique">Composer mon devis</a></p>
-    <p class="hero-info pt-anim" data-info-cle data-anime="gsap">Gratuit et sans engagement</p>
+  </div>
+  <div class="ov-metre-ruban" data-effet="metre" role="img" aria-label="Les quatre étapes du devis">
+    <div class="ov-metre-bande">
+      <div class="ov-metre-reglet"><svg class="ov-metre-graduations" viewBox="0 0 2400 56" preserveAspectRatio="xMinYMin meet" aria-hidden="true"><path d="M0 0 v30"/><text x="4" y="46">0</text><path d="M10 0 v12"/><path d="M20 0 v12"/><path d="M30 0 v12"/><path d="M40 0 v12"/><path d="M50 0 v20"/><path d="M60 0 v12"/><path d="M70 0 v12"/><path d="M80 0 v12"/><path d="M90 0 v12"/><path d="M100 0 v30"/><text x="104" y="46">1</text><path d="M110 0 v12"/><path d="M120 0 v12"/><path d="M130 0 v12"/><path d="M140 0 v12"/><path d="M150 0 v20"/><path d="M160 0 v12"/><path d="M170 0 v12"/><path d="M180 0 v12"/><path d="M190 0 v12"/><path d="M200 0 v30"/><text x="204" y="46">2</text><path d="M210 0 v12"/><path d="M220 0 v12"/><path d="M230 0 v12"/><path d="M240 0 v12"/><path d="M250 0 v20"/><path d="M260 0 v12"/><path d="M270 0 v12"/><path d="M280 0 v12"/><path d="M290 0 v12"/><path d="M300 0 v30"/><text x="304" y="46">3</text><path d="M310 0 v12"/><path d="M320 0 v12"/><path d="M330 0 v12"/><path d="M340 0 v12"/><path d="M350 0 v20"/><path d="M360 0 v12"/><path d="M370 0 v12"/><path d="M380 0 v12"/><path d="M390 0 v12"/><path d="M400 0 v30"/><text x="404" y="46">4</text><path d="M410 0 v12"/><path d="M420 0 v12"/><path d="M430 0 v12"/><path d="M440 0 v12"/><path d="M450 0 v20"/><path d="M460 0 v12"/><path d="M470 0 v12"/><path d="M480 0 v12"/><path d="M490 0 v12"/><path d="M500 0 v30"/><text x="504" y="46">5</text><path d="M510 0 v12"/><path d="M520 0 v12"/><path d="M530 0 v12"/><path d="M540 0 v12"/><path d="M550 0 v20"/><path d="M560 0 v12"/><path d="M570 0 v12"/><path d="M580 0 v12"/><path d="M590 0 v12"/><path d="M600 0 v30"/><text x="604" y="46">6</text><path d="M610 0 v12"/><path d="M620 0 v12"/><path d="M630 0 v12"/><path d="M640 0 v12"/><path d="M650 0 v20"/><path d="M660 0 v12"/><path d="M670 0 v12"/><path d="M680 0 v12"/><path d="M690 0 v12"/><path d="M700 0 v30"/><text x="704" y="46">7</text><path d="M710 0 v12"/><path d="M720 0 v12"/><path d="M730 0 v12"/><path d="M740 0 v12"/><path d="M750 0 v20"/><path d="M760 0 v12"/><path d="M770 0 v12"/><path d="M780 0 v12"/><path d="M790 0 v12"/><path d="M800 0 v30"/><text x="804" y="46">8</text><path d="M810 0 v12"/><path d="M820 0 v12"/><path d="M830 0 v12"/><path d="M840 0 v12"/><path d="M850 0 v20"/><path d="M860 0 v12"/><path d="M870 0 v12"/><path d="M880 0 v12"/><path d="M890 0 v12"/><path d="M900 0 v30"/><text x="904" y="46">9</text><path d="M910 0 v12"/><path d="M920 0 v12"/><path d="M930 0 v12"/><path d="M940 0 v12"/><path d="M950 0 v20"/><path d="M960 0 v12"/><path d="M970 0 v12"/><path d="M980 0 v12"/><path d="M990 0 v12"/><path d="M1000 0 v30"/><text x="1004" y="46">10</text><path d="M1010 0 v12"/><path d="M1020 0 v12"/><path d="M1030 0 v12"/><path d="M1040 0 v12"/><path d="M1050 0 v20"/><path d="M1060 0 v12"/><path d="M1070 0 v12"/><path d="M1080 0 v12"/><path d="M1090 0 v12"/><path d="M1100 0 v30"/><text x="1104" y="46">11</text><path d="M1110 0 v12"/><path d="M1120 0 v12"/><path d="M1130 0 v12"/><path d="M1140 0 v12"/><path d="M1150 0 v20"/><path d="M1160 0 v12"/><path d="M1170 0 v12"/><path d="M1180 0 v12"/><path d="M1190 0 v12"/><path d="M1200 0 v30"/><text x="1204" y="46">12</text><path d="M1210 0 v12"/><path d="M1220 0 v12"/><path d="M1230 0 v12"/><path d="M1240 0 v12"/><path d="M1250 0 v20"/><path d="M1260 0 v12"/><path d="M1270 0 v12"/><path d="M1280 0 v12"/><path d="M1290 0 v12"/><path d="M1300 0 v30"/><text x="1304" y="46">13</text><path d="M1310 0 v12"/><path d="M1320 0 v12"/><path d="M1330 0 v12"/><path d="M1340 0 v12"/><path d="M1350 0 v20"/><path d="M1360 0 v12"/><path d="M1370 0 v12"/><path d="M1380 0 v12"/><path d="M1390 0 v12"/><path d="M1400 0 v30"/><text x="1404" y="46">14</text><path d="M1410 0 v12"/><path d="M1420 0 v12"/><path d="M1430 0 v12"/><path d="M1440 0 v12"/><path d="M1450 0 v20"/><path d="M1460 0 v12"/><path d="M1470 0 v12"/><path d="M1480 0 v12"/><path d="M1490 0 v12"/><path d="M1500 0 v30"/><text x="1504" y="46">15</text><path d="M1510 0 v12"/><path d="M1520 0 v12"/><path d="M1530 0 v12"/><path d="M1540 0 v12"/><path d="M1550 0 v20"/><path d="M1560 0 v12"/><path d="M1570 0 v12"/><path d="M1580 0 v12"/><path d="M1590 0 v12"/><path d="M1600 0 v30"/><text x="1604" y="46">16</text><path d="M1610 0 v12"/><path d="M1620 0 v12"/><path d="M1630 0 v12"/><path d="M1640 0 v12"/><path d="M1650 0 v20"/><path d="M1660 0 v12"/><path d="M1670 0 v12"/><path d="M1680 0 v12"/><path d="M1690 0 v12"/><path d="M1700 0 v30"/><text x="1704" y="46">17</text><path d="M1710 0 v12"/><path d="M1720 0 v12"/><path d="M1730 0 v12"/><path d="M1740 0 v12"/><path d="M1750 0 v20"/><path d="M1760 0 v12"/><path d="M1770 0 v12"/><path d="M1780 0 v12"/><path d="M1790 0 v12"/><path d="M1800 0 v30"/><text x="1804" y="46">18</text><path d="M1810 0 v12"/><path d="M1820 0 v12"/><path d="M1830 0 v12"/><path d="M1840 0 v12"/><path d="M1850 0 v20"/><path d="M1860 0 v12"/><path d="M1870 0 v12"/><path d="M1880 0 v12"/><path d="M1890 0 v12"/><path d="M1900 0 v30"/><text x="1904" y="46">19</text><path d="M1910 0 v12"/><path d="M1920 0 v12"/><path d="M1930 0 v12"/><path d="M1940 0 v12"/><path d="M1950 0 v20"/><path d="M1960 0 v12"/><path d="M1970 0 v12"/><path d="M1980 0 v12"/><path d="M1990 0 v12"/><path d="M2000 0 v30"/><text x="2004" y="46">20</text><path d="M2010 0 v12"/><path d="M2020 0 v12"/><path d="M2030 0 v12"/><path d="M2040 0 v12"/><path d="M2050 0 v20"/><path d="M2060 0 v12"/><path d="M2070 0 v12"/><path d="M2080 0 v12"/><path d="M2090 0 v12"/><path d="M2100 0 v30"/><text x="2104" y="46">21</text><path d="M2110 0 v12"/><path d="M2120 0 v12"/><path d="M2130 0 v12"/><path d="M2140 0 v12"/><path d="M2150 0 v20"/><path d="M2160 0 v12"/><path d="M2170 0 v12"/><path d="M2180 0 v12"/><path d="M2190 0 v12"/><path d="M2200 0 v30"/><text x="2204" y="46">22</text><path d="M2210 0 v12"/><path d="M2220 0 v12"/><path d="M2230 0 v12"/><path d="M2240 0 v12"/><path d="M2250 0 v20"/><path d="M2260 0 v12"/><path d="M2270 0 v12"/><path d="M2280 0 v12"/><path d="M2290 0 v12"/><path d="M2300 0 v30"/><text x="2304" y="46">23</text><path d="M2310 0 v12"/><path d="M2320 0 v12"/><path d="M2330 0 v12"/><path d="M2340 0 v12"/><path d="M2350 0 v20"/><path d="M2360 0 v12"/><path d="M2370 0 v12"/><path d="M2380 0 v12"/><path d="M2390 0 v12"/><path d="M2400 0 v30"/><text x="2404" y="46">24</text></svg></div>
+      <ol class="ov-metre-etapes" role="list"><li data-anime="gsap"><span>1</span>Le métier</li><li data-anime="gsap"><span>2</span>La pièce</li><li data-anime="gsap"><span>3</span>Les postes</li><li data-anime="gsap"><span>4</span>Vos coordonnées</li></ol>
+    </div>
+    <span class="ov-metre-boitier" aria-hidden="true"></span>
   </div>
 </section>
 <section class="estimateur bloc clair" id="estimateur">

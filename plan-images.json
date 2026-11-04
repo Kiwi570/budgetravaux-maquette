@@ -343,5 +343,95 @@
   "gabarit": "lieu",
   "scene": "a family kitchen with a stainless steel sink, a tall chrome mixer tap and a washing machine connection beside it",
   "alt": "Évier inox et mitigeur dans une cuisine"
+ },
+ {
+  "source": "recu/grok_zip/depannage-ouverture-mobile.jpg",
+  "nom": "depannage-bon",
+  "role": "ouverture",
+  "ratio": "4:5",
+  "largeurs": [
+   480,
+   784,
+   1080
+  ],
+  "cadrage": [
+   55,
+   58
+  ],
+  "alt": "Tuyaux sous un évier éclairés par une lampe torche",
+  "page": "Dépannage & tarifs",
+  "emplacement": "ouverture, cadre du bon"
+ },
+ {
+  "source": "recu/grok_zip/renovation-ouverture.jpg",
+  "nom": "renovation-bande",
+  "role": "ouverture",
+  "ratio": "21:9",
+  "largeurs": [
+   640,
+   1280,
+   1600
+  ],
+  "cadrage": [
+   55,
+   55
+  ],
+  "alt": "Salle de bain rénovée avec douche à l'italienne",
+  "page": "Rénovation",
+  "emplacement": "ouverture, bandeau"
+ },
+ {
+  "source": "recu/grok_zip/plomberie-ouverture-mobile.jpg",
+  "nom": "plomberie-trappe",
+  "role": "ouverture",
+  "ratio": "1:1",
+  "largeurs": [
+   480,
+   784,
+   1080
+  ],
+  "cadrage": [
+   50,
+   52
+  ],
+  "alt": "Carrelage ouvert sur des tuyaux de cuivre et de PVC neufs",
+  "page": "Plomberie en détail",
+  "emplacement": "ouverture, trappe"
+ },
+ {
+  "source": "recu/grok_zip/devis-ouverture.jpg",
+  "nom": "devis-cadre",
+  "role": "ouverture",
+  "ratio": "4:3",
+  "largeurs": [
+   480,
+   784,
+   1040
+  ],
+  "cadrage": [
+   62,
+   50
+  ],
+  "alt": "Crayon, mètre ruban fermé et feuille quadrillée sur un établi",
+  "page": "Devis en ligne",
+  "emplacement": "ouverture, cadre"
+ },
+ {
+  "source": "recu/grok_zip/contact-ouverture.jpg",
+  "nom": "contact-bande",
+  "role": "ouverture",
+  "ratio": "3:1",
+  "largeurs": [
+   640,
+   1280,
+   1600
+  ],
+  "cadrage": [
+   50,
+   60
+  ],
+  "alt": "Rue de maisons en brique au crépuscule",
+  "page": "Contact & RDV",
+  "emplacement": "ouverture, bandeau panoramique"
  }
 ]

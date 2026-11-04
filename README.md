@@ -19,6 +19,8 @@ Pages du site actuel non reprises (possibles en v2) : une fiche par corps d'éta
 
 ## Effets propres (plan d'animation)
 
+Ouvertures des pages intérieures (v2, `source/gabarits/ouvertures.mjs`) : `bon` (Dépannage), `chantier` (Rénovation), `trappe` (Plomberie), `metre` (Devis), et le numéro en grand sur Contact.
+
 `lampe` (ouverture de l'accueil, WebGL), `reseau` (goutte dans le tuyau des urgences), `ticket` (tickets qui s'impriment), `disjoncteurs` (tableau des métiers), `compteur-eau` (étapes), `ricochet` (carte de l'Oise), `thermique` (caméra thermique), `horloge` (tarif selon l'heure). En plus : `planches`, `vannes`, `estimateur`. Effets de la bibliothèque du socle : lignes, mots, cascade, rideau, parallaxe, zoom, trace, galerie, onde, magnétique.
 
 ## Commandes
